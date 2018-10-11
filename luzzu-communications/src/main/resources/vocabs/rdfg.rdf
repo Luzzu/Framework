@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE RDF [
+   <!ENTITY rdf  "http://www.w3.org/1999/02/22-rdf-syntax-ns">
+   <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema">
+   <!ENTITY rdfg "http://www.w3.org/2004/03/trix/rdfg-1">
+]>
+
+<rdf:RDF
+   xml:base="&rdfg;/"
+   xmlns:rdf="&rdf;#"
+   xmlns:rdfs="&rdfs;#"
+   xmlns:rdfg="&rdfg;/">
+
+   <rdfs:Class rdf:about="&rdfg;/Graph">
+      <rdfs:label>Graph</rdfs:label>
+      <rdfs:comment>
+An RDF graph (with intensional semantics).
+      </rdfs:comment>
+   </rdfs:Class>
+
+   <rdf:Property rdf:about="&rdfg;/equivalentGraph">
+      <rdfs:label>equivalent graph</rdfs:label>
+      <rdfs:comment>
+The graphs associated with the subject and object are equivalent.
+      </rdfs:comment>
+      <rdfs:domain rdf:resource="&rdfg;/Graph"/>
+      <rdfs:range rdf:resource="&rdfg;/Graph"/>
+   </rdf:Property>
+
+   <rdf:Property rdf:about="&rdfg;/subGraphOf">
+      <rdfs:label>subgraph of</rdfs:label>
+      <rdfs:comment>
+The graph associated with the subject is a subgraph of a graph equivalent
+to that associated with the object.
+      </rdfs:comment>
+      <rdfs:domain rdf:resource="&rdfg;/Graph"/>
+      <rdfs:range rdf:resource="&rdfg;/Graph"/>
+   </rdf:Property>
+
+</rdf:RDF>

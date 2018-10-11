@@ -1,0 +1,12 @@
+%% author: "Jeremy"
+%% package: "io.github.luzzu.testing.metrics"
+
+def{DeprecatedClassesAndPropertiesMetric}:
+  metric{<http://purl.org/eis/vocab/dqm#UsageOfDeprecatedClassesOrProperties>};
+  label{"Usage of Deprecated Classes and Properties"};
+  description{"Measures the number of owl:DeprecatedClasses and owl:DeprecatedProperties used in a dataset"};
+  rule{ 
+	var.x = match{?p == <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> & custom.IsDeprecatedClass(?o)} => action{countUnique(?o)}; 
+  	var.y = match{!?p == <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> & custom.IsDeprecatedProperty(?p)} => action{countUnique(?p)}; 
+  } ;
+  finally{normalise(ratio(add(var.x,var.y), totalTriples))}.

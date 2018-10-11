@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfa="http://www.w3.org/ns/rdfa#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#"
+>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#presentation">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An
+      element whose implicit native role semantics will not be mapped to the
+      accessibility API.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#combobox">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A presentation
+      of a select; usually similar to a textbox where users can type ahead to
+      select an option, or type to enter arbitrary text as a new item in the
+      list. Also see listbox.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#icon">
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfa:term>icon</rdfa:term>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#icon</rdfa:uri>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icon refers to a resource that
+      represents an icon. </rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#meta">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">meta refers to a resource that
+      provides metadata. </rdfs:comment>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfa:term>meta</rdfa:term>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#meta</rdfa:uri>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#radiogroup">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group
+      of radio buttons.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#document">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A region
+      containing related information that is declared as document content, as
+      opposed to a web application.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#timer">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of
+      live region containing a numerical counter which indicates an amount of
+      elapsed time from a start point, or the time remaining until an end point.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#heading">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A heading
+      for a section of the page.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#listitem">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single
+      item in a list or directory.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#tree">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of
+      list that may contain sub-level nested groups that can be collapsed and
+      expanded.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#last">
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#last</rdfa:uri>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfa:term>last</rdfa:term>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">last refers to the last resource in a
+      collection of resources. </rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#img">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A container
+      for a collection of elements that form an image.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#copyright">
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">copyright refers to a copyright
+      statement for the resource. </rdfs:comment>
+    <rdfa:term>copyright</rdfa:term>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#copyright</rdfa:uri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#rowgroup">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group
+      containing one or more row elements in a grid.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#index">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">index refers to a resource providing
+      an index. </rdfs:comment>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfa:term>index</rdfa:term>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#index</rdfa:uri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#progressbar">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An
+      element that displays the progress status for tasks that take a long time.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#toolbar">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collection
+      of commonly used function buttons represented in compact visual form.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#group">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of
+      user interface objects which are not intended to be included in a page
+      summary or table of contents by assistive technologies.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#link">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interactive
+      reference to an internal or external resource that, when activated, causes
+      the user agent to navigate to that resource. Also see button.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#option">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A selectable
+      item in a select list.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#relrev-properties">
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#role-properties"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#prev">
+    <rdfa:term>prev</rdfa:term>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#prev</rdfa:uri>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prev refers to a previous resource
+      (before the current one) in an ordered collection of resources. </rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#license">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfa:term>license</rdfa:term>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">license refers to a resource that
+      defines the associated license. </rdfs:comment>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#license</rdfa:uri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#stylesheet">
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#stylesheet</rdfa:uri>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stylesheet refers to a resource
+      serving as a stylesheet for a resource. </rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfa:term>stylesheet</rdfa:term>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#dialog">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dialog
+      is an application window that is designed to interrupt the current processing
+      of an application in order to prompt the user to enter information or require
+      a response. Also see alertdialog.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#scrollbar">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A graphical
+      object that controls the scrolling of content within a viewing area, regardless
+      of whether the content is fully displayed within the viewing area.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#menuitemradio">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A
+      checkable menuitem in a group of menuitemradio roles, only one of which
+      can be checked at a time.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#form">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A landmark
+      region that contains a collection of items and objects that, as a whole,
+      combine to create a form. Also see search.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#treeitem">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An option
+      item of a tree. This is an element within a tree that may be expanded or
+      collapsed if it contains a sub-level group of treeitems.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#help">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">help refers to a resource offering
+      help. </rdfs:comment>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#help</rdfa:uri>
+    <rdfa:term>help</rdfa:term>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#application">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A
+      region declared as a web application, as opposed to a web document.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#contents">
+    <rdfa:term>contents</rdfa:term>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contents refers to a resource serving
+      as a table of contents. </rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#contents</rdfa:uri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#section">
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfa:term>section</rdfa:term>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#section</rdfa:uri>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">section refers to a resource serving
+      as a section in a collection. </rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#region">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A large
+      perceivable section of a web page or document, that the author feels is
+      important enough to be included in a page summary or table of contents,
+      for example, an area of the page containing live sporting event statistics.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#status">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A container
+      whose content is advisory information for the user but is not important
+      enough to justify an alert. Also see alert.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#main">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acts as the
+      main content of the document. </rdfs:comment>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#role-properties"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#glossary">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#glossary</rdfa:uri>
+    <rdfa:term>glossary</rdfa:term>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glossary refers to a resource
+      providing a glossary of terms. </rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#p3pv1">
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p3pv1 refers to a P3P Policy Reference
+      File [P3P]. </rdfs:comment>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#p3pv1</rdfa:uri>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfa:term>p3pv1</rdfa:term>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#separator">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A divider
+      that separates and distinguishes sections of content or groups of menuitems.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#cite">
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#cite</rdfa:uri>
+    <rdfa:term>cite</rdfa:term>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cite refers to a resource that defines
+      a citation. </rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#alert">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A message
+      with important, and usually time-sensitive, information. Also see alertdialog
+      and status.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#first">
+    <rdfa:term>first</rdfa:term>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">first refers the first item in a
+      collection (see also start and top).</rdfs:comment>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#first</rdfa:uri>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#log">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of
+      live region where new information is added in meaningful order and old
+      information may disappear. Also see marquee.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#top">
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top is a synonym for start. </rdfs:comment>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#top</rdfa:uri>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfa:term>top</rdfa:term>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#bookmark">
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#bookmark</rdfa:uri>
+    <rdfa:term>bookmark</rdfa:term>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bookmark refers to a bookmark - a link
+      to a key entry point within an extended document. </rdfs:comment>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#next">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#next</rdfa:uri>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfa:term>next</rdfa:term>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">next refers to the next resource
+      (after the current one) in an ordered collection of resources. </rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#itsRules">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#itsRules</rdfa:uri>
+    <rdfa:term>itsRules</rdfa:term>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">itsRules indicates that the designated
+      resource is an [ITS] rule set.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#menuitem">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An option
+      in a group of choices contained by a menu or menubar.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#tablist">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A list
+      of tab elements, which are references to tabpanel elements.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#marquee">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type
+      of live region where non-essential information changes frequently. Also
+      see log.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#contentinfo">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contains meta information about the
+      content on the page or the page as a whole.</rdfs:comment>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#role-properties"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#role">
+    <rdfa:term>role</rdfa:term>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#role</rdfa:uri>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role indicates the purpose of the
+      resource. See the XHTML Role
+      Vocabulary for roles in this vocabulary space, and XHTMLROLE for information on extending the
+      collection of roles. </rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#menubar">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A presentation
+      of menu that usually remains visible and is usually presented horizontally.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#rowheader">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell
+      containing header information for a row in a grid.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#article">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A section
+      of a page that consists of a composition that forms an independent part
+      of a document, page, or site.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#role-properties">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#tooltip">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A contextual
+      popup that displays a description for an element.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#list">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group of
+      non-interactive list items. Also see listbox.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#subsection">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subsection refers to a resource
+      serving as a subsection in a collection. </rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#subsection</rdfa:uri>
+    <rdfa:term>subsection</rdfa:term>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#grid">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A grid is
+      an interactive control which contains cells of tabular data arranged in
+      rows and columns, like a table.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#menuitemcheckbox">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A
+      checkable menuitem that has three possible values: true, false, or mixed.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#listbox">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A widget
+      that allows the user to select one or more items from a list of choices.
+      Also see combobox and list.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#tab">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A grouping
+      label providing a mechanism for selecting the tab content that is to be
+      rendered to the user.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#math">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Content that
+      represents a mathematical expression. </rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#navigation">
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#role-properties"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates a collection of items suitable for
+      navigating the document or related documents.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#chapter">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfa:term>chapter</rdfa:term>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#chapter</rdfa:uri>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chapter refers to a resource serving
+      as a chapter in a collection. </rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#alternate">
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#alternate</rdfa:uri>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternate 
+    designates alternate versions for a resource.</rdfs:comment>
+    <rdfa:term>alternate</rdfa:term>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#alertdialog">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A
+      type of dialog that contains an alert message, where initial focus goes
+      an element within the dialog. Also see alert and dialog.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#tabpanel">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A container
+      for the resources associated with a tab, where each tab is contained in
+      a tablist.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#definition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates the definition of a term or concept.</rdfs:comment>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#role-properties"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#button">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An input
+      that allows for user-triggered actions when clicked or pressed. Also see
+      link.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#up">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">up refers to a resource "above" in a
+      hierarchically structured set. </rdfs:comment>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#up</rdfa:uri>
+    <rdfa:term>up</rdfa:term>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#treegrid">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A grid
+      whose rows can be expanded and collapsed in the same manner as for a tree.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#textbox">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input
+      that allows free-form text as its value.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#gridcell">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell
+      in a grid or treegrid.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#complementary">
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#role-properties"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates that the section supports but is
+      separable from the main content of resource.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#banner">
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#role-properties"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contains
+      the prime heading or internal title of a page. </rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#checkbox">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A checkable
+      input that has three possible values: true, false, or mixed.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#menu">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of
+      widget that offers a list of choices to the user.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#start">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">start refers to the first resource in
+      a collection of resources. </rdfs:comment>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#start</rdfa:uri>
+    <rdfa:term>start</rdfa:term>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#search">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates
+      that the section provides a search facility. </rdfs:comment>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#role-properties"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#appendix">
+    <rdfa:term>appendix</rdfa:term>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#appendix</rdfa:uri>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appendix refers to a resource serving
+      as an appendix in a collection. </rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#relrev-properties"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#spinbutton">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A form
+      of range that expects a user to select from amongst discrete choices.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#note">
+    <rdfs:member rdf:resource="http://www.w3.org/1999/xhtml/vocab#role-properties"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates
+      the content is parenthetic or ancillary to the main content of the
+      resource. </rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#directory">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A list
+      of references to members of a group, such as a static table of contents.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#row">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A row of cells
+      in a grid.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#slider">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A user
+      input where the user selects a value from within a given range.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#radio">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A checkable
+      input in a group of radio roles, only one of which can be checked at a
+      time.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab">
+    <xhv:stylesheet rdf:resource="http://www.w3.org/StyleSheets/TR/base.css"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#columnheader">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A
+      cell containing header information for a column.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>
+

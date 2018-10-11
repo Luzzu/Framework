@@ -1,0 +1,65 @@
+<rdf:RDF
+  xmlns:rdf ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+>
+
+<daml:Ontology rdf:about="">
+  <daml:versionInfo>$Id: airport-ont.daml,v 1.1 2002/03/14 06:24:16 mdean Exp $</daml:versionInfo>
+  <rdfs:comment>Airport</rdfs:comment>
+</daml:Ontology>
+
+<rdfs:Class rdf:ID="Airport">
+  <rdfs:subClassOf>
+    <daml:Restriction>
+      <daml:onProperty rdf:resource="#name"/>
+      <daml:toClass rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+    </daml:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <daml:Restriction>
+      <daml:onProperty rdf:resource="#iataCode"/>
+      <daml:toClass rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+    </daml:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <daml:Restriction>
+      <daml:onProperty rdf:resource="#icaoCode"/>
+      <daml:toClass rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+    </daml:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <daml:Restriction>
+      <daml:onProperty rdf:resource="#location"/>
+      <daml:toClass rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+    </daml:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <daml:Restriction>
+      <daml:onProperty rdf:resource="#latitude"/>
+      <daml:toClass rdf:resource="http://www.w3.org/2000/10/XMLSchema#double"/>
+    </daml:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <daml:Restriction>
+      <daml:onProperty rdf:resource="#longitude"/>
+      <daml:toClass rdf:resource="http://www.w3.org/2000/10/XMLSchema#double"/>
+    </daml:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <daml:Restriction>
+      <daml:onProperty rdf:resource="#elevation"/>
+      <daml:toClass rdf:resource="http://www.w3.org/2000/10/XMLSchema#double"/>
+    </daml:Restriction>
+  </rdfs:subClassOf>
+</rdfs:Class>
+
+<daml:DatatypeProperty rdf:ID="elevation"/>
+<daml:DatatypeProperty rdf:ID="iataCode"/>
+<daml:DatatypeProperty rdf:ID="icaoCode"/>
+<daml:DatatypeProperty rdf:ID="latitude"/>
+<daml:DatatypeProperty rdf:ID="location"/>
+<daml:DatatypeProperty rdf:ID="longitude"/>
+<daml:DatatypeProperty rdf:ID="name"/>
+
+</rdf:RDF>

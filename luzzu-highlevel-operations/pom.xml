@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.github.luzzu</groupId>
+    <artifactId>luzzu</artifactId>
+    <version>4.0.0</version>
+  </parent>
+  <artifactId>luzzu-highlevel-operations</artifactId>
+  <name>Luzzu High-Level Operations Module</name>
+  <description>This module consists of classes that support Luzzu on a higher level such as ranking</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>io.github.luzzu</groupId>
+  		<artifactId>luzzu-lowlevel-operations</artifactId>
+  		<version>${luzzu.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>io.github.luzzu</groupId>
+  		<artifactId>luzzu-semantics</artifactId>
+  		<version>${luzzu.version}</version>
+  	</dependency>
+  </dependencies>
+</project>

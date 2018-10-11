@@ -1,0 +1,84 @@
+@prefix daq: 	<http://purl.org/eis/vocab/daq#>.
+@prefix dc: 							<http://purl.org/dc/elements/1.1/> .
+@prefix dct:     					<http://purl.org/dc/terms/>.
+@prefix foaf:    					<http://xmlns.com/foaf/0.1/>.
+@prefix owl: 	<http://www.w3.org/2002/07/owl#>.
+@prefix qpro: <http://purl.org/eis/vocab/qpro#>.
+@prefix rdf: 	<http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#>.
+@prefix xsd: 	<http://www.w3.org/2001/XMLSchema#>.
+
+qpro:
+	a owl:Ontology , voaf:Vocabulary ;
+  dct:title """Quality Problem Report (QPRO)"""@en ;
+  dc:description """The Quality Problem Report (QPRO) enables the fine-grained description of quality problems found while assessing a dataset."""@en ;
+  dct:creator [
+    foaf:name "Jeremy Debattista";
+    foaf:mbox <mailto:debattij@scss.tcd.ie>
+  ] ;
+  dct:modified "2017-08-03"^^xsd:date ;
+  dct:language "en"^^xsd:language ;
+  vann:preferredNamespaceUri "http://purl.org/eis/vocab/qpro#";
+  vann:preferredNamespacePrefix "qpro" ;
+  foaf:homepage <http://purl.org/eis/vocab/qpro#> .
+
+# Classes
+qpro:QualityReport a rdfs:Class ;
+	rdfs:comment """Represents a report on the problems detected during the assessment of quality on a dataset."""@en ;
+	rdfs:label "Quality Report"@en .
+
+qpro:QualityProblem a rdfs:Class ;
+	rdfs:comment """Represents a quality problem detected during the assessment of quality metrics on triples."""@en ;
+	rdfs:label "Quality Problem"@en .
+
+qpro:Exception a rdfs:Class ;
+		rdfs:comment """Represents an Exception that causes the dataset to have Quality Problems. This is an abstract class"""@en ;
+		rdfs:label "Exception (Abstract)"@en .
+
+
+# Properties
+qpro:computedOn a rdf:Property ;
+	rdfs:domain qpro:QualityReport ;
+	rdfs:range rdfs:Resource ;
+	rdfs:comment """Represents the dataset URI on which quality metrics where computed"""@en ;
+	rdfs:label "computed on"@en .
+
+qpro:hasProblem a rdf:Property ;
+	rdfs:domain qpro:QualityReport ;
+	rdfs:range qpro:QualityProblem ;
+	rdfs:comment """Identifies problem instances in the report"""@en;
+	rdfs:label "has problem"@en .
+
+qpro:isDescribedBy a rdf:Property;
+	rdfs:domain qpro:QualityProblem;
+	rdfs:range daq:Metric;
+	rdfs:comment """Represent the URI of the metric which instantiated this problem"""@en;
+	rdfs:label "is described by"@en .
+
+qpro:problematicThing a rdf:Property;
+	rdfs:domain qpro:QualityProblem;
+	rdfs:range rdfs:Resource;
+	rdfs:comment """Represent the actual problematic instance from the dataset. This could be a list of resources (rdf:Seq), a list of reified statements, or a model representing a list of statements."""@en;
+	rdfs:label "Problematic Thing"@en.
+
+qpro:inGraph a rdf:Property;
+	rdfs:domain rdf:Statement ;
+	rdfs:range rdfg:Graph ;
+	rdfs:comment """This property enables the reification of quads by creating a new property to define the context of a triple statement."""@en;
+	rdfs:label "in graph"@en.
+
+qpro:exceptionDescription
+		a	rdf:Property;
+		rdfs:comment """Describes a particular exception raised by the Resource or Triple in question, causing a quality problem"""@en ;
+		rdfs:label "Exception Description"@en ;
+		rdfs:domain rdfs:Resource ;
+		rdfs:range qpro:Exception ;
+		rdfs:range xsd:Literal .
+
+qpro:extraExceptionProperty
+		a	rdf:Property ;
+		rdfs:comment """Enables the description of extra exception properties. This is an abstract property."""@en ;
+		rdfs:label "Extra Exception Property (Abstract)"@en .

@@ -1,0 +1,36 @@
+[
+		{
+			"Name":"Home",
+			"Disable":false,
+			"Elements":[
+				{
+					"Name":"Domain_Search",
+					"Disable":false
+				}]
+		},
+		{
+			"Name":"Posts",
+			"Disable":true,
+			"Elements":[{
+				"Name":"Save_Ranking",
+				"Disable":true
+			}
+			]
+		},
+		{
+			"Name":"Ranked_Datasets",
+			"Disable":false
+		},
+		{
+			"Name":"Visualisation",
+			"Disable":false
+		},
+		{
+			"Name":"Assessment_Stats",
+			"Disable":false
+		},
+		{
+			"Name":"Assessment",
+			"Disable":false
+		}
+]

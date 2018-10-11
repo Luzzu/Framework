@@ -1,0 +1,39 @@
+-> tableAll().
+
+[category: (?category rdfs:subClassOf daq:Category) 			
+			(?p rdfs:subPropertyOf daq:hasDimension) (?categoryURI ?p ?dimensionURI)
+			(?categoryURI rdf:type ?category)
+			-> (_:Z rdf:type dqv:Category) (_:Z owl:equivalentClass ?category)]
+
+[dimension: (?dimension rdfs:subClassOf daq:Dimension)
+			(?p rdfs:subPropertyOf daq:hasDimension) (?p rdfs:domain ?category) (?p rdfs:range ?dimension) 
+			(?p1 rdfs:subPropertyOf daq:hasMetric) (?dimensionURI ?p ?metricURI)
+			-> 
+			(_:Y rdf:type dqv:Dimension) (_:Y dqv:inCategory _:Z) (_:Y owl:equivalentClass ?dimension)]
+			
+[metric: (?metric rdfs:subClassOf daq:Metric)
+			(?p rdfs:subPropertyOf daq:hasMetric) (?p rdfs:domain ?dimension)
+			(?p rdfs:range ?metric)
+			(?metricURI rdf:type ?metric)
+				-> 
+			(_:X rdf:type dqv:Metric) (_:X dqv:inDimension _:Y) (_:X owl:equivalentClass ?metric)]
+			
+		
+[observation: (?a rdf:type daq:Observation) 
+				(?a daq:computedOn ?v1)
+				(?a daq:isEstimate ?v2)
+				(?a daq:metric ?metricURI)
+				(?a daq:value ?v4)
+				(?a qb:dataSet ?v5)
+//				(?metricURI rdf:type ?metric) (?metric rdfs:subClassOf daq:Metric)
+					-> 
+				(?a rdf:type dqv:Observation)
+				(?a dqv:computedOn ?v1)
+				(?a daq:isEstimate ?v2)
+				(?a dqv:isMeasurementOf _:X)
+				(?a dqv:value ?v4)
+				(?a qb:dataSet ?v5)
+]
+
+[qualityGraph: (?a rdf:type daq:QualityGraph) -> 
+				(?a rdf:type dqv:QualityMeasurementDataset) (?a qb:structure daq:dsd)]

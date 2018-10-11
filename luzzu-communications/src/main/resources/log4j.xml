@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p %c{1} - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="rollingFile" class="org.apache.log4j.RollingFileAppender">
+		<param name="file" value="${java.io.tmpdir}/luzzu/debug.log" />
+		<param name="MaxFileSize" value="500MB" />
+		<param name="MaxBackupIndex" value="2" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%p %t %c - %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+	    		<param name="levelMin" value="info" />
+	    		<param name="levelMax" value="ERROR" />
+	    </filter>
+	</appender>
+
+	<root>
+		<priority value="INFO" />
+		<appender-ref ref="rollingFile" />
+	</root>
+	
+	<logger name="org.apache.jena">
+		<level value="error" />
+		<appender-ref ref="rollingFile" />
+	</logger>
+
+
+
+</log4j:configuration>

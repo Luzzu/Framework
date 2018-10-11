@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+	xmlns:resource="http://purl.org/vocab/resourcelist/schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:cc="http://web.resource.org/cc/"
+	xmlns:dctype="http://purl.org/dc/dcmitype/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:sioc="http://rdfs.org/sioc/spec/"
+	xmlns:bibo="http://purl.org/ontology/bibo/"
+	xmlns:lifecycle="http://purl.org/vocab/lifecycle/schema#">
+	<owl:Ontology rdf:about="" dc:date="2008-05-14">
+		<dc:title xml:lang="en">Resource List Ontology</dc:title>
+		<rdfs:comment xml:lang="en">
+The Resource List ontology describes collections of Items grouped together in Sections and explicitly ordered. Items refer to resources, currently bibo:Documents. The ontology subclasses SIOC for Container and Item relationships as well as providing additional properties for explicit ordering and optimisations for retrieving deeply structured Lists.
+The Resource List ontology is intended for use describing academic reading lists, bookmarks, bibliographies and similar structured collections of references.
+    	</rdfs:comment>
+		<dc:identifier>http://purl.org/vocab/resourcelist/schema#</dc:identifier>
+		<dct:isVersionOf rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<dc:creator>Nadeem Shabir</dc:creator>
+		<dc:creator>Rob Styles</dc:creator>
+		<dc:contributor>Ian Corns</dc:contributor>
+		<dc:contributor>Sarah Bartlett</dc:contributor>
+		<dc:rights>Copyright © 2008 Talis Information Ltd</dc:rights>
+		<vann:preferredNamespaceUri>http://purl.org/vocab/resourcelist/schema#</vann:preferredNamespaceUri>
+		<vann:preferredNamespacePrefix>resource</vann:preferredNamespacePrefix>
+		<vann:example rdf:resource="ontology_diagram-20090701.html" />
+		<vann:example rdf:resource="readinglist-example-20090701.html" />
+		<vann:usageNote rdf:resource="usagenote.html" />
+		<dct:hasFormat>
+			<dctype:Text rdf:about="http://purl.org/vocab/resourcelist/schema-20080519.html">
+				<dc:format>
+					<dct:IMT>
+						<rdf:value>text/html</rdf:value>
+						<rdfs:label xml:lang="en">HTML</rdfs:label>
+					</dct:IMT>
+				</dc:format>
+			</dctype:Text>
+		</dct:hasFormat>
+		<dct:hasFormat>
+			<dctype:Text rdf:about="http://purl.org/vocab/resourcelist/schema-20080519.rdf">
+				<dc:format>
+					<dct:IMT>
+						<rdf:value>application/rdf+xml</rdf:value>
+						<rdfs:label xml:lang="en">RDF</rdfs:label>
+					</dct:IMT>
+				</dc:format>
+			</dctype:Text>
+		</dct:hasFormat>
+		<dct:issued>2008-05-19</dct:issued>
+		<skos:historyNote rdf:value="First cut of the ontology published" dc:date="2008-05-19" dc:creator="Nadeem Shabir"/>
+		<skos:historyNote rdf:value="Ontology updated, lifecycle integrated" dc:date="2008-07-31" dc:creator="Nadeem Shabir"/>
+		<skos:historyNote rdf:value="Ontology updated, updated to reflect new properties, and change to using rdf:Seq of ordering of items/sections" dc:date="2009-07-01" dc:creator="Nadeem Shabir"/>
+	</owl:Ontology>
+	<cc:Work rdf:about="">
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/2.0/uk/"/>
+	</cc:Work>
+	<cc:License rdf:about="http://creativecommons.org/licenses/by/2.0/uk/">
+		<cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+		<cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+		<cc:requires rdf:resource="http://web.resource.org/cc/Notice"/>
+		<cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+		<cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+	</cc:License>
+	<rdfs:Class rdf:about="http://purl.org/vocab/resourcelist/schema#List">
+		<rdfs:label xml:lang="en">Resource List</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Resource List represents an ordered collection of Items each which refers to a resource (currently bibo:Documents) for such purposes as managing a bibliography, circulating a reading list or similar.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/spec/Container"/>
+		<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+		<dct:issued>2008-05-19</dct:issued>
+		<skos:historyNote rdf:value="Updated, List now also subclasses rdf:Seq" dc:date="2009-07-01" dc:creator="Nadeem Shabir"/>
+	</rdfs:Class>
+	<rdfs:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Section">
+		<rdfs:label xml:lang="en">Section</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Section denotes a grouping of resources within a Resource List that are considered related in some way.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/spec/Container"/>
+		<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+		<dct:issued>2008-05-19</dct:issued>
+		<skos:historyNote rdf:value="Updated, Section now also subclasses rdf:Seq" dc:date="2009-07-01" dc:creator="Nadeem Shabir"/>
+	</rdfs:Class>
+	<rdfs:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Item">
+		<rdfs:label xml:lang="en">Item</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Item represents a resource in the context of the list in which it is contained. This differs from the resource itself in that a resource may be referenced in many lists or many times within a single list. Item provides the means to contextualize the specific reference to a resource on each list.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/spec/Item"/>
+		<dct:issued>2008-05-19</dct:issued>
+	</rdfs:Class>
+	<rdfs:Class rdf:about="http://purl.org/vocab/resourcelist/schema#AlternativeItem">
+		<rdfs:label xml:lang="en">Alternative Item</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Alternative Item is an Item that is used specifically as an alternative to the Item it is associated with. This allows resource list creators to specify alternative resources when the core items on their list are unavailable, or simply in addition to them within a given context.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<rdfs:subClassOf rdf:resource="http://purl.org/vocab/resourcelist/schema#Item"/>
+		<dct:issued>2008-05-19</dct:issued>
+	</rdfs:Class>
+	<rdf:Property rdf:about="http://purl.org/vocab/resourcelist/schema#list">
+		<rdfs:label xml:lang="en">list</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sections and Items are contained within Lists, the list property allows an easy way to get from Items and Sections that may be several levels deep to their parent List.</rdfs:comment>
+		<rdfs:range rdf:resource="http://purl.org/vocab/resourcelist/schema#List"/>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Item"/>
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Section"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<dct:issued>2008-05-19</dct:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="http://purl.org/vocab/resourcelist/schema#contains">
+		<rdfs:label xml:lang="en">contains</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A List may contain many Sections and Items organised in a hierarchical structure. the contains property provides a relationshiop between the parent List and all Sections and Items within it, whether they are attached directly or deeper within the structure. This allows a List and all of its parts to be retrieved with a single DESCRIBE. This is an optimisation that precludes the need for recursive querying.</rdfs:comment>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Section"/>
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Item"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<rdfs:domain rdf:resource="http://purl.org/vocab/resourcelist/schema#List"/>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<dct:issued>2008-05-19</dct:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="http://purl.org/vocab/resourcelist/schema#next">
+		<rdfs:label xml:lang="en">next</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEPRECATED: The Sections and Items within a List or a Section are ordered. The mechanism for that is a doubly linked list, using next and previous.</rdfs:comment>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Section"/>
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Item"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Item"/>
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Section"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<dct:issued>2008-05-19</dct:issued>
+		<skos:historyNote rdf:value="Deprecated: Lists and Sections are now subclasses of rdf:Seq, explicit ordering using previous/next is highly undesirable" dc:date="2009-07-01" dc:creator="Nadeem Shabir"/>
+	</rdf:Property>
+	<rdf:Property rdf:about="http://purl.org/vocab/resourcelist/schema#previous">
+		<rdfs:label xml:lang="en">previous</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEPRECATED: The Sections and Items within a List or a Section are ordered. The mechanism for that is a doubly linked list, using next and previous.</rdfs:comment>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Section"/>
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Item"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Item"/>
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Section"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<dct:issued>2008-05-19</dct:issued>
+		<skos:historyNote rdf:value="Deprecated: Lists and Sections are now subclasses of rdf:Seq, explicit ordering using previous/next is highly undesirable" dc:date="2009-07-01" dc:creator="Nadeem Shabir"/>
+	</rdf:Property>
+	<rdf:Property rdf:about="http://purl.org/vocab/resourcelist/schema#resource">
+		<rdfs:label xml:lang="en">resource</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The resource property relates an Item as it occurs in a List or Section to the resource it refers to. In our current view of Resource Lists the Items refer to resources all of which can be described using Bibliontology.</rdfs:comment>
+		<rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+		<rdfs:domain rdf:resource="http://purl.org/vocab/resourcelist/schema#Item"/>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<dct:issued>2008-05-19</dct:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="http://purl.org/vocab/resourcelist/schema#usedBy">
+		<rdfs:label xml:lang="en">List Used By</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The usedBy property relates a List to the those rdf:resources that refer to it.</rdfs:comment>		
+		<rdfs:domain rdf:resource="http://purl.org/vocab/resourcelist/schema#List"/>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<dct:issued>2008-05-19</dct:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="http://purl.org/vocab/resourcelist/schema#usesList">
+		<rdfs:label xml:lang="en">Uses Resource List</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The usesList property is used to relate any rdf:resource to a Resource List it makes use of.</rdfs:comment>
+		<rdfs:range rdf:resource="http://purl.org/vocab/resourcelist/schema#List"/>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<dct:issued>2008-05-19</dct:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="http://purl.org/vocab/resourcelist/schema#alternative">
+		<rdfs:label xml:lang="en">Alternative</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The alternative property is used to relate one item to another as an alternative.</rdfs:comment>
+		<rdfs:domain rdf:resource="http://purl.org/vocab/resourcelist/schema#Item"/>
+		<rdfs:range rdf:resource="http://purl.org/vocab/resourcelist/schema#AlernativeItem"/>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<dct:issued>2008-05-19</dct:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="http://purl.org/vocab/resourcelist/schema#created">
+		<rdfs:label xml:lang="en">Created Date</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property is used to capture the date a list, item, or section was created</rdfs:comment>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date" />
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Item"/>
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Section"/>
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#List"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<dct:issued>2008-07-31</dct:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="http://purl.org/vocab/resourcelist/schema#lastUpdated">
+		<rdfs:label xml:lang="en">Last Updated Date</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property is used to capture the date a list, item, or section last updated</rdfs:comment>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date" />
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Item"/>
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#Section"/>
+					<owl:Class rdf:about="http://purl.org/vocab/resourcelist/schema#List"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<dct:issued>2009-07-01</dct:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="http://purl.org/vocab/resourcelist/schema#description">
+		<rdfs:label xml:lang="en">Description</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property is used to provide a description of a Resource List.</rdfs:comment>
+		<rdfs:domain rdf:resource="http://purl.org/vocab/resourcelist/schema#List"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<dct:issued>2008-05-19</dct:issued>
+	</rdf:Property>
+				
+	<lifecycle:State rdf:about="http://purl.org/vocab/resourcelist/schema#status-draft">
+		<rdfs:label xml:lang="en">Draft</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This State is used to indicate that something is Draft.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<dct:issued>2008-07-31</dct:issued>
+	</lifecycle:State>
+
+	<lifecycle:State rdf:about="http://purl.org/vocab/resourcelist/schema#status-published">
+		<rdfs:label xml:lang="en">Published</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This State is used to indicate that something is Published.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/resourcelist/schema#"/>
+		<dct:issued>2008-07-31</dct:issued>
+	</lifecycle:State>
+	
+</rdf:RDF>

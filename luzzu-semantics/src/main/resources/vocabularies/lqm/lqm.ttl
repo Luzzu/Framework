@@ -1,0 +1,55 @@
+# This vocabulary defines quality metrics that by default are included in the Luzzu Framework
+
+@prefix daq:		<http://purl.org/eis/vocab/daq#> .
+@prefix dqm:     <http://purl.org/eis/vocab/dqm#> .
+@prefix lqm:     <http://theme-e.adaptcentre.ie/lqm#> .
+@prefix qpro:     <http://purl.org/eis/vocab/qpro#> .
+
+@prefix rdf:		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:		<http://www.w3.org/2001/XMLSchema#> .
+
+lqm:SyntaxErrorsMetric
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Metric ;
+	daq:expectedDataType xsd:boolean ;
+	rdfs:comment	"Determines whether the assessed dataset has syntax errors and thus the quality assessment could not be done." ;
+	rdfs:label	"Syntax Error" .
+	
+lqm:hasSyntaxErrors
+	a	rdf:Property ;
+	rdfs:subPropertyOf	daq:hasMetric ;
+	rdfs:domain	dqm:SyntacticValidity ;
+	rdfs:range	lqm:SyntaxErrorsMetric .
+
+lqm:SyntaxErrorProblem
+	a	rdfs:Class ;
+	rdfs:subClassOf qpro:Exception ;
+	rdfs:comment "The under-assessed dataset has syntactic error and cannot be fully parsed." ;
+	rdfs:label "Syntax Errors in Dataset" .
+
+lqm:CountMetric
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Metric ;
+	daq:expectedDataType xsd:long ;
+	rdfs:comment	"Determines the total number of data lines (or triples in Linked Data) assessed." ;
+	rdfs:label	"Count Metric" .
+	
+lqm:Volume
+	a	rdfs:Class ;
+	rdfs:subClassOf	daq:Dimension ;
+	daq:expectedDataType xsd:boolean ;
+	rdfs:comment	"Groups metrics related to the volume/size of a data source." ;
+	rdfs:label	"Volume" .
+
+lqm:hasVolumeDimension
+	a	rdf:Property ;
+	rdfs:subPropertyOf	daq:hasDimension ;
+	rdfs:domain	dqm:Intrinsic ;
+	rdfs:range	lqm:Volume .
+	
+lqm:hasCountMetric
+	a	rdf:Property ;
+	rdfs:subPropertyOf	daq:hasMetric ;
+	rdfs:domain	lqm:Volume ;
+	rdfs:range	lqm:CountMetric .

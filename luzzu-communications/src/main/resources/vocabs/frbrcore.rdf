@@ -1,0 +1,2754 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:msg0="http://web.resource.org/cc/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+  <rdf:Description rdf:about="http://vocab.org/frbr/core.rdf">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <foaf:primaryTopic rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <dct:hasFormat rdf:resource="http://vocab.org/frbr/core.html"/>
+    <dct:hasFormat rdf:resource="http://vocab.org/frbr/core.json"/>
+    <dct:hasFormat rdf:resource="http://vocab.org/frbr/core.turtle"/>
+    <foaf:topic rdf:resource="http://purl.org/vocab/frbr/core"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://vocab.org/frbr/core.html">
+    <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    <dc:format>text/html</dc:format>
+    <rdfs:label>HTML</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://vocab.org/frbr/core.json">
+    <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    <dc:format>application/json</dc:format>
+    <rdfs:label>JSON</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://vocab.org/frbr/core.turtle">
+    <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    <dc:format>text/plain</dc:format>
+    <rdfs:label>Turtle</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dc:date>2009-05-16</dc:date>
+    <dc:title xml:lang="en">Expression of Core FRBR Concepts in RDF</dc:title>
+    <rdfs:comment xml:lang="en">
+      This vocabulary is an expression in RDF of the concepts and relations described in the
+      IFLA report on the Functional Requirements for Bibliographic Records (FRBR). 
+    </rdfs:comment>
+    <rdfs:comment xml:lang="en">
+      This vocabulary is a work in progress, it includes RDF classes for the group 1, 2 and 3 entities
+      described by the FRBR report and properties corresponding to the core relationships between
+      those entities. It does not yet describe attributes of the entities. Where possible, appropriate 
+      relationships with other vocabularies are included in order to place this vocabulary in the 
+      context of existing RDF work.
+    </rdfs:comment>
+    <dc:identifier>http://purl.org/vocab/frbr/frbr-core-20051014</dc:identifier>
+    <dct:isVersionOf rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <dc:creator rdf:resource="http://iandavis.com/id/me"/>
+    <dc:creator rdf:nodeID="mor5501a82b7b699"/>
+    <dc:contributor rdf:resource="http://bruce.darcus.name/about#me"/>
+    <dc:rights>Copyright © 2005 Richard Newman and Ian Davis</dc:rights>
+    <dct:replaces rdf:resource="http://purl.org/vocab/frbr/frbr-core-20050809"/>
+    <vann:preferredNamespaceUri>http://purl.org/vocab/frbr/core#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>frbr</vann:preferredNamespacePrefix>
+    <skos:example rdf:resource="file:///var/www/vocab.org/www/htdocs/frbr/frbr-example-film-20050809.html"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:historyNote rdf:nodeID="mor5501a82b7b718"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7b774"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://iandavis.com/id/me">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Ian Davis</foaf:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7b699">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Richard Newman</foaf:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://bruce.darcus.name/about#me">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Bruce D'Arcus</foaf:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7b718">
+    <rdfs:label xml:lang="en">Added type hierarchy</rdfs:label>
+    <dc:date>2005-10-14</dc:date>
+    <dc:creator rdf:resource="http://iandavis.com/id/me"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7b774">
+    <rdfs:label xml:lang="en">Various minor tidying tasks</rdfs:label>
+    <dc:date>2009-05-16</dc:date>
+    <dc:creator rdf:resource="http://iandavis.com/id/me"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="file:///var/www/vocab.org/www/htdocs/frbr/">
+    <rdf:type rdf:resource="http://web.resource.org/cc/Work"/>
+    <msg0:license rdf:resource="http://creativecommons.org/licenses/by/2.0/uk/"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/2.0/uk/">
+    <rdf:type rdf:resource="http://web.resource.org/cc/License"/>
+    <msg0:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+    <msg0:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+    <msg0:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+    <msg0:requires rdf:resource="http://web.resource.org/cc/Notice"/>
+    <msg0:requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/format">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/terms/hasFormat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/terms/isVersionOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/terms/replaces">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/type">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/identifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/changes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.isi.edu/~pan/damltime/time-entry.owl#Event">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://xmlns.com/wordnet/1.6/Work~2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/terms/IMT">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/dcmitype/Text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://web.resource.org/cc/License">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://web.resource.org/cc/Permission">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://web.resource.org/cc/Requirement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://web.resource.org/cc/permits">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://web.resource.org/cc/requires">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://web.resource.org/cc/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://web.resource.org/cc/Reproduction">
+    <rdf:type rdf:resource="http://web.resource.org/cc/Permission"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://web.resource.org/cc/Distribution">
+    <rdf:type rdf:resource="http://web.resource.org/cc/Permission"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://web.resource.org/cc/Notice">
+    <rdf:type rdf:resource="http://web.resource.org/cc/Requirement"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://web.resource.org/cc/Attribution">
+    <rdf:type rdf:resource="http://web.resource.org/cc/Requirement"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://web.resource.org/cc/DerivativeWorks">
+    <rdf:type rdf:resource="http://web.resource.org/cc/Permission"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Endeavour">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">endeavour</rdfs:label>
+    <skos:definition xml:lang="en">Any of the products of artistic or creative endeavour.</skos:definition>
+    <rdfs:comment xml:lang="en">This class represents any one of the FRBR group one entities.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Subject"/>
+    <owl:equivalentClass rdf:nodeID="mor5501a82b7b852"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7ba0f"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7ba6b"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7bac4"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7b852">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">the union of all expressions, items, manifestations and works</rdfs:label>
+    <owl:unionOf rdf:nodeID="mor5501a82b7b8a7"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7b8a7">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7b8f9"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Expression">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">expression</rdfs:label>
+    <skos:definition xml:lang="en">A realization of a single work usually in a physical form.</skos:definition>
+    <rdfs:comment xml:lang="en">This class corresponds to the FRBR group one entity 'Expression'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7bcff"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7bd59"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7bdb3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7b8f9">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7b94a"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Item">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">item</rdfs:label>
+    <skos:definition xml:lang="en">An exemplar of a single manifestation.</skos:definition>
+    <rdfs:comment xml:lang="en">This class corresponds to the FRBR group one entity 'Item'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7bf89"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7c03c"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7c096"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7bfe3"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7c0f0"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7b94a">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7b999"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Manifestation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">manifestation</rdfs:label>
+    <skos:definition xml:lang="en">The physical embodiment of one or more expressions.</skos:definition>
+    <rdfs:comment xml:lang="en">This class corresponds to the FRBR group one entity 'Manifestation'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7be40"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7be9a"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7beff"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7b999">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Work">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">work</rdfs:label>
+    <skos:definition xml:lang="en">An abstract notion of an artistic or intellectual creation.</skos:definition>
+    <rdfs:comment xml:lang="en">This class corresponds to the FRBR group one entity 'Work'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/wordnet/1.6/Work~2"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7bb60"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7bbba"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7bc6c"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7bc14"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ba0f">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ba6b">
+    <rdf:value>Added comment</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7bac4">
+    <rdf:value>Extracted definition from existing comment</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7bb60">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7bbba">
+    <rdf:value>Added comment</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7bc14">
+    <rdf:value>Made subclass of wordnet:Work~2</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7bc6c">
+    <rdf:value>Extracted definition from existing comment</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7bcff">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7bd59">
+    <rdf:value>Added comment</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7bdb3">
+    <rdf:value>Extracted definition from existing comment</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7be40">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7be9a">
+    <rdf:value>Added comment</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7beff">
+    <rdf:value>Extracted definition from existing comment</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7bf89">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7bfe3">
+    <rdf:value>Made subclass of geo:SpatialThing</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c03c">
+    <rdf:value>Added comment</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c096">
+    <rdf:value>Extracted definition from existing comment</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c0f0">
+    <rdf:value>Removed subclass of geo:SpatialThing</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#ResponsibleEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">responsible entity</rdfs:label>
+    <skos:definition xml:lang="en">One responsible for the creation, production, distribution or maintenance of artistic or creative content.</skos:definition>
+    <rdfs:comment xml:lang="en">This class represents any of the FRBR group two entities.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Subject"/>
+    <owl:equivalentClass rdf:nodeID="mor5501a82b7c172"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7c273"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7c2cd"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7c327"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c172">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">the union of all people and corporate bodies</rdfs:label>
+    <owl:unionOf rdf:nodeID="mor5501a82b7c1c5"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c1c5">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#CorporateBody"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7c216"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#CorporateBody">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">corporate body</rdfs:label>
+    <skos:definition xml:lang="en">An organization or group of individuals and/or other organizations.</skos:definition>
+    <rdfs:comment xml:lang="en">This class corresponds to the FRBR group two entity 'Corporate Body'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <owl:equivalentClass rdf:nodeID="mor5501a82b7c4e1"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7c5e1"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7c63a"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7c698"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c216">
+    <rdf:first rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c273">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c2cd">
+    <rdf:value>Added comment</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c327">
+    <rdf:value>Extracted definition from existing comment</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">person</rdfs:label>
+    <skos:definition xml:lang="en">A living or dead individual.</skos:definition>
+    <rdfs:comment xml:lang="en">This class corresponds to the FRBR group two entity 'Person'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Subject"/>
+    <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <dct:issued>2005-08-08</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7c3b6"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7c411"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7c46b"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c3b6">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c411">
+    <rdf:value>Added comment</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c46b">
+    <rdf:value>Extracted definition from existing comment</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c4e1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">the union of all organizations and groups</rdfs:label>
+    <owl:unionOf rdf:nodeID="mor5501a82b7c534"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c534">
+    <rdf:first rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7c585"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#CorporateBody"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c585">
+    <rdf:first rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#CorporateBody"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c5e1">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c63a">
+    <rdf:value>Added comment</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c698">
+    <rdf:value>Extracted definition from existing comment</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Subject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">subject</rdfs:label>
+    <skos:definition xml:lang="en">Something that may serve as the subject of a work.</skos:definition>
+    <rdfs:comment xml:lang="en">This class represents any of the FRBR group three entities.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <owl:equivalentClass rdf:nodeID="mor5501a82b7c718"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7c8bd"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7c916"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7c971"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c718">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">the union of all events, objects, places and concepts</rdfs:label>
+    <owl:unionOf rdf:nodeID="mor5501a82b7c76b"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c76b">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Event"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7c7bc"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Event">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">event</rdfs:label>
+    <skos:definition xml:lang="en">An action or occurrence.</skos:definition>
+    <rdfs:comment xml:lang="en">This class corresponds to the FRBR group three entity 'Event'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Subject"/>
+    <rdfs:subClassOf rdf:resource="http://www.isi.edu/~pan/damltime/time-entry.owl#Event"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Place"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Object"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Concept"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7cd4e"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7ce02"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7cdaa"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c7bc">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Object"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7c80f"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Object">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">object</rdfs:label>
+    <skos:definition xml:lang="en">A tangible or material thing.</skos:definition>
+    <rdfs:comment xml:lang="en">This class corresponds to the FRBR group three entity 'Object'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Subject"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Event"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Place"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Concept"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7cbac"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7cc06"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7ccba"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7cc61"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c80f">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Place"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7c860"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Place">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">place</rdfs:label>
+    <skos:definition xml:lang="en">A location.</skos:definition>
+    <rdfs:comment xml:lang="en">This class corresponds to the FRBR group three entity 'Place'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Subject"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Event"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Object"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Concept"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7ce94"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7ceed"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7cf9f"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7cf47"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c860">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Concept"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">concept</rdfs:label>
+    <skos:definition xml:lang="en">An abstract idea or notion.</skos:definition>
+    <rdfs:comment xml:lang="en">This class corresponds to the FRBR group three entity 'Concept'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Subject"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Object"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Event"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Place"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7ca08"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7ca64"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7cb13"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7cabb"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c8bd">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c916">
+    <rdf:value>Added comment</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7c971">
+    <rdf:value>Extracted definition from existing comment</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ca08">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ca64">
+    <rdf:value>Added comment</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7cabb">
+    <rdf:value>Made subclass of skos:Concept</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7cb13">
+    <rdf:value>Extracted definition from existing comment</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7cbac">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7cc06">
+    <rdf:value>Added comment</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7cc61">
+    <rdf:value>Made subclass of geo:SpatialThing</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ccba">
+    <rdf:value>Extracted definition from existing comment</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7cd4e">
+    <rdf:value>Added comment</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7cdaa">
+    <rdf:value>Made subclass of owltime:Event</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ce02">
+    <rdf:value>Extracted definition from existing comment</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ce94">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ceed">
+    <rdf:value>Added comment</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7cf47">
+    <rdf:value>Made subclass of geo:SpatialThing</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7cf9f">
+    <rdf:value>Extracted definition from existing comment</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#ClassicalWork">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">classical work</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <dct:issued>2005-10-14</dct:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#LegalWork">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">legal work</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <dct:issued>2005-10-14</dct:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#LiteraryWork">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">literary work</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <dct:issued>2005-10-14</dct:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#ScholarlyWork">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">scholarly work</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <dct:issued>2005-10-14</dct:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">text</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <dct:issued>2005-10-14</dct:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Image">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">image</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <dct:issued>2005-10-14</dct:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Sound">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">sound</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <dct:issued>2005-10-14</dct:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#MovingImage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">moving image</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <dct:issued>2005-10-14</dct:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Data">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">data</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <dct:issued>2005-10-14</dct:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Performance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">performance</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <dct:issued>2005-10-14</dct:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#relatedEndeavour">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">related endeavour</rdfs:label>
+    <skos:definition xml:lang="en">Another endeavour that is related in some way to an endeavour.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d0a5"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d103"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d0a5">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d103">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#realization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">realization</rdfs:label>
+    <skos:definition xml:lang="en">An expression that is an intellectual or artistic realization of a work.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d18e"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d1e8"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d18e">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d1e8">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#realizationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">realization of</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <skos:definition xml:lang="en">The work that has been realized by an expression.</skos:definition>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#realization"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d271"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d2cb"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d271">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d2cb">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#embodiment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">embodiment</rdfs:label>
+    <skos:definition xml:lang="en">A manifestation that embodies an expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#embodimentOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d353"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d3ae"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d353">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d3ae">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#embodimentOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">embodiment of</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <skos:definition xml:lang="en">An expression that is embodied by a manifestation.</skos:definition>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#embodiment"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d433"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d48d"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d433">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d48d">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#exemplar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">exemplar</rdfs:label>
+    <skos:definition xml:lang="en">An item that is an exemplar of a manifestation.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#exemplarOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d518"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d571"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d518">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d571">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#exemplarOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">exemplar of</rdfs:label>
+    <skos:definition xml:lang="en">The manifestation that is exemplified by a item.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#exemplar"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d5fa"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d653"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d5fa">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d653">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#reproduction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">reproduction</rdfs:label>
+    <skos:definition xml:lang="en">A reproduction of a manifestation or item.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#reproductionOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b7d6cd"/>
+    <rdfs:range rdf:nodeID="mor5501a82b7d7c7"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d8c6"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7d8f1"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7d94b"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d6cd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">a manifestation or an item</rdfs:label>
+    <owl:unionOf rdf:nodeID="mor5501a82b7d720"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d720">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7d76f"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d76f">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d7c7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">a manifestation or an item</rdfs:label>
+    <owl:unionOf rdf:nodeID="mor5501a82b7d81a"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d81a">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7d868"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d868">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d8c6">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d8f1">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d94b">
+    <rdf:value>Added domain and range of Manifestation or Item</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#reproductionOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">reproduction of</rdfs:label>
+    <skos:definition xml:lang="en">A manifestation or item that is reproduced.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#reproduction"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b7d9c3"/>
+    <rdfs:range rdf:nodeID="mor5501a82b7dabf"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7dbbd"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7dc16"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7dc70"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7d9c3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">a manifestation or an item</rdfs:label>
+    <owl:unionOf rdf:nodeID="mor5501a82b7da15"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7da15">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7da67"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7da67">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7dabf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">a manifestation or an item</rdfs:label>
+    <owl:unionOf rdf:nodeID="mor5501a82b7db0e"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7db0e">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7db60"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7db60">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7dbbd">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7dc16">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7dc70">
+    <rdf:value>Added domain and range of Manifestation or Item</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#successor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">successor</rdfs:label>
+    <skos:definition xml:lang="en">A successor to a work or expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#successorOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b7dce7"/>
+    <rdfs:range rdf:nodeID="mor5501a82b7dddc"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7ded4"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7df2d"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7df89"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7dce7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7dd33"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7dd33">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7dd82"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7dd82">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7dddc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7de24"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7de24">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7de76"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7de76">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ded4">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7df2d">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7df89">
+    <rdf:value>Added domain and range of Work or Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#successorOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">successor of</rdfs:label>
+    <skos:definition xml:lang="en">A work or expression that is succeeded.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#successor"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b7dffe"/>
+    <rdfs:range rdf:nodeID="mor5501a82b7e0f0"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7e1eb"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7e244"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7e29f"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7dffe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7e047"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e047">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7e098"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e098">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e0f0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7e138"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e138">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7e189"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e189">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e1eb">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e244">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e29f">
+    <rdf:value>Added domain and range of Work or Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#supplement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">supplement</rdfs:label>
+    <skos:definition xml:lang="en">A supplement to a work or expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#supplementOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b7e315"/>
+    <rdfs:range rdf:nodeID="mor5501a82b7e40e"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7e505"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7e55f"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7e5b9"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e315">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7e367"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e367">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7e3b6"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e3b6">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e40e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7e456"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e456">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7e4a7"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e4a7">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e505">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e55f">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e5b9">
+    <rdf:value>Added domain and range of Work or Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#supplementOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">supplement of</rdfs:label>
+    <skos:definition xml:lang="en">A work or expression that is supplemented.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#supplement"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b7e631"/>
+    <rdfs:range rdf:nodeID="mor5501a82b7e722"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7e81f"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7e878"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7e8e8"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e631">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7e67d"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e67d">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7e6cb"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e6cb">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e722">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7e76a"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e76a">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7e7bb"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e7bb">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e81f">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e878">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e8e8">
+    <rdf:value>Added domain and range of Work or Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#complement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">complement</rdfs:label>
+    <skos:definition xml:lang="en">A complement to a work or expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#complementOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b7e962"/>
+    <rdfs:range rdf:nodeID="mor5501a82b7ea56"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7eb4e"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7eba9"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7ec04"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e962">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7e9af"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e9af">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7e9fe"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7e9fe">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ea56">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7eaa2"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7eaa2">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7eaf0"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7eaf0">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7eb4e">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7eba9">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ec04">
+    <rdf:value>Added domain and range of Work or Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#complementOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">complement of</rdfs:label>
+    <skos:definition xml:lang="en">A work or expression that is complemented.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#complement"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b7ec7c"/>
+    <rdfs:range rdf:nodeID="mor5501a82b7ed6f"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7ee69"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7eec2"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7ef1c"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ec7c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7ecc8"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ecc8">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7ed17"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ed17">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ed6f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7edbb"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7edbb">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7ee0a"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ee0a">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ee69">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7eec2">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ef1c">
+    <rdf:value>Added domain and range of Work or Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#summarization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">summarization</rdfs:label>
+    <skos:definition xml:lang="en">A summarization of a work or expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#summarizationOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b7ef95"/>
+    <rdfs:range rdf:nodeID="mor5501a82b7f087"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7f17e"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7f1d7"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7f231"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ef95">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7efe1"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7efe1">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7f02f"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f02f">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f087">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7f0d2"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f0d2">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7f120"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f120">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f17e">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f1d7">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f231">
+    <rdf:value>Added domain and range of Work or Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#summarizationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">summarization of</rdfs:label>
+    <skos:definition xml:lang="en">A work or expression that is summarized.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#summarization"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b7f2a9"/>
+    <rdfs:range rdf:nodeID="mor5501a82b7f39d"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7f495"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7f4ee"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7f548"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f2a9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7f2f5"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f2f5">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7f343"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f343">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f39d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7f3e8"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f3e8">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7f437"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f437">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f495">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f4ee">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f548">
+    <rdf:value>Added domain and range of Work or Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#adaption">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">adaption</rdfs:label>
+    <skos:definition xml:lang="en">An adaption of a work or expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#adaptionOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b7f5c2"/>
+    <rdfs:range rdf:nodeID="mor5501a82b7f6b3"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7f7bd"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7f816"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7f877"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f5c2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7f60d"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f60d">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7f65f"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f65f">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f6b3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7f6ff"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f6ff">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7f75d"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f75d">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f7bd">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f816">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f877">
+    <rdf:value>Added domain and range of Work or Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#adaptionOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">adaption of</rdfs:label>
+    <skos:definition xml:lang="en">A work or expression that is adapted.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#adaption"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b7f8f2"/>
+    <rdfs:range rdf:nodeID="mor5501a82b7f9e5"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7fadd"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7fb36"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7fb8f"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f8f2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7f93b"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f93b">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7f98d"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f98d">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7f9e5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7fa2d"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7fa2d">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7fa7f"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7fa7f">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7fadd">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7fb36">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7fb8f">
+    <rdf:value>Added domain and range of Work or Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#transformation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">transformation</rdfs:label>
+    <skos:definition xml:lang="en">A transformation of a work or expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#transformationOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b7fc0c"/>
+    <rdfs:range rdf:nodeID="mor5501a82b7fcff"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b7fdf6"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b7fe51"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b7feab"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7fc0c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7fc57"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7fc57">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7fca6"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7fca6">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7fcff">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7fd47"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7fd47">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7fd98"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7fd98">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7fdf6">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7fe51">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7feab">
+    <rdf:value>Added domain and range of Work or Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#transformationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">transformation of</rdfs:label>
+    <skos:definition xml:lang="en">A work or expression that is transformed.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#transformation"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b7ff23"/>
+    <rdfs:range rdf:nodeID="mor5501a82b80015"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b8010c"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b80165"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b801bf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ff23">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b7ff6e"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ff6e">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b7ffbd"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b7ffbd">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80015">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b8005d"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b8005d">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b800ae"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b800ae">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b8010c">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80165">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b801bf">
+    <rdf:value>Added domain and range of Work or Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#imitation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">imitation</rdfs:label>
+    <skos:definition xml:lang="en">An imitation of a work or expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#imitationOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b80238"/>
+    <rdfs:range rdf:nodeID="mor5501a82b8032e"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b80426"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b80480"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b804dc"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80238">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b80284"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80284">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b802d3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b802d3">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b8032e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b80376"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80376">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b803c9"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b803c9">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80426">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80480">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b804dc">
+    <rdf:value>Added domain and range of Work or Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#imitationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">imitation of</rdfs:label>
+    <skos:definition xml:lang="en">A work or expression that is imitated.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#imitation"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="mor5501a82b80556"/>
+    <rdfs:range rdf:nodeID="mor5501a82b80648"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b8073f"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b80798"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b807f3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80556">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b805a1"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b805a1">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b805f1"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b805f1">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80648">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b80690"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80690">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:nodeID="mor5501a82b806e2"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b806e2">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b8073f">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80798">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b807f3">
+    <rdf:value>Added domain and range of Work or Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#abridgement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">abridgement</rdfs:label>
+    <skos:definition xml:lang="en">An abridgment of an expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#abridgementOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b8087e"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b808d8"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b80932"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b8087e">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b808d8">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80932">
+    <rdf:value>Added domain and range of Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#abridgementOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">abridgement of</rdfs:label>
+    <skos:definition xml:lang="en">An expression that is abridged.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#abridgement"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b809b7"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b80a10"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b80a6a"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b809b7">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80a10">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80a6a">
+    <rdf:value>Added domain and range of Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#revision">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">revision</rdfs:label>
+    <skos:definition xml:lang="en">A revision of an expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#revisionOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b80af3"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b80b4c"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b80ba7"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80af3">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80b4c">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80ba7">
+    <rdf:value>Added domain and range of Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#revisionOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">revision of</rdfs:label>
+    <skos:definition xml:lang="en">An expression that is revised.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#revision"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b80c30"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b80c8a"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b80ce6"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80c30">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80c8a">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80ce6">
+    <rdf:value>Added domain and range of Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#translation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">translation</rdfs:label>
+    <skos:definition xml:lang="en">A translation of an expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#translationOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b80d6f"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b80dc8"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b80e20"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80d6f">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80dc8">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80e20">
+    <rdf:value>Added domain and range of Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#translationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">translation of</rdfs:label>
+    <skos:definition xml:lang="en">An expression that is translated.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#translation"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b80ea8"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b80f01"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b80f5c"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80ea8">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80f01">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80f5c">
+    <rdf:value>Added domain and range of Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#arrangement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">arrangement</rdfs:label>
+    <skos:definition xml:lang="en">An arrangement of an expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#arrangementOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b80fe5"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b8103e"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b81096"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b80fe5">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b8103e">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81096">
+    <rdf:value>Added domain and range of Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#arrangementOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">arrangement of</rdfs:label>
+    <skos:definition xml:lang="en">An expression that is arranged.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#arrangement"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b81126"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b81180"/>
+    <skos:historyNote rdf:nodeID="mor5501a82b811db"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81126">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81180">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b811db">
+    <rdf:value>Added domain and range of Expression</rdf:value>
+    <dc:date>2005-08-10</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#alternate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">alternate</rdfs:label>
+    <skos:definition xml:lang="en">An alternative to a manifestation.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#alternateOf"/>
+    <dct:issued>2005-08-10</dct:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#alternateOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">alternate of</rdfs:label>
+    <skos:definition xml:lang="en">A manifestation that is alternated.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#alternate"/>
+    <dct:issued>2005-08-10</dct:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#reconfiguration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">reconfiguration</rdfs:label>
+    <skos:definition xml:lang="en">A recongifuration of an item.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#reconfigurationOf"/>
+    <dct:issued>2005-08-10</dct:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#reconfigurationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">reconfiguration of</rdfs:label>
+    <skos:definition xml:lang="en">An item that is reconfigured.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#reconfiguration"/>
+    <dct:issued>2005-08-10</dct:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#part">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">part</rdfs:label>
+    <skos:definition xml:lang="en">A part of an endeavour.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b81315"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b81370"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81315">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81370">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#partOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">part of</rdfs:label>
+    <skos:definition xml:lang="en">An endeavour incorporating an endeavour.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b813f2"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b8144b"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b813f2">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b8144b">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#responsibleEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">responsible entity</rdfs:label>
+    <skos:definition xml:lang="en">An entity in some way responsible for an endeavour.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntityOf"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b814d1"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b8152b"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b814d1">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b8152b">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#responsibleEntityOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">responsible entity of</rdfs:label>
+    <skos:definition xml:lang="en">An endeavour that is the responsibility of an entity.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntity"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b815af"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b8160c"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b815af">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b8160c">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">creator</rdfs:label>
+    <skos:definition xml:lang="en">An entity in some way responsible for the creation of a work.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntity"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#creatorOf"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b81694"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b816ed"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81694">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b816ed">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#creatorOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">creator of</rdfs:label>
+    <skos:definition xml:lang="en">A work that was in some way created by of an entity.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntityOf"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#creator"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b81777"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b817df"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81777">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b817df">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#realizer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">realizer</rdfs:label>
+    <skos:definition xml:lang="en">An entity in some way responsible for realizing an expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntity"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#realizerOf"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b81868"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b818c1"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81868">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b818c1">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#realizerOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">realizer of</rdfs:label>
+    <skos:definition xml:lang="en">An expression that was in some way realized by an entity.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntityOf"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#realizer"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b8194c"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b819a5"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b8194c">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b819a5">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#producer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">producer</rdfs:label>
+    <skos:definition xml:lang="en">An entity in some way responsible for producing a manifestation.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntity"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#producerOf"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b81a2f"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b81a88"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81a2f">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81a88">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#producerOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">producer of</rdfs:label>
+    <skos:definition xml:lang="en">A manifestation that was in some way produced an entity.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntityOf"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#producer"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b81b15"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b81b6e"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81b15">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81b6e">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#owner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">owner</rdfs:label>
+    <skos:definition xml:lang="en">An entity that owns an item.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntity"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#ownerOf"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b81bf5"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b81c52"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81bf5">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81c52">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#ownerOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">owner of</rdfs:label>
+    <skos:definition xml:lang="en">An item that is in some way owned an entity.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntityOf"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#owner"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b81cda"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b81d33"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81cda">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81d33">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#subject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">subject</rdfs:label>
+    <skos:definition xml:lang="en">The subject of a work.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdfs:range rdf:nodeID="mor5501a82b81da8"/>
+    <dct:issued>2005-07-15</dct:issued>
+    <skos:changeNote rdf:nodeID="mor5501a82b81ef1"/>
+    <skos:changeNote rdf:nodeID="mor5501a82b81f4a"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81da8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="mor5501a82b81df3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81df3">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdf:rest rdf:nodeID="mor5501a82b81e41"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81e41">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <rdf:rest rdf:nodeID="mor5501a82b81e94"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81e94">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Subject"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81ef1">
+    <rdf:value>Added isDefinedBy property referring to FRBR core namespace</rdf:value>
+    <dc:date>2005-08-08</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="mor5501a82b81f4a">
+    <rdf:value>Added definition</rdf:value>
+    <dc:date>2005-08-09</dc:date>
+    <dc:creator>Ian Davis</dc:creator>
+  </rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:doap="http://usefulinc.com/ns/doap#"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:http="http://www.w3.org/2006/http#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:pingback="http://purl.org/net/pingback/"
+   xmlns:prv="http://purl.org/net/provenance/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:sioc="http://rdfs.org/sioc/ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <rdf:Description rdf:about="http://aksw.org/Projects/SemanticPingBack#simplepost">
+    <rdfs:label>Simplified Pingback Post Definition</rdfs:label>
+  </rdf:Description>
+  <foaf:Document rdf:about="http://aksw.org/Projects/SemanticPingback">
+    <rdfs:label>Semantic Pingback Project Homepage</rdfs:label>
+  </foaf:Document>
+  <rdf:Description rdf:about="http://aksw.org/Projects/SemanticPingback#HowTo">
+    <rdfs:label>How to add Semantic Pingback functionality to your application</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://aksw.org/Projects/SemanticPingback#Implementations">
+    <rdfs:label>Available Implementations</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://aksw.org/Projects/SemanticPingback#usagefoaf">
+    <rdfs:label>Use an external pingback service with your FOAF profile</rdfs:label>
+  </rdf:Description>
+  <foaf:Person rdf:about="http://bblfish.net/people/henry/card#me">
+    <foaf:name>Henry Story</foaf:name>
+  </foaf:Person>
+  <foaf:Document rdf:about="http://hixie.ch/specs/pingback/pingback-1.0">
+    <dcterms:creator>Ian Hickson</dcterms:creator>
+    <dcterms:creator>Stuart Langridge</dcterms:creator>
+    <rdfs:label>Pingback 1.0 Specification</rdfs:label>
+  </foaf:Document>
+  <foaf:Person rdf:about="http://philipp.frischmuth24.de/id/me">
+    <foaf:name>Philipp Frischmuth</foaf:name>
+  </foaf:Person>
+  <owl:Ontology rdf:about="http://purl.org/net/pingback/">
+    <vann:changes rdf:resource="http://code.google.com/p/ontowiki/source/list?path=/SemanticPingback/namespace.rdf&amp;amp;repo=models"/>
+    <vann:example rdf:resource="http://aksw.org/Projects/SemanticPingback#HowTo"/>
+    <vann:example rdf:resource="http://aksw.org/Projects/SemanticPingback#Implementations"/>
+    <vann:example rdf:resource="http://aksw.org/Projects/SemanticPingback#usagefoaf"/>
+    <vann:preferredNamespacePrefix>pingback</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://purl.org/net/pingback/</vann:preferredNamespaceUri>
+    <doap:maintainer rdf:resource="http://sebastian.tramp.name"/>
+    <rdfs:label>Semantic Pingback Vocabulary</rdfs:label>
+    <skos:note>This small vocabulary defines resources which are used in the context of Semantic Pingback. The Semantic Pingback mechanism is an extension of the well-known Pingback method, a technological cornerstone of the blogosphere, thus supporting the interlinking within the Data Web.</skos:note>
+    <foaf:homepage rdf:resource="http://aksw.org/Projects/SemanticPingback"/>
+    <foaf:maker rdf:resource="http://bblfish.net/people/henry/card#me"/>
+    <foaf:maker rdf:resource="http://philipp.frischmuth24.de/id/me"/>
+    <foaf:maker rdf:resource="http://sebastian.tramp.name"/>
+    <foaf:maker rdf:resource="http://www.informatik.uni-leipzig.de/~auer/foaf.rdf#me"/>
+    <foaf:primaryTopic rdf:resource="http://purl.org/net/pingback/Container"/>
+    <foaf:primaryTopic rdf:resource="http://purl.org/net/pingback/Item"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://purl.org/net/pingback/Container">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/net/pingback/"/>
+    <rdfs:label>Pingback Container</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://purl.org/net/pingback/Item"/>
+    <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+    <skos:note>Doing a GET on a pingback:Container with mime type html should return a html form similar to:
+
+    &lt;form action="POST" action=""&gt;
+        source: &lt;input type="text" name="source"/&gt; (pingback:source of the new Pingback Item)&lt;br/&gt;
+        target: &lt;input type="text" name="target"/&gt; (pingback:target of the new Pingback Item)&lt;br/&gt;
+        comment: &lt;input type="text" name="comment"/&gt;  (sioc:content of the new Pingback Item)
+    &lt;/form&gt;
+</skos:note>
+    <skos:note>Doing a POST of an pingback:Request on a pingback:Container creates a pingback:Item</skos:note>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/pingback/Item">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/net/pingback/"/>
+    <rdfs:label>Pingback</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://purl.org/net/pingback/Container"/>
+    <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Item"/>
+    <skos:example rdf:resource="http://purl.org/net/pingback/examplePingback1"/>
+    <skos:example rdf:resource="http://purl.org/net/pingback/examplePingback2"/>
+    <skos:note>One should be able to do a GET on a pingback:Item instance (and get back an RDFa/n3, RDF/XML document), a DELETE and an PUT (to be defined later).</skos:note>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/pingback/Request">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/net/pingback/"/>
+    <rdfs:label>(Simplified) Pingback HTTP Request</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/http#PostRequest"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="http://purl.org/net/pingback/sourceParameter"/>
+        <owl:hasValue rdf:resource="http://purl.org/net/pingback/targetParameter"/>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</owl:maxCardinality>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/http#param"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <skos:note>This is the class of all REST-based pingback requests. Such a request SHOULD at least have a parameter source and target. </skos:note>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/pingback/RequestGuideline">
+    <rdfs:comment>This concept represents the process of creating data based on a pingback request.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/net/pingback/"/>
+    <rdfs:label>Pingback Creation Guideline</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/provenance/ns#CreationGuideline"/>
+  </owl:Class>
+  <http:Param rdf:about="http://purl.org/net/pingback/commentParameter">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/net/pingback/"/>
+    <rdfs:label>comment</rdfs:label>
+    <skos:note>The value of this parameter is an URI.</skos:note>
+    <http:paramName>comment</http:paramName>
+  </http:Param>
+  <pingback:Item rdf:about="http://purl.org/net/pingback/examplePingback1">
+    <dcterms:created>2008-01-14</dcterms:created>
+    <pingback:source rdf:resource="http://sebastian.tramp.name"/>
+    <pingback:target rdf:resource="http://philipp.frischmuth24.de/id/me"/>
+    <sioc:content>Hi Phil, lets connect :-)</sioc:content>
+    <sioc:has_container rdf:resource="http://pingback.aksw.org"/>
+    <sioc:ip_address>139.18.8.71</sioc:ip_address>
+    <rdfs:label>friendship request</rdfs:label>
+    <skos:note>This is an example of an item which was created by a pingback request. Source and target resource of the request are WebIDs. As part of the post-processing of this request, the agent of the target resource gets the source WebID and looks for RDF statements (and HTML links), which relate this resource with the target WebID. The user can then decide to backlink the connection to approve this friendship request.</skos:note>
+  </pingback:Item>
+  <pingback:Item rdf:about="http://purl.org/net/pingback/examplePingback2">
+    <dcterms:created>2009-08-06</dcterms:created>
+    <pingback:source rdf:resource="http://identi.ca/notice/7674706"/>
+    <pingback:target rdf:resource="http://blog.aksw.org/2009/ontowiki-09-available/"/>
+    <sioc:has_container rdf:resource="http://blog.aksw.org/xmlrpc.php"/>
+    <sioc:ip_address>139.18.8.71</sioc:ip_address>
+    <rdfs:label>blogpost back-linking request</rdfs:label>
+    <skos:note>This is an example of an item which was created by a pingback request. In that example, source and target resource of the request are different sub-types of sioc:Post. As part of the post-processing of this request, the blog system of the target resource gets the source post and looks for RDF statements (and HTML links), which relate this post with the target post. The blog system own can then decide to approve this connection which means the target backlinks the source post.</skos:note>
+  </pingback:Item>
+  <owl:ObjectProperty rdf:about="http://purl.org/net/pingback/service">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/net/pingback/"/>
+    <rdfs:label>pingback service</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://hixie.ch/specs/pingback/pingback-1.0"/>
+    <skos:note>This property is used to link the target resource with a pingback XML/RPC service URI. The linked service should accept XML/RPC pingback requests as described in the Pingback 1.0 specification.</skos:note>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/net/pingback/source">
+    <rdfs:domain rdf:resource="http://purl.org/net/pingback/Item"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/net/pingback/"/>
+    <rdfs:label>source resource</rdfs:label>
+    <skos:example rdf:resource="http://purl.org/net/pingback/examplePingback1"/>
+    <skos:example rdf:resource="http://purl.org/net/pingback/examplePingback2"/>
+    <skos:note>The source resource of a Pingback (Item) is in most cases the subject of the statement which is communicated with this pingback request.</skos:note>
+  </owl:ObjectProperty>
+  <http:Param rdf:about="http://purl.org/net/pingback/sourceParameter">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/net/pingback/"/>
+    <rdfs:label>source</rdfs:label>
+    <skos:note>The value of this parameter is an URI.</skos:note>
+    <http:paramName>source</http:paramName>
+  </http:Param>
+  <owl:ObjectProperty rdf:about="http://purl.org/net/pingback/target">
+    <rdfs:domain rdf:resource="http://purl.org/net/pingback/Item"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/net/pingback/"/>
+    <rdfs:label>target resource</rdfs:label>
+    <skos:example rdf:resource="http://purl.org/net/pingback/examplePingback1"/>
+    <skos:example rdf:resource="http://purl.org/net/pingback/examplePingback2"/>
+    <skos:note>The target resource of a Pingback (Item) is in most cases the object of the statement which is communicated with this pingback request.</skos:note>
+  </owl:ObjectProperty>
+  <http:Param rdf:about="http://purl.org/net/pingback/targetParameter">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/net/pingback/"/>
+    <rdfs:label>target</rdfs:label>
+    <skos:note>The value of this parameter is an URI.</skos:note>
+    <http:paramName>target</http:paramName>
+  </http:Param>
+  <owl:ObjectProperty rdf:about="http://purl.org/net/pingback/to">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/net/pingback/"/>
+    <rdfs:label>pingback request to</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/net/pingback/Container"/>
+    <rdfs:seeAlso rdf:resource="http://aksw.org/Projects/SemanticPingBack#simplepost"/>
+    <rdfs:seeAlso rdf:resource="http://purl.org/net/pingback/Request"/>
+    <skos:note>This property is used to link the subject resource (which is then the target resource of the pingback request) with a resource which accept the simplified pingback request. This relation (as well as pingback:service) gives a way for other services to ping this resource e.g. when a new document was created that mentions this resource.</skos:note>
+  </owl:ObjectProperty>
+  <foaf:Person rdf:about="http://sebastian.tramp.name">
+    <foaf:name>Sebastian Tramp</foaf:name>
+  </foaf:Person>
+  <foaf:Person rdf:about="http://www.informatik.uni-leipzig.de/~auer/foaf.rdf#me">
+    <foaf:name>Sören Auer</foaf:name>
+  </foaf:Person>
+</rdf:RDF>

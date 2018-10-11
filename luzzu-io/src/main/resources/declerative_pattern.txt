@@ -1,0 +1,65 @@
+package [%%packagename%%];
+
+import io.github.luzzu.assessment.QualityMetric;
+
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.sparql.core.Quad;
+
+import io.github.luzzu.exceptions.MetricProcessingException;
+import io.github.luzzu.qualityproblems.ProblemCollection;
+
+
+[%%imports%%]
+
+/**
+ * @author [%%author%%]
+ *
+ * [%%label%%]
+ * [%%description%%]
+ */
+public class [%%classname%%] implements QualityMetric<Double> {
+
+	private final Resource METRIC_URI = ModelFactory.createDefaultModel().createResource("[%%metricuri%%]");
+	private String datasetURI = "";
+	private long totalTriplesAssessed = 0l;
+	
+	[%%variables%%]
+	
+	public void compute(Quad quad) throws MetricProcessingException {
+		[%%computefunction%%]
+		totalTriplesAssessed++;
+	}
+
+	public Double metricValue() {
+		[%%metricvaluefuntion%%]
+	}
+	
+	public Resource getMetricURI() {
+		return this.METRIC_URI;
+	}
+
+	public ProblemCollection<?> getProblemCollection(){
+		return null;
+	}
+	
+	public Resource getAgentURI() {
+		return null;
+	}
+	public boolean isEstimate() {
+		return false;
+	}
+	
+	public void setDatasetURI(String datasetURI) {
+		this.datasetURI = datasetURI;
+	}
+
+	public String getDatasetURI() {
+		return this.datasetURI;
+	}
+	
+	public Model getObservationActivity() {
+		return null;
+	}
+}

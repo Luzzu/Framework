@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.github.luzzu</groupId>
+    <artifactId>luzzu</artifactId>
+    <version>4.0.0</version>
+  </parent>
+  <artifactId>luzzu-ld-qualitymetrics-commons</artifactId>
+  <name>Luzzu Linked Data Quality Metric Commons</name>
+  <description>In this module we capture a number of data types and algorithms that can be potentially used for building Linked Data quality metrics. These are automatically included with the luzzu-assessment project, therefore, there is no need to import this dependency in your quality metric implementation project.s</description>
+
+  <dependencies>	
+  
+  	<dependency>
+		<groupId>io.github.luzzu</groupId>
+		<artifactId>luzzu-lowlevel-operations</artifactId>
+		<version>${luzzu.version}</version>
+	</dependency>
+	
+  	<dependency>
+		<groupId>org.mapdb</groupId>
+		<artifactId>mapdb</artifactId>
+		<version>${mapdb.version}</version>
+	</dependency>
+		  
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-databind</artifactId>
+	    <version>2.9.4</version>
+	</dependency>
+
+	<dependency>
+		<groupId>com.googlecode.concurrentlinkedhashmap</groupId>
+		<artifactId>concurrentlinkedhashmap-lru</artifactId>
+		<version>1.4.2</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.google.guava</groupId>
+	    <artifactId>guava</artifactId>
+	    <version>${guava.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>io.github.luzzu</groupId>
+		<artifactId>luzzu-semantics</artifactId>
+		<version>${luzzu.version}</version>
+	</dependency>
+  </dependencies>
+
+</project>

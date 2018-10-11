@@ -1,0 +1,2713 @@
+<http://openfoodfacts.org>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ns.nature.com/publications/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tekk.com.ar>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://impressive.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://g1o.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://scoffoni.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://nbn-resolving.org>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lod.euscreen.eu/download/euscreen_data.tar.gz>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://chickenkiller.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://msm.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://robots.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wuerzblog.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://datenfahrt.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://gutenberg.org>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://upr.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opensim-chat.eu>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://fcestrada.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://zhishi.me/data/zhwiki>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jonkman.ca>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.yso.fi/onto/allars/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/sabiork:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/ec:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wifo5-04.informatik.uni-mannheim.de/sider>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/pharmgkb_resource:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mhatta.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://red.gnoss.com/en/community/MPV-APADRINA/resource/>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://occams.info>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cthedot.de>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://fr.dbpedia.org>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://olivierberger.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lod2.eu>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uniovi.es>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ieeevis.tw.rpi.edu/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/input-indicators-local-authority-funding-from-government-grant>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jhercher.de>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://speiserweb.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://monarchos.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/input-indicators/affordable-rent-per-dwelling>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://prov.vic.gov.au>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://glottolog.org>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://myopenlink.net>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://johndrinkwater.name>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://thornton2.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dbpedialite.org>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wals.info>  <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://novicenotes.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://livejournal.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cf.ac.uk>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/imd-score-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://products.garnicaplywood.com/comunidad/garnicacatalogo>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-crime-rank-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ns.nature.com/citations/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-housing-rank/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://hawaii.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://fabianabel.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/uniprot:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-housing-score/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dltj.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/homelessness/households-accommodated/temporary-housing-types>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://makxdekkers.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://piana.eu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://leetchee.fr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://libver.math.auth.gr>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://seesaa.net>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/imd-environment-rank-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://idehen.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/wellbeing/happy-yesterday/mean/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mywhine.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bigasterisk.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://resourcelists.rgu.ac.uk/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://willdaniels.co.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://xula.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://rhizomik.net>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://snell-pym.org.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://harvard.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://adullact.net>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ontologi.es/colour/>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://roytennant.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://onebiglibrary.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://maymay.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kdata.kr>  <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-environment-rank-la-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://frb.270a.info/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://users.ecs.soton.ac.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tomheath.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://esd-toolkit.eu>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dbtune.org/magnatune/>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://pipian.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-rank-2007>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://fcns.eu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uni-karlsruhe.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://panda.id.au>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://harvard.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://f-dengler.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://aves3d.org>  <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://europa.eu>  <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://linkedopendata.gr>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jsu.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-rank-la-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://pleiades.stoa.org/places/1043/turtle>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://140.203.154.209>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cheminfov.informatics.indiana.edu:8080/pubchem>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://m-kuttner.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ko.dbpedia.org>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dwm.me.uk>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://f00die.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://staticfree.info>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/homelessness-acceptances-per-1000>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/homelessness/homelessness-acceptances/ethnicity>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://anjeve.de>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/input-indicators/total-new-homes-bonus-grant>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cocoondev.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://keuser.fr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://camera.it>  <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://gadm.geovocab.org>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-education-rank-la-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uni-hannover.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cosmico.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/households/projections/population>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://doomicile.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://helheim.deusto.es/bizkaisense/resource/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kantenwerk.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://outoffoc.us>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tramp.name>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://semanticweb.cs.vu.nl/poseidon/ns/>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://andrea-perego.name>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://quitter.se>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://umbel.org>  <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kenzoid.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dardailler.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://schiessle.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ontologi.es/rail>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sharesemantics.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org>  <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-employment-rank-la-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bris.ac.uk>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wifo5-04.informatik.uni-mannheim.de/dws-group>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://glou.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/wellbeing/life-satisfaction/percentage0-6/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://euskadi.net>  <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://evi.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://openlylocal.com>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://fastcult.ru>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://didactalia.net>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://red.gnoss.com/en/community/nextweb/resource/>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kb.se>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://nctu.edu.tw>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://introvert.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-income-rank/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cyganiak.de>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sadiframework.org/services/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://minsky.gsi.dit.upm.es/semanticwiki/>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dbtune.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://coreymwamba.co.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/input-indicators/local-authorities-working-with-troubled-families>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cipfa.org.uk>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://fortytwo.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://samnoble.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://w3future.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-score-2007>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mlode.nlp2rdf.org/resource/sentiws/>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/affymetrix:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://etucosacivedi.it>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ns.nature.com/techniques/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/taxon_resource:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://b4mad.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://datahub.io>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://liyangyu.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://orangeseeds.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://livingsources.org>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://crossref.org>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://gromgull.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://fabriziotarizzo.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tdiprima.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://pocketsoap.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://3kbo.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://go5th.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://isi.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://imirhil.fr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://travisuped.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ogbuji.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://nickshanks.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://unc.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dajobe.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://theses.fr>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bootsnall.com>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://e-tard.tv>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://webposible.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/households/social-lettings/general-needs/lettings/prp/household-composition>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://njh.me>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://semanticweb.org>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://b3kat.de>  <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dayofarchaeology.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kuruman.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://productontology.org>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-score/LSOA/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.nobelprize.org/resource/>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bibleontology.com>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://it.dbpedia.org>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://statistics.data.gov.uk>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://aims.fao.org/aos/agrovoc/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ecb.270a.info>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://oszk.hu>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://iconclass.org/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://nachlin.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://heavy-liquid.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mmt.me.uk>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://status.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://openei.org>  <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/house-building/completions/tenure>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://estatwrap.ontologycentral.com>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://aemet.linkeddata.es>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://coreyavis.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.opendatascotland.org/data/simd/health-rank>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dixite.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://modulepool.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://icite.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://portsmouth.ac.uk>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://chromic.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://declan.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://torrez.us>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://periapsis.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://paulbooker.co.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://brondsema.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://fcac.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://xtrasgu.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lod.taxonconcept.org>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dbpedia.org>  <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ontologi.es/rail/>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://miskatonic.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.enel.com/LMF/resource/punto-enel/>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://comiles.eu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.ifpri.org/lod/ghi.rdf>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/irefindex_irogid:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://manchester.ac.uk>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://britishmuseum.org>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mapasinteractivos.didactalia.net/comunidad/mapasflashinteractivos>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kaimi.cc>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://diwis.imis.athena-innovation.gr:8181/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-rank-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://rdf.ecs.soton.ac.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.uniprot.org/tissues>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.uniprot.org/uniprot/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ruchni.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uchicago.edu>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://purl.org/vocabularies/princeton/wn30>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://shadura.me>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://stationary-traveller.eu>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://advogato.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://semanticweb.cs.vu.nl/europeana/lod/purl/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://stanford.edu>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tommorris.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://discoveringidentity.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/house-building/starts/tenure>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://5ver.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://deusto.es>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bournemouth.ac.uk>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.opendatascotland.org/data/simd/employment-rank>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/kegg:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://man.ac.uk>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://pipetree.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://inamidst.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://oreilly.com>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-crime-rank-la-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://malcolm.id.au>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/planning/decisions/major-and-minor-development-type/all>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://radio-weblogs.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/housing/dwellings/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://skilledtests.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-income-rank-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://datenwissen.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://evite.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://marcuscobden.co.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.digitalsocial.eu/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://clauwa.info>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://alik.su>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://globalnames.org>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/impact-indicators/affordable-housing-completions>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://linkedlifedata.com/resource/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lists.library.qmul.ac.uk/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://auth.gr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://rdf.muninn-project.org/ww1>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sig.ma>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ptlabo.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lydiastench.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://eye48.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://blogoltre.it>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://zora-z.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/housing-market>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mapbureau.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://deuxpi.ca>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wifo5-04.informatik.uni-mannheim.de/factbook>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yuji.in>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://voque.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mrblog.nl>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://alexandrefranke.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://diekershoff.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-score-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ebremer.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://linuxwrangling.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-environment-score-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ninebynine.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://offog.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cultura.linkeddata.es/BNE/resource/>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lists.bolton.ac.uk/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sidar.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://theleonardi.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-income-score/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dtdns.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://locv.tw.rpi.edu/source/us/dataset/cv-lineage/>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wyehead.co.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/households/projections/totalhouseolds>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://chroniclingamerica.loc.gov>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://diogos.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://altervista.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dbtune.org/artists/last-fm/>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://openspring.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://nunolopes.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://oskuro.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wasab.dk>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://rdfdiff.appspot.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://reference.data.gov.uk>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://logd.tw.rpi.edu/ih2/id/country/>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://slashhome.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://telecom-sudparis.eu>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://integralblue.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.zaragoza.es/datosabiertos/id/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://robinstewart.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://archiveshub.ac.uk>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bne.es>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/impact-indicators/troubled-families>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://keithalexander.co.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dbtune.org/jamendo/>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://miguiadeviajes.net>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://de.dbpedia.org>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://princeton.edu>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-environment-score/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://macno.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://derby.ac.uk>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ontologi.es/cpan-data>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dbtune.org/musicbrainz/>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kwarc.info>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://st-andrews.ac.uk>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wordnet.okfn.gr/resource/>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wieser.info>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://pookzilla.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dbmi-icode-01.dbmi.pitt.edu/dikb/resource/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://hope.ac.uk>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://indymedia.org>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://suda.co.uk>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ns.nature.com/subjects/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/impact-indicators-housing-starts>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://realify.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://timttmy.co.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://status.cat>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/imd-crime-rank-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wright.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://vkps.co.uk>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://deusto.gnoss.com>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://simonstl.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opera.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/housing/homelessness-acceptances/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/planning/decisions/majorAndMinorDevelopments>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/affymetrix_resource:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kantenwerk.org/metadata/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://it-sudparis.eu>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uniba.it>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://towers.org.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://thesecretmirror.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://linked-statistics.org>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://unitn.it>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://holgerlausen.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ndl.go.jp>  <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uniprot.org>  <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/geneid_resource:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sussex.ac.uk>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://free.fr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://beesdesign.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://webheat.co.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://antiflux.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/genbank:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/households-accommodated-per-1000>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://gunmonkeynet.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://visualcv.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://atari-frosch.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-environment-rank-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://raimond.me.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mfd-consult.dk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://freelish.us>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://phoenixproductions.org.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://baomoi.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://gnu.org.ua>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://piwany.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://plymouth.ac.uk>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://simia.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jibbering.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ourcoffs.org.au>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://galago-project.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.uniprot.org/core>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendata.euskadi.net/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://planet-libre.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ashok.org.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wikier.org>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-education-rank-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://nimbustier.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://johnbreslin.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/households/projections/byDependentChildren/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://josemalvarez.es>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ukoln.ac.uk>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://haschke.biz>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mmu.ac.uk>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/input-indicators/local-authority-funding-from-government-grant>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jens-lehmann.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://semanticweb.cs.vu.nl>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://toronto.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kanzaki.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://provenanceweb.org/>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/hgnc:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opencalais.com>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://linkeddata.openlinksw.com/about/data/>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jewishencyclopedia.com>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://doc.metalex.eu/doc/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://randomness.org.uk>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wifo5-04.informatik.uni-mannheim.de/eurostat>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://nbrightside.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://criptonita.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/impact-indicators/housing-completions>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wfaber.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://red.gnoss.com/en/community/OpenData/resource/>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://skipforward.net>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.enel.com/LMF/resource/charging-station/>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://daniel-krause.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://eurecom.fr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://utsa.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://debian.org>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://andybudd.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://decafbad.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://progval.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://umbc.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://eprints.ecs.soton.ac.uk>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://b-kaempgen.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://w3.org>  <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://assets.taxonconcept.org>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://milstan.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ontologycentral.com>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://olea.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lehigh.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://zbw.eu>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://destin-informatique.com>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://logd.tw.rpi.edu/ih2/id/us/fed/agency/Environmental_Protection_Agency/chemical/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tudelft.nl>  <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dagoneye.it>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://danwinckler.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://userland.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://people.kmi.open.ac.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://robla.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://widgets.ecs.soton.ac.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ced117.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://demokritos.gr>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://deutsche-biographie.de>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yomotsu.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://shef.ac.uk>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/cpd:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://exdc.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://scharffe.fr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/goa_resource:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.opendatascotland.org/data/simd/geographic-access-rank>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://somsants.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ns.nature.com/contributors/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bombsite.com>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jesandco.org>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://resourcelists.ntu.ac.uk/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://iu.edu>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://recit.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mamalibre.com.ar>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.opendatascotland.org/data/education/pupils-by-school-and-datazone>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://nelix.id.au>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ohloh.net>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://desone.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://hackerposse.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lingvoj.org>  <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://strangled.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jenitennison.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://topquadrant.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cnrs.fr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/mesh:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ordnancesurvey.co.uk>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://collectivesource.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-crime-rank/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://giroscopo.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/service-expenditure>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://threepress.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://status-ericxdu.rhcloud.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ivan-herman.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://korrekt.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/households-2008>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/impact-indicators-affordable-housing-starts>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://adrideo.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://planet-data.eu>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ei.homeip.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.eionet.europa.eu/gemet/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://harper-adams.ac.uk>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bnf.fr>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wu.ac.at>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://drobilla.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://vub.ac.be>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://gomertronic.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://datendienst.dnb.de/cgi-bin/mabit.pl?cmd=fetch&userID=opendata&pass=opendata&mabheft=GND.rdf.gz>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.opendatascotland.org/id/educational-establishment/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.opendatascotland.org/data/education/leavers/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ntlworld.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://librdf.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ryanlee.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://russwurm.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dewey.info>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lexvo.org>  <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.opendatascotland.org/data/simd/rank>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://soumitrabhattacharya.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://gmxhome.de>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lancehendrix.me>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sifry.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/ndc_resource:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sztaki.hu>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://gnoss.com>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://hu-berlin.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/impact-indicators/households-in-temporary-accommodation>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://int-evry.fr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ucl.ac.uk>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://nuts.geovocab.org>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://worldcat.org>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.eea.europa.eu/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://put.poznan.pl>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://panix.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lexinfo.net>  <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ufpe.br>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://thelovebug.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/impact-indicators/energy-efficiency-new-builds>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://snee.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://myexperiment.org>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://onlinehome.us>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/households/social-lettings/general-needs/lettings/prp/number-bedrooms>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://olivierberger.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://goldenline.pl>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://new-can.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uk-postcodes.com>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://busterjs.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://foaf-project.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/housing/household-projections/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.w3.org/2006/03/wn/wn20/>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://otbm.fr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cbasewrap.ontologycentral.com>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://20100.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://psm.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mud.cz>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://linkedct.org>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ja.dbpedia.org>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/geography/lsoa/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tripcom.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://athelia.com>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://betaroad.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://eunis.eea.europa.eu>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://spraci.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ohsu.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://thoughtcraft.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://eyaloren.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/omim:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://aksw.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://normanrichter.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://krisvandenbergh.be>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cdrewu.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://derfizz.de>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cornelius-rabsch.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ssweeny.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-employment-score-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/wellbeing/life-satisfaction/standard-deviation/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bka.li>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://gnu.org>  <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bfs.270a.info>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://rod.eionet.europa.eu>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/homelessness/homelessness-decisions/decisions>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.opendatascotland.org/data/simd/housing-rank>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://blog.soton.ac.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://postblue.info>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://colinda.org>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://twcu.ac.jp>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.semanticweb.org>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://planetrdf.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cs.rpi.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://anearalone.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jelenajovanovic.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/planning/decisions/other-developments/all>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/net-additional-dwellings>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://trinker.co.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-housing-rank-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://freerangelibrarian.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sugarlabs.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-crime-score-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://biessmann.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uni-potsdam.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://el.dbpedia.org>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://setonhill.edu>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/wellbeing/life-satisfaction/mean/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uni-siegen.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://greek-lod.math.auth.gr/police/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://msc2010.org/resources/MSC/2010/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ontosearch.com>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://zdb-services.de>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://gniewoslaw.pl>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-education-rank/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://larve.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ualberta.ca>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://harth.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://morelightmorelight.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cv.iptc.org/newscodes/>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://openrdf.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/impact-indicators/neighbourhood-plans>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/civil-administrative/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tl1n.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://esis.no>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/omim_resource:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://thomas-riechert.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://danbri.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://blog.semantic-web.at>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ufl.edu>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wordpress.com>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://legislation.data.gov.uk>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://davidhaberthuer.ch>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uni-leipzig.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://greggkellogg.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bibsonomy.org>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ticklefish.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://agfa.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wifo5-04.informatik.uni-mannheim.de/gutendata>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ito.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://commonplace.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://inkdroid.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://worldbank.270a.info>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://blogspace.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ncsu.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://deri.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://hatena.ne.jp>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jarltech.de>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-income-score-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ronaldpoell.eu>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://museos.gnoss.com/en/community/mismuseos/resource/>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://indexwrap.ontologycentral.com>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uio.no>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sonnenburgs.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/impact-indicators/fire-related-casualties-per-100000>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.zaragoza.es/turruta/resource>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://qdnx.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://zonk.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sixhills-consulting.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ftw.at>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kontroversen.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://roboranch.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://semantic.ckan.net/about/data/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://reallywow.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://montana.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bnode.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ed.ac.uk>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-employment-score/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://pokepedia.fr>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://roehampton.ac.uk>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://umb.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://equestriarp.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://semantic-web-grundlagen.de>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://petstatus.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://alaska.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/obo:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mondeca.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mismuseos.net/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://fao.org>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://fgiasson.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lylejohnson.name>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://smiffysplace.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ibiblio.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/rn:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cpantesters.org>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.fundacionctic.org/dataset-catalog/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://logd.tw.rpi.edu/ih2/id/us/state/>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mit.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendap.tw.rpi.edu/>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://andzol.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/geneid:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://webfoundation.org>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wifo5-04.informatik.uni-mannheim.de/drugbank>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tw.rpi.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kurtisrandom.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.bbc.co.uk/nature>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://palimpsest-press.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://crabdance.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ldn-fai.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ichbindagegen.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://probeta.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kasei.us>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://naholyr.fr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ineverycrea.net/>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://odellbuildingandremodeling.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://menuism.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/impact-indicators-energy-efficiency-new-builds>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://skos.um.es/unesco6/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://hackcraft.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://theru.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tue.nl>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mkbergman.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bblfish.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/input-indicators/fire-and-rescue-expenditure>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uni-mannheim.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://davidseth.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://id.loc.gov>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/irefindex_icrogid:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sorg-empire.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lenka.no>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jugem.jp>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/impact-indicators/affordable-housing-starts>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cooleysekula.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://apache.org>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wifo5-04.informatik.uni-mannheim.de/dailymed>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/pharmgkb:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cpline.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ns.nature.com/catalogs/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://nicecupoftea.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://reegle.info>  <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sudoc.fr>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dallasbay.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ntnu.no>  <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://red.gnoss.com/en/community/greencompetitiveness>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-education-score-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ldodds.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mmmattos.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dimitros.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/input-indicators/bonus-grant-per-dwelling>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sweetiebelle.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://crschmidt.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wifo5-03.informatik.uni-mannheim.de/bookmashup>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://syndic8.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://managemetadata.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://alochana.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cording.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://usda.gov>  <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://identifiers.org>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://inndata.at>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ligadonospoliticos.com.br>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bestbuy.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://isoco.net>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://metade.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/wellbeing/worthwhile/standard-deviation/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/impact-indicators-planning-applications-granted>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bonifaz.ec>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/taxon:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://nytimes.com>  <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://linkedopencolors.appspot.com>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/imd-rank-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://marconeumann.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://abdn.ac.uk>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yoz.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://netfort.gr.jp>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wayfargone.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://vihart.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-employment-rank-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ontology.kiom.re.kr/ontology/lod.rdf>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bl.uk>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tschlotfeldt.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://central-lancashire.ac.uk>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://datacite.org>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sauria.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://hajollyha.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/homologene:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://esd.org.uk>  <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://stat.gov.rs>  <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.uniprot.org/taxonomy>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/wellbeing-lsoa-happy-yesterday-mean>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.uniprot.org/citations>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://rdfize.com>  <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://software.coop>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://wojciechpolak.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://leobard.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://caseyhalverson.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://morlardf.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://webenemasuno.linkeddata.es/elviajero/resource/>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ilikefreedom.ro>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://southampton.ac.uk>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://shemnon.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/eco:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://gcstar.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opencorporates.com>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://vu.nl>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.icane.es>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.bbc.co.uk/music>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ec.europa.eu/eurostat/ramon/rdfdata/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/ndc:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uibk.ac.at>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uni-kl.de>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bressure.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://geospecies.org>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://pablorizzo.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://puc-rio.br>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://codehaus.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.opendatascotland.org/data/simd/education-rank>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://buerkle.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://shnoulle.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lists.lib.keele.ac.uk/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://hyper.to>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kjernsmo.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uis.270a.info>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dammerer.at>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://okfn.org>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/wellbeing-happy-yesterday-standard-deviation>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2007/IMD-score/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mamund.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://reduno-internacional.com/en/community/UNOi>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-health-score-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://foaf.cc>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/impact-indicators/planning-applications-granted>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bestkungfu.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uoa.gr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://imf.270a.info>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/taxonomy:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://umd.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/wellbeing-worthwhile-mean>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-health-rank/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/mgi:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cambridgesemantics.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://nl.dbpedia.org>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://linkedmarkmail.wikier.org/>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ns.nature.com/data-citations/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://red.gnoss.com/comunidad/prospectivatecnologica/recurso/>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://fragdev.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/sgd:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://rainbowdash.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://proofile.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://transparency.270a.info>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://spip.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lod.ac>  <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://gegeweb.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lespetitescases.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://eu.dbpedia.org/resource/>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://oliver-maresch.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://just-imho.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lebsanft.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://datagraph.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://idref.fr>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://prefix.cc>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://geonames.org>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://danjou.info>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://biodiversitya-z.org>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kathryl.fr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lod.hebis.de/resource/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-education-score>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.europeana.eu>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bosatsu.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/impact-indicators/business-rates-yield>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://heiko-stoermer.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uam.es>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://morphtown.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uni-bielefeld.de>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://debianart.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://totl.net>  <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://fao.270a.info>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.uniprot.org/keywords>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://l3s.de>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://monkey.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://nxg.me.uk>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-health-rank-la-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.opendatascotland.org/data/simd/crime-rank>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://unime.it>  <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://pitt.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/impact-indicators/planning-authorities-with-local-plan>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ns.nature.com/products/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bibbase.org>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://famu.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://decentralyze.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/imd-income-rank-la-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://figoblog.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://rdfweb.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.opendatascotland.org/data/simd/income-rank>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-crime-score/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tomayac.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://vphill.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://husk.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://autistici.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://justgiblets.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sirireiter.dk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cheminfov.informatics.indiana.edu:8080/chemogenomics>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://uninsubria.it>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://nodix.de>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cheminfov.informatics.indiana.edu:8080/uniprot/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-employment-rank/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-environment-rank/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://koalie.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://markbaker.ca>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://company.semantic-web.at>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://cheminfov.informatics.indiana.edu:8080/bindingdb>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://snow-crash.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kwark.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://idehen.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/transparency/impact-indicators/housing-starts>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://semanlink.net>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://data.gov.au>  <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://thum.us>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://d-nb.info>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ichoose.tw.rpi.edu/>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://openelectiondata.org>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://utexas.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://greek-lod.math.auth.gr/fire-brigade/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ring.ciard.net/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://eye-of-newt.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ocs.taxonconcept.org>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://thefigtrees.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dayures.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://hannay.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://1w6.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://davidgalbraith.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://webenemasuno.linkeddata.es>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://belfalas.org>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jones.dk>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-health-score/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://typepad.com>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://airforcehistoryindex.org>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://barkingiguana.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://emse.fr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://psi.oasis-open.org/iso/639/>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ryanwick.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/sgd_resource:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://turnguard.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://13mm.de>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://billdueber.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-rank/LSOA/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://red.gnoss.com/en/community/Interactivos/>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/bio2rdf_dataset:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ledru.info>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://hcklab.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://oecd.270a.info>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ludost.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.bbc.co.uk/programmes>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://edgarwrap.ontologycentral.com>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/bio2rdf_resource:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dev8d.org>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://openlibrary.org>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://iandickinson.me.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://semanticmatching.org>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://my-profile.eu>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://openlinksw.com>
+        <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/drugbank_target:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://legadolibre.com.ar>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://qth.fr>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/doc/IMD/2007/IMD-rank/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://sebseb01.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://brunel.ac.uk>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://logd.tw.rpi.edu/ih2/id/us/fed/agency/Department_of_Agriculture/crop/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://marinespecies.org>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://evanpatton.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dfau.de>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://fer.hr>  <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yorku.ca>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ntu.ac.uk>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://susu.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://babyponies.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://soucy.cc>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://hii.co.il>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://rivuli-development.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/households/social-lettings/general-needs/rents/prp/numberBedrooms>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://neurario.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://linkedmdb.org>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-health-rank-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tfri.gov.tw>  <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tashari.org>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-housing-rank-la-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://my-status.tk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mcu.es>  <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jonkulp.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://govwild.org>  <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://berlios.de>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mclures.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.yso.fi/onto/ysa/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/IMD/2010/IMD-rank/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://blognewcomb.com>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dbtropes.org>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lichfielddc.gov.uk>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://rakuten.ne.jp>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://intelligent.pe.kr>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/housing/duty-owed-no-accommodation-secured/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://mulestable.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://legislation.gov.uk>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://lotico.com>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tsu.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://kit.edu>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://trueg.de>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://ucd.ie>  <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/planning/decisions/otherDevelopments/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://w3c.es>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://quasthoffs.de>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://utep.eagle-i.net/i/>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://shellen.com>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-income-rank-la-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://olivieraubert.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/id/housing/households-accommodated-by-authority/>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://revyu.com>  <:hasDomain>  "usergeneratedcontent"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://aims.fao.org/aos/jita/>
+        <:hasDomain>  "publications"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://zaragoza.es>  <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://productdb.org>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://brettsinger.net>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://toxi.co.uk>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tobyinkster.co.uk>
+        <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://156.35.82.103>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://linkedgeodata.org>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linkedfood.org/resource/>
+        <:hasDomain>  "crossdomain"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://luon.net>  <:hasDomain>  "social web"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://oceandrilling.org>
+        <:hasDomain>  "geographic"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://bio2rdf.org/interpro:>
+        <:hasDomain>  "lifesciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://dbtune.org/bbc/peel/>
+        <:hasDomain>  "media"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-housing-score-2010>
+        <:hasDomain>  "government"^^<http://www.w3.org/2001/XMLSchema#string> .

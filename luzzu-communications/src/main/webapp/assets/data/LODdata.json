@@ -1,0 +1,244 @@
+[
+{
+	"name":"Availability of the SPARQL end-point metric",
+	"mean":84.07,
+	"Q2":97.92,
+	"std":24.90,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Different Serialisation Metric",
+	"mean":99.44,
+	"Q2":100,
+	"std":2.86,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Basic Provenance Metric",
+	"mean":12.78,
+	"Q2":0,
+	"std":32.89,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name": "Vocabulary Usage Indication",
+	"mean":2.71,
+	"Q2":0,
+	"std":10.62,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Reuse existing vocabularies metric",
+	"mean":34.01,
+	"Q2":24,
+	"std":29.10,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Availability of the RDF dumps metric",
+	"mean":100,
+	"Q2":24,
+	"std":29.10,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Extended Provenance Metric",
+	"mean":100,
+	"Q2":24,
+	"std":29.10,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Machine-readable indication of a license metric",
+	"mean":100,
+	"Q2":24,
+	"std":29.10,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Reuse existing terms metric",
+	"mean":98.99,
+	"Q2":24,
+	"std":29.10,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Human-readable indication of a license metric",
+	"mean":8.8,
+	"Q2":0,
+	"std":28.33,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Machine-readable indication of a license metric",
+	"mean":14.4,
+	"Q2":0,
+	"std":35.11,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Untyped Literals",
+	"mean":98.99,
+	"Q2":24,
+	"std":29.10,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Incorrect Domain or Range Datatypes",
+	"mean":60.11,
+	"Q2":57.14,
+	"std":13.43,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Short URIs metric",
+	"mean":84.07,
+	"Q2":97.92,
+	"std":24.90,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Valid Usage of the owl:InverseFunctionalProperty",
+	"mean":96.98,
+	"Q2":100,
+	"std":12.29,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name": "Undefined classes and properties metric",
+	"mean":54.48,
+	"Q2":53.33,
+	"std":32.18,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Extensional conciseness metric",
+	"mean":92.04,
+	"Q2":99.34,
+	"std":13.22,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name": "Scalability of a data source metric",
+	"mean":78.44,
+	"Q2":24,
+	"std":29.10,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name": "Entities as members of disjoint classes metric",
+	"mean":100,
+	"Q2":100,
+	"std":0,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name": "Compatible Datatype",
+	"mean":96.80,
+	"Q2":100,
+	"std":14.16,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name": "Misplaced classes or properties metric",
+	"mean":99.99,
+	"Q2":100,
+	"std":0.01,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name": "Ontology hijacking metric",
+	"mean":93.64,
+	"Q2":100,
+	"std":19.99,
+	"comment":"Detects the redefinition by third parties of external classes/properties such that reasoning over data using those external terms is affected",
+	"analysis":""
+},
+{
+	"name": "Low latency metric",
+	"mean":57.55,
+	"Q2":99.23,
+	"std":47.12,
+	"comment":"Measures the delay between the submission of a request to the data source and the reception of the respective response (or the first part of it)",
+	"analysis":""
+},
+{
+	"name":  "Misuse Owl datatype or object properties metric",
+	"mean":98.88,
+	"Q2":100,
+	"std":5.17,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name": "Usage of Deprecated Classesor Deprecated Properties",
+	"mean":99.97,
+	"Q2":100,
+	"std":0.23,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name": "No blank node metric",
+	"mean":96.01,
+	"Q2":100,
+	"std":12.15,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"High throughput metric",
+	"mean":47.78,
+	"Q2":29.67,
+	"std":45.60,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Multiple Language Usage Metric",
+	"mean":1.72,
+	"Q2":1,
+	"std":2.71,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"No Use of Prolix RDF features metric",
+	"mean":98.99,
+	"Q2":24,
+	"std":29.10,
+	"comment":"",
+	"analysis":""
+},
+{
+	"name":"Existence of links to external data providers",
+	"mean":27.01,
+	"Q2":1,
+	"std":183.3,
+	"comment":"",
+	"analysis":""
+}
+]
+
+
