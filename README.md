@@ -54,7 +54,7 @@ Details on these metrics can be found in [Debattista et al. - Evaluating the Qua
 ### Executing the Application
 In order to start Luzzu, you can use the provided `start.sh` script. Don't forget that each shell script requires permission to run (`chmod +x start.sh`). If you enabled the Web UI, you should now be able to navigate to [the Luzzu Web UI (experimental)](http://localhost:8080/). The source code for the UI can be found in [this repository](https://github.com/Luzzu/webapp).
 
-Luzzu has a number of APIs. We refer the user to the [API wiki page](). You could also be able to navigate to [http://localhost:8080/Luzzu/application.wadl](http://localhost:8080/Luzzu/application.wadl) and view a simplified Web Application Description Language (WADL) descriptior for the application with user and core resources only.
+Luzzu has a number of APIs. We refer the user to the [API wiki page](https://github.com/Luzzu/Framework/wiki/Restful-APIs). You could also be able to navigate to [http://localhost:8080/Luzzu/application.wadl](http://localhost:8080/Luzzu/application.wadl) and view a simplified Web Application Description Language (WADL) descriptior for the application with user and core resources only.
 
 To get full WADL with extended resources use the query parameter detail e.g [http://localhost:8080/Luzzu/application.wadl?detail=true](http://localhost:8080/Luzzu/application.wadl?detail=true)
 
