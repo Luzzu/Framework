@@ -69,7 +69,7 @@ use-case driven discovery and retrieval.</description>
 		<guava.version>23.6-jre</guava.version> <!-- 18.0 -->
 		<slf4j.version>1.7.5</slf4j.version>
 		<jackson.version>2.9.5</jackson.version>
-		
+
 	</properties>
 
 	<packaging>pom</packaging>
@@ -85,8 +85,6 @@ use-case driven discovery and retrieval.</description>
 		<module>luzzu-qml</module>
 		<module>luzzu-io</module>
 		<module>luzzu-webapp</module>
-		<module>luzzu-lod-dataportal</module>
-		
 	</modules>
 
 	<dependencies>
@@ -164,7 +162,7 @@ use-case driven discovery and retrieval.</description>
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
+
 	    <dependency>
 	     <groupId>org.apache.jena</groupId>
 	     <artifactId>jena-core</artifactId>
@@ -203,19 +201,19 @@ use-case driven discovery and retrieval.</description>
 			<artifactId>commons-collections4</artifactId>
 			<version>4.0</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
 			<version>${jackson.version}</version>
 		</dependency>
-		
+
 		<dependency>
 		    <groupId>org.apache.httpcomponents</groupId>
 		    <artifactId>httpclient</artifactId>
 		    <version>4.5.2</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpcore</artifactId>
@@ -350,7 +348,7 @@ use-case driven discovery and retrieval.</description>
 					    </archive>
 					</configuration>
 				</plugin> -->
-				
+
 			</plugins>
 		</pluginManagement>
 	</build>
