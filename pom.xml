@@ -68,6 +68,8 @@ use-case driven discovery and retrieval.</description>
 		<luzzu.version>4.0.0</luzzu.version>
 		<guava.version>23.6-jre</guava.version> <!-- 18.0 -->
 		<slf4j.version>1.7.5</slf4j.version>
+		<jackson.version>2.9.5</jackson.version>
+		
 	</properties>
 
 	<packaging>pom</packaging>
@@ -82,7 +84,9 @@ use-case driven discovery and retrieval.</description>
 		<module>luzzu-communications</module>
 		<module>luzzu-qml</module>
 		<module>luzzu-io</module>
-		<module>luzzu-webapp</module>	
+		<module>luzzu-webapp</module>
+		<module>luzzu-lod-dataportal</module>
+		
 	</modules>
 
 	<dependencies>
@@ -203,7 +207,7 @@ use-case driven discovery and retrieval.</description>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
-			<version>2.9.3</version>
+			<version>${jackson.version}</version>
 		</dependency>
 		
 		<dependency>
