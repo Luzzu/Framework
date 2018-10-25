@@ -3,6 +3,7 @@ package io.github.luzzu.io.helper;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.Properties;
+import java.util.concurrent.TimeoutException;
 
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.function.VoidFunction;
@@ -43,7 +44,7 @@ public class TriplePublisher implements Serializable {
 			channel.exchangeDeclare(EXCHANGE_NAME, "fanout");
 			
 			logger.debug("OK connected to MQ service, exchange {} created", EXCHANGE_NAME);
-		} catch (IOException e) {
+		} catch (IOException | TimeoutException e) {
 			logger.error("IO Error connecting to MQ service", e);
 		}
 	}
@@ -84,7 +85,7 @@ public class TriplePublisher implements Serializable {
 			if(connection.isOpen()) {
 				connection.close();
 			}
-		} catch (IOException e) {
+		} catch (IOException | TimeoutException e) {
 			logger.warn("Error closing channel or connection to MQ service", e);
 		}
 	}
