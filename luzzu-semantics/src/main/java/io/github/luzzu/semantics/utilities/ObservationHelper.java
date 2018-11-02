@@ -62,11 +62,16 @@ public class ObservationHelper {
 		try{
 			return sdf.parse(date);
 		} catch (ParseException e){
-			sdf = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss'Z'");
-			return sdf.parse(date);
+			try {
+				sdf = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss'Z'");
+				return sdf.parse(date);
+			} catch (ParseException e2) {
+				sdf = new SimpleDateFormat("yyyy-MM-dd");
+				return sdf.parse(date);
+			}
 		}
 	}
-	
+
 	public static Observation getLatestObservation(List<Observation> observations){
 		Collections.sort(observations);
 		Collections.reverse(observations);
