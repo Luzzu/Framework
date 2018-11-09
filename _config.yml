@@ -1,1 +1,6 @@
 theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-redirect-from
+  
+redirect_from: "http://eis-bonn.github.io/Luzzu/"
