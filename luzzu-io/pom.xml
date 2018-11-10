@@ -97,7 +97,7 @@
 		</dependency>
 
 
-		<!-- required for SPARK -->
+		<!-- required for SPARK 
 		<dependency>
 			<groupId>org.apache.spark</groupId>
 			<artifactId>spark-core_2.10</artifactId>
@@ -131,6 +131,7 @@
 			<artifactId>amqp-client</artifactId>
 			<version>4.8.0</version>
 		</dependency>
+-->
 
 		<dependency>
    			<groupId>org.rdfhdt</groupId>
