@@ -59,11 +59,6 @@
         		<artifactId>luzzu-webapp</artifactId>
         		<version>${luzzu.version}</version>
         </dependency>
-        <dependency>
-        	<groupId>io.github.luzzu</groupId>
-        	<artifactId>luzzu-lod-dataportal</artifactId>
-        	<version>4.0.0</version>
-        </dependency>
 	</dependencies>
 	
 	<build>
