@@ -12,6 +12,7 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
+import java.nio.file.LinkOption;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Collection;
@@ -62,8 +63,15 @@ public class DeclerativeMetricCompiler {
 	public static DeclerativeMetricCompiler getInstance(){
 		if (instance  == null) {
 			logger.info("[DeclerativeMetricCompiler] Initialising and verifying external metrics.");
+			
 			try {
+				
+				if (Files.notExists(Paths.get("classes/"), LinkOption.NOFOLLOW_LINKS)) {
+					Files.createDirectory(Paths.get("classes/"));
+				}
+				
 				instance = new DeclerativeMetricCompiler();
+				
 			} catch (URISyntaxException | IOException e) {
 				ExceptionOutput.output(e, "[DeclerativeMetricCompiler] - Error creating singleton instance", logger);
 			} 

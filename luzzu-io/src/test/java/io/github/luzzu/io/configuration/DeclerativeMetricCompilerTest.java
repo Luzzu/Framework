@@ -1,12 +1,14 @@
 package io.github.luzzu.io.configuration;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.jena.graph.Triple;
 import org.apache.jena.sparql.core.Quad;
 import org.apache.jena.sparql.vocabulary.FOAF;
-import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -26,8 +28,10 @@ public class DeclerativeMetricCompilerTest extends Assert {
 		metC = DeclerativeMetricCompiler.getInstance();
 	}
 	
-	@After
-	public void tearDown() throws Exception{ }
+	@AfterClass
+	public static void tearDown() throws Exception {
+		FileUtils.deleteDirectory(new File("classes/"));
+	}
 	
 	@Test
 	public void successfulCompilationTest() throws IOException, ParseException {
