@@ -31,3 +31,5 @@ target/
 .classpath
 .project
 .settings/
+
+/luzzu-internal-tests/
