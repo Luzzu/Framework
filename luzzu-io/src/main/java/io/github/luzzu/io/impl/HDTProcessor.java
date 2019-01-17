@@ -50,7 +50,7 @@ public class HDTProcessor extends AbstractIOProcessor {
 	@Override
 	public void setUpProcess() throws LuzzuIOException {
 		try {
-			this.processor = HDTManager.loadIndexedHDT(datasetLocation);
+			this.processor = HDTManager.mapIndexedHDT(datasetLocation);
 			this.hdtDictionary = this.processor.getDictionary();
 			this.nodeDictionary = new NodeDictionary(this.hdtDictionary);
 			logger.debug("Dataset {} is loaded into HDT processor.", datasetLocation);
