@@ -163,7 +163,7 @@ public class Main {
             System.out.println("Max Memory: "+ (double) Runtime.getRuntime().maxMemory() / (1024.0*1024.0) + " MB");
             System.out.println("Free Memory: "+ (double) Runtime.getRuntime().freeMemory() / (1024.0*1024.0) + " MB");
             
-        	System.out.println("Log File: " + System.getProperty("java.io.tmpdir")+"luzzu/debug.log");
+        	System.out.println("Log File: " + System.getProperty("java.io.tmpdir")+"/luzzu/debug.log");
 
             if (Boolean.parseBoolean(PROP.getProperty("WEB_APP_ENABLED")))
 	    		if (java.awt.Desktop.isDesktopSupported()) 

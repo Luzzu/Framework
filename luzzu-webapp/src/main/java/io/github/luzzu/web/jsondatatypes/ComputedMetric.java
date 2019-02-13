@@ -87,6 +87,11 @@ public class ComputedMetric {
 		this.observations.add(observation);
 	}
 	
+	public void clearAllObservations() {
+		if (this.observations == null) this.observations = new ArrayList<ObservationObject>();
+		this.observations.clear();
+	}
+	
 	public Resource getMetric_uri() {
 		return metric_uri;
 	}
