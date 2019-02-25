@@ -67,6 +67,22 @@ lmi:
 		rdfs:label "Luzzu After Arg" ;
 		rdfs:comment "Specifies after arguments for Complex Metrics";
 		rdfs:subclassOf lmi:LuzzuMetricArg .
+		
+	lmi:LocalVocabulary a rdfs:Class, owl:Class ;
+		rdfs:label "Local Vocabulary" ;
+		rdfs:comment "Specifies a local vocabulary that cannot be dereferenced and should be used by the metrics" .
+		
+	
+	lmi:namespace a rdfs:Property, owl:DatatypeProperty ;
+		rdfs:label "namespace" ;
+		rdfs:domain lmi:LocalVocabulary ;
+		rdfs:range xsd:string .
+		
+
+	lmi:filename a rdfs:Property, owl:DatatypeProperty ;
+		rdfs:label "filename" ;
+		rdfs:domain lmi:LocalVocabulary ;
+		rdfs:range xsd:string .
 
 	lmi:type a rdfs:Property  , owl:DatatypeProperty ;
 		rdfs:label "type" ;

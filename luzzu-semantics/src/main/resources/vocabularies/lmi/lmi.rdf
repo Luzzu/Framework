@@ -1,243 +1,140 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:daq="http://purl.org/eis/vocab/daq#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:lmi="http://purl.org/eis/vocab/lmi#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:voaf="http://purl.org/vocommons/voaf#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-  <rdf:Description rdf:nodeID="genid1">
-    <foaf:name>Jeremy Debattista</foaf:name>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="genid1">
-    <foaf:mbox rdf:resource="mailto:debattij@scss.tcd.ie"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#">
-    <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#">
-    <dct:title xml:lang="en">Luzzu Metric Implementation ontology (LMI)</dct:title>
-  </rdf:Description>
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+>
   <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#">
     <dc:description xml:lang="en">The Luzzu Metric Implementation ontology (LMI) enables the definition of specific metrics to be connected to their Java Implementations. This vocabulary is used in Luzzu to load the required metrics in the framework.</dc:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#">
-    <dct:creator rdf:nodeID="genid1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-03</dct:modified>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#">
     <dct:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</dct:language>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#">
-    <vann:preferredNamespaceUri>http://purl.org/eis/vocab/qpro#</vann:preferredNamespaceUri>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#">
-    <vann:preferredNamespacePrefix>qpro</vann:preferredNamespacePrefix>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#">
+    <dct:creator rdf:nodeID="ub85bL17C15"/>
+    <dct:title xml:lang="en">Luzzu Metric Implementation ontology (LMI)</dct:title>
     <foaf:homepage rdf:resource="http://purl.org/eis/vocab/qpro#"/>
+    <vann:preferredNamespaceUri>http://purl.org/eis/vocab/qpro#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>qpro</vann:preferredNamespacePrefix>
+    <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuMetricJavaImplementation">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuMetricJavaImplementation">
+  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LocalVocabulary">
+    <rdfs:comment>Specifies a local vocabulary that cannot be dereferenced and should be used by the metrics</rdfs:comment>
+    <rdfs:label>Local Vocabulary</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuMetricJavaImplementation">
-    <rdfs:label>Luzzu Metric Java Implementation</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuMetricJavaImplementation">
-    <rdfs:comment>Registers a Java metric implementation as a Luzzu plugin.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#javaPackageName">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#javaPackageName">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#javaPackageName">
-    <rdfs:label>Java Package Name</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#javaPackageName">
-    <rdfs:comment>Registers the full Java package name of the metric, which will be used later for invocation by the lmi:metric property</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#javaPackageName">
-    <rdfs:domain rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuMetricJavaImplementation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#javaPackageName">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#referTo">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#referTo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#referTo">
-    <rdfs:label>refer to</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#referTo">
-    <rdfs:comment>Attaches a Java Metric Implementation to a semantically described metric</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#referTo">
-    <rdfs:domain rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuMetricJavaImplementation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#referTo">
-    <rdfs:range rdf:resource="http://purl.org/eis/vocab/daq#Metric"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#before">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#before">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#before">
-    <rdfs:label>before</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#before">
     <rdfs:comment>Attaches a Luzzu before argument to a metric</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#before">
-    <rdfs:domain rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuMetricJavaImplementation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#before">
     <rdfs:range rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuBeforeArg"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#after">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#after">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#after">
-    <rdfs:label>after</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#after">
-    <rdfs:comment>Attaches a Luzzu after argument to a metric</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#after">
+    <rdfs:label>before</rdfs:label>
     <rdfs:domain rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuMetricJavaImplementation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#after">
-    <rdfs:range rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuBeforeArg"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuMetricArg">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuMetricArg">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuMetricArg">
+    <rdfs:comment>This is an abstract class that is extended by lmi:LuzzuBeforeArg and lmi:LuzzuAfterArg. This should not be used directly.</rdfs:comment>
     <rdfs:label>Luzzu Metric Arg</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuMetricArg">
-    <rdfs:comment>This is an abstract class that is extended by lmi:LuzzuBeforeArg and lmi:LuzzuAfterArg. This should not be used directly.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuBeforeArg">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuBeforeArg">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuBeforeArg">
-    <rdfs:label>Luzzu Before Arg</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuBeforeArg">
-    <rdfs:comment>Specifies before arguments for Complex Metrics</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuBeforeArg">
-    <rdfs:subclassOf rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuMetricArg"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuAfterArg">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuAfterArg">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuAfterArg">
-    <rdfs:label>Luzzu After Arg</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuAfterArg">
-    <rdfs:comment>Specifies after arguments for Complex Metrics</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuAfterArg">
-    <rdfs:subclassOf rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuMetricArg"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#type">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#type">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#type">
-    <rdfs:label>type</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#type">
-    <rdfs:comment>Specifies the Java type of the parameter (eg java.lang.String)</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#type">
-    <rdfs:domain rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuMetricArg"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#type">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#type">
-    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#type">
-    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#parameter">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#parameter">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#parameter">
-    <rdfs:label>parameter</rdfs:label>
+  <rdf:Description rdf:nodeID="ub85bL17C15">
+    <foaf:name>Jeremy Debattista</foaf:name>
+    <foaf:mbox rdf:resource="mailto:debattij@scss.tcd.ie"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#parameter">
     <rdfs:label>Specifies the value of the parameter (eg file name)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#parameter">
     <rdfs:domain rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuMetricArg"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#parameter">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    <rdfs:label>parameter</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#parameter">
     <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#parameter">
-    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#namespace">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/eis/vocab/lmi#LocalVocabulary"/>
+    <rdfs:label>namespace</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#MetricConfiguration">
+  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#javaPackageName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    <rdfs:label>Java Package Name</rdfs:label>
+    <rdfs:comment>Registers the full Java package name of the metric, which will be used later for invocation by the lmi:metric property</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuMetricJavaImplementation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#filename">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>filename</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    <rdfs:domain rdf:resource="http://purl.org/eis/vocab/lmi#LocalVocabulary"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuBeforeArg">
+    <rdfs:label>Luzzu Before Arg</rdfs:label>
+    <rdfs:comment>Specifies before arguments for Complex Metrics</rdfs:comment>
+    <rdfs:subclassOf rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuMetricArg"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#MetricConfiguration">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#MetricConfiguration">
-    <rdfs:label>Metric Configuration</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#MetricConfiguration">
-    <rdfs:comment>(Used for API Call) An instance of this class should have one or more metrics listed with the lmi:metric property. These will be passed to the Luzzu API to start a Quality Assessment. Metrics should exist in the Luzzu framework prior to invocation.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#metric">
+  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#referTo">
+    <rdfs:domain rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuMetricJavaImplementation"/>
+    <rdfs:range rdf:resource="http://purl.org/eis/vocab/daq#Metric"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#metric">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#metric">
-    <rdfs:label>metric</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#metric">
-    <rdfs:comment>(Used for API Call)  The full Java package name of the metric that is required to be assessed.</rdfs:comment>
+    <rdfs:comment>Attaches a Java Metric Implementation to a semantically described metric</rdfs:comment>
+    <rdfs:label>refer to</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#metric">
     <rdfs:domain rdf:resource="http://purl.org/eis/vocab/lmi#MetricConfiguration"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#metric">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    <rdfs:label>metric</rdfs:label>
+    <rdfs:comment>(Used for API Call)  The full Java package name of the metric that is required to be assessed.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#type">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    <rdfs:domain rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuMetricArg"/>
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment>Specifies the Java type of the parameter (eg java.lang.String)</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>type</rdfs:label>
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#MetricConfiguration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>(Used for API Call) An instance of this class should have one or more metrics listed with the lmi:metric property. These will be passed to the Luzzu API to start a Quality Assessment. Metrics should exist in the Luzzu framework prior to invocation.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Metric Configuration</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#after">
+    <rdfs:range rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuBeforeArg"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    <rdfs:comment>Attaches a Luzzu after argument to a metric</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>after</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuMetricJavaImplementation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuAfterArg">
+    <rdfs:subclassOf rdf:resource="http://purl.org/eis/vocab/lmi#LuzzuMetricArg"/>
+    <rdfs:comment>Specifies after arguments for Complex Metrics</rdfs:comment>
+    <rdfs:label>Luzzu After Arg</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/eis/vocab/lmi#LuzzuMetricJavaImplementation">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Luzzu Metric Java Implementation</rdfs:label>
+    <rdfs:comment>Registers a Java metric implementation as a Luzzu plugin.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>
+

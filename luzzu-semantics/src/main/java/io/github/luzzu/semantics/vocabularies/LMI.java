@@ -34,6 +34,12 @@ public class LMI {
     
     public static final Property type = m_model.createProperty( "http://purl.org/eis/vocab/lmi#type" );
     
+    public static final Property namespace = m_model.createProperty( "http://purl.org/eis/vocab/lmi#namespace" );
+
+    public static final Property filename = m_model.createProperty( "http://purl.org/eis/vocab/lmi#filename" );
+   
+    public static final Resource LocalVocabulary = m_model.createResource( "http://purl.org/eis/vocab/lmi#LocalVocabulary" );
+
     public static final Resource LuzzuAfterArg = m_model.createResource( "http://purl.org/eis/vocab/lmi#LuzzuAfterArg" );
     
     public static final Resource LuzzuBeforeArg = m_model.createResource( "http://purl.org/eis/vocab/lmi#LuzzuBeforeArg" );
