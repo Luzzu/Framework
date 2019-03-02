@@ -49,6 +49,8 @@ import io.github.luzzu.operations.properties.PropertyManager;
 import io.github.luzzu.qml.parser.ParseException;
 import io.github.luzzu.qualityproblems.ProblemCollection;
 import io.github.luzzu.semantics.vocabularies.LMI;
+//Import LoadToDataStore Java File
+import io.github.luzzu.io.LoadToDataStore;
 
 public abstract class AbstractIOProcessor implements IOProcessor {
 
@@ -348,6 +350,15 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 			ExceptionOutput.output(e, "Error in generating Problem Report File for "+this.datasetPLD, logger);
 		}
 		
+		
+		//Write ProblemReport to Datastore
+		String fileName = prFile.getName();
+		int lastIndexPos = fileName.lastIndexOf(".");
+		if (lastIndexPos > 0) {
+			fileName = fileName.substring(0, lastIndexPos);
+		}
+		LoadToDataStore ltds = new LoadToDataStore();
+		ltds.loadData(fileName,prFile.getAbsolutePath());
 
 	}
 	
@@ -433,9 +444,17 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 			
 			this.isGeneratingQMD = false;
 			this.endedGeneratingQMD = true;
+			
+			//Write Quality Metadata to Datastore
+			LoadToDataStore ltds = new LoadToDataStore();
+			ltds.loadData("defaultGraph",metadataFilePath);
+			
+			
 		} finally {
 			lock.unlock();
 		}
+		
+
 	}
 	
 	
