@@ -19,7 +19,14 @@ public class StringUtils {
 	 * @return (String) Modified dataset graph URI
 	 */
 	public static String strippedURI(String datasetURI){
-		String stripped = datasetURI.replace("http://", "");
+		String stripped = datasetURI;
+		if (datasetURI.startsWith("http://"))
+			stripped = datasetURI.replace("http://", "");
+		else if (datasetURI.startsWith("https://"))
+			stripped = datasetURI.replace("https://", "");
+		else if (datasetURI.startsWith("uri:"))
+			stripped = datasetURI.replace("uri:", "");
+		
 		if (stripped.charAt(stripped.length() - 1) == '/'){
 			stripped = stripped.substring(0,stripped.length() - 1);
 		}
