@@ -61,7 +61,7 @@ public class LoadToDataStore
 		connectionURL= connectionURL.replace("//", "/");
 		connectionURL= connectionURL.replace("::", ":");
 		connectionURL=protocol+"://"+connectionURL;
-		String connectionGetURL=host+":"+port+"/$/stats/" + dataStore
+		String connectionGetURL=host+":"+port+"/$/stats/" + dataStore;
 		connectionGetURL= connectionGetURL.replace("//", "/");
 		connectionGetURL= connectionGetURL.replace("::", ":");
 		connectionGetURL=protocol+"://"+connectionGetURL;
