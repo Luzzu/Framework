@@ -18,6 +18,7 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.CredentialsProvider;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.impl.client.BasicCredentialsProvider;
@@ -60,7 +61,11 @@ public class LoadToDataStore
 		connectionURL= connectionURL.replace("//", "/");
 		connectionURL= connectionURL.replace("::", ":");
 		connectionURL=protocol+"://"+connectionURL;
-
+		String connectionGetURL=host+":"+port+"/$/stats/" + dataStore
+		connectionGetURL= connectionGetURL.replace("//", "/");
+		connectionGetURL= connectionGetURL.replace("::", ":");
+		connectionGetURL=protocol+"://"+connectionGetURL;
+			
 		File uploadTripleFile = new File(filePath);
 		//Build Base URI
 		URIBuilder uriBuilder = null;
@@ -116,10 +121,19 @@ public class LoadToDataStore
 
 
 		try {
+			try{
+			CloseableHttpResponse responseGet = httpclient.execute(new HttpGet(connectionGetURL));
+			}
+			catch(ClientProtocolException e)
+			{
+				logger.warn("Client Protocol Exception during Datastore Status Check");
+				e.printStackTrace();	
+			}
 			CloseableHttpResponse response = httpclient.execute(httpPost);
 			httpclient.close();
 		} catch (ClientProtocolException e) {
 			System.out.println("Client Protocol Exception");
+			logger.error("Client Protocol Exception during Load to Datasote");
 			e.printStackTrace();
 		} catch (IOException e) {
 			System.out.println("IO Exception");
@@ -127,7 +141,7 @@ public class LoadToDataStore
 		}
 
 
-		logger.info("Load to Datasote Successful");
+		logger.info("Load to Datasote Completed");
 
 
 	}
