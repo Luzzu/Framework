@@ -440,6 +440,9 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 				RDFDataMgr.write(out, md.createQualityMetadata(), RDFFormat.TRIG_PRETTY);
 				
 				logger.info("[IOProcessor - {}] Quality metadata for {} written successfully. File stored: {}",this.datasetPLD,metadataFilePath);
+				//Write Quality Metadata to Datastore
+				LoadToDataStore ltds = new LoadToDataStore();
+				ltds.loadData("defaultGraph",metadataFilePath);
 			} catch(MetadataException | IOException ex) {
 				ExceptionOutput.output(ex, "Error in generating quality metadata file for "+this.datasetPLD, logger);
 			}
@@ -454,9 +457,7 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 			
 		} finally {
 			lock.unlock();
-			//Write Quality Metadata to Datastore
-			LoadToDataStore ltds = new LoadToDataStore();
-			ltds.loadData("defaultGraph",metadataFilePath);
+
 		}
 		
 
