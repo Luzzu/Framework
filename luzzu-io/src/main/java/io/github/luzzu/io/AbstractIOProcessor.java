@@ -357,6 +357,8 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 		if (lastIndexPos > 0) {
 			fileName = fileName.substring(0, lastIndexPos);
 		}
+		
+		//Write ProblemReport to Datastore
 		LoadToDataStore ltds = new LoadToDataStore();
 		ltds.loadData(fileName,prFile.getAbsolutePath());
 
@@ -446,12 +448,15 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 			this.endedGeneratingQMD = true;
 			
 			//Write Quality Metadata to Datastore
-			LoadToDataStore ltds = new LoadToDataStore();
-			ltds.loadData("defaultGraph",metadataFilePath);
+			//LoadToDataStore ltds = new LoadToDataStore();
+			//ltds.loadData("defaultGraph",metadataFilePath);
 			
 			
 		} finally {
 			lock.unlock();
+			//Write Quality Metadata to Datastore
+			LoadToDataStore ltds = new LoadToDataStore();
+			ltds.loadData("defaultGraph",metadataFilePath);
 		}
 		
 
