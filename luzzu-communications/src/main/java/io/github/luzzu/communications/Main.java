@@ -5,9 +5,12 @@ import java.io.IOException;
 import java.net.URI;
 import java.util.Properties;
 import javax.json.stream.JsonGenerator;
+import javax.net.ssl.SSLException;
 
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.grizzly.http.server.StaticHttpHandler;
+import org.glassfish.grizzly.ssl.SSLContextConfigurator;
+import org.glassfish.grizzly.ssl.SSLEngineConfigurator;
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.slf4j.Logger;
@@ -22,7 +25,7 @@ public class Main {
 	
 	// Base URI the Grizzly HTTP server will listen on
 	private static Properties PROP = PropertyManager.getInstance().getProperties("luzzu.properties");
-	private static String SCHEME = PROP.getProperty("SCHEME");
+	private static String SCHEME = Boolean.parseBoolean(PROP.getProperty("ENABLE_SSH")) ? PROP.getProperty("SSLSCHEME") : PROP.getProperty("SCHEME");
 	private static String DOMAIN = PROP.getProperty("DOMAIN");
 	private static String PORT_NUMBER = PROP.getProperty("PORT");
 	private static String APPLICATION = PROP.getProperty("APPLICATION");
@@ -38,6 +41,31 @@ public class Main {
        	server.getServerConfiguration().addHttpHandler(new StaticHttpHandler("src/main/webapp"), "/");
        	server.getServerConfiguration().addHttpHandler(new StaticHttpHandler("src/main/webapp"), "/assets/");
        	return server;
+    }
+    
+    
+    public static HttpServer startSSLServer() throws SSLException {
+        final ResourceConfig rc = new ResourceConfig().packages("io.github.luzzu").property(JsonGenerator.PRETTY_PRINTING, true);
+        
+        SSLContextConfigurator sslCon = new SSLContextConfigurator();
+        
+        sslCon.setKeyStoreFile(PROP.getProperty("KEYSTORE_LOC"));
+        sslCon.setKeyStorePass(PROP.getProperty("KEYSTORE_PASS"));
+
+        sslCon.setTrustStoreFile(PROP.getProperty("TRUSTSTORE_LOC"));
+        sslCon.setTrustStorePass(PROP.getProperty("TRUSTSTORE_PASS"));
+        
+        
+        if (sslCon.validateConfiguration(true)) {
+        	HttpServer server = GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc, true, new SSLEngineConfigurator(sslCon).setClientMode(false).setNeedClientAuth(false));
+           	
+           	server.getHttpHandler().setAllowEncodedSlash(true);
+           	server.getServerConfiguration().addHttpHandler(new StaticHttpHandler("src/main/webapp"), "/");
+           	server.getServerConfiguration().addHttpHandler(new StaticHttpHandler("src/main/webapp"), "/assets/");
+           	return server;
+        } else {
+        	throw new SSLException("SSL Configuration is not valid");
+        }
     }
     
     private static void checkOrCreateDirectories() {
@@ -117,7 +145,7 @@ public class Main {
     }
     
     private static void reloadWSsettings() {
-    	SCHEME = PROP.getProperty("SCHEME");
+    	SCHEME = Boolean.parseBoolean(PROP.getProperty("ENABLE_SSH")) ? PROP.getProperty("SSLSCHEME") : PROP.getProperty("SCHEME");
     	DOMAIN = PROP.getProperty("DOMAIN");
     	PORT_NUMBER = PROP.getProperty("PORT");
     	APPLICATION = PROP.getProperty("APPLICATION");
@@ -155,8 +183,8 @@ public class Main {
     	}
     	
     	// Starting server
-    	final HttpServer server = startServer();
-        try {
+    	final HttpServer server = (Boolean.parseBoolean(PROP.getProperty("ENABLE_SSH")) == true) ? startSSLServer() : startServer();
+    	try {
             server.start();
             System.out.println(String.format("Jersey app started with WADL available at " + "%sapplication.wadl\n", BASE_URI));
             System.out.println("Total Memory: "+ (double) Runtime.getRuntime().totalMemory() / (1024.0*1024.0) + " MB");
