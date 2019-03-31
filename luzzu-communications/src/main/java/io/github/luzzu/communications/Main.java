@@ -39,7 +39,7 @@ public class Main {
        	HttpServer server = GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);
        	server.getHttpHandler().setAllowEncodedSlash(true);
        	server.getServerConfiguration().addHttpHandler(new StaticHttpHandler("src/main/webapp"), "/");
-       	server.getServerConfiguration().addHttpHandler(new StaticHttpHandler("src/main/webapp"), "/assets/");
+       	server.getServerConfiguration().addHttpHandler(new StaticHttpHandler("src/main/webapp/assets/"), "/assets/");
        	return server;
     }
     
@@ -61,7 +61,7 @@ public class Main {
            	
            	server.getHttpHandler().setAllowEncodedSlash(true);
            	server.getServerConfiguration().addHttpHandler(new StaticHttpHandler("src/main/webapp"), "/");
-           	server.getServerConfiguration().addHttpHandler(new StaticHttpHandler("src/main/webapp"), "/assets/");
+           	server.getServerConfiguration().addHttpHandler(new StaticHttpHandler("src/main/webapp/assets/"), "/assets/");
            	return server;
         } else {
         	throw new SSLException("SSL Configuration is not valid");
