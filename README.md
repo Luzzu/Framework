@@ -43,9 +43,9 @@ We provide a set of quality metrics that can be downloaded and used within Luzzu
   2. Representational Metrics: [Download](http://s001.adaptcentre.ie/FrameworkMetrics/LDMetrics/representational.zip)
   3. Contextual Metrics: [Download](http://s001.adaptcentre.ie/FrameworkMetrics/LDMetrics/contextual.zip)
 
-The downloaded files should be uncompressed and be placed in the `luzzu-communications\externals\metrics\` folder.
+The downloaded files should be uncompressed and be placed in the `luzzu-communications/externals/metrics/` folder.
 
-Furthermore, in order for these metrics to work, you would need to download the vocabularies as well from [here](http://s001.adaptcentre.ie/FrameworkMetrics/Vocabs/). These should be uncompressed, and the ttl files should be placed in the `luzzu-communications\externals\vocabs\` folder. The `dqm.zip` contain all semantic definitions for the quality metrics in the previous section.
+Furthermore, in order for these metrics to work, you would need to download the vocabularies as well from [here](http://s001.adaptcentre.ie/FrameworkMetrics/Vocabs/). These should be uncompressed, and the ttl files should be placed in the `luzzu-communications/externals/vocabs/` folder. The `dqm.zip` contain all semantic definitions for the quality metrics in the previous section.
 
 The source code of these metrics are also Open Source and could be found in [the Luzzu Linked Data quality metrics GitHub repository](https://github.com/Luzzu/LDqualitymetrics). To create your own metrics we refer to the Luzzu's Framework [wiki page] ().
 
