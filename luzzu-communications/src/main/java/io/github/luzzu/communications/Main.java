@@ -44,30 +44,6 @@ public class Main {
     }
     
     
-    public static HttpServer startSSLServer() throws SSLException {
-        final ResourceConfig rc = new ResourceConfig().packages("io.github.luzzu").property(JsonGenerator.PRETTY_PRINTING, true);
-        
-        SSLContextConfigurator sslCon = new SSLContextConfigurator();
-        
-        sslCon.setKeyStoreFile(PROP.getProperty("KEYSTORE_LOC"));
-        sslCon.setKeyStorePass(PROP.getProperty("KEYSTORE_PASS"));
-
-        sslCon.setTrustStoreFile(PROP.getProperty("TRUSTSTORE_LOC"));
-        sslCon.setTrustStorePass(PROP.getProperty("TRUSTSTORE_PASS"));
-        
-        
-        if (sslCon.validateConfiguration(true)) {
-        	HttpServer server = GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc, true, new SSLEngineConfigurator(sslCon).setClientMode(false).setNeedClientAuth(false));
-           	
-           	server.getHttpHandler().setAllowEncodedSlash(true);
-           	server.getServerConfiguration().addHttpHandler(new StaticHttpHandler("src/main/webapp"), "/");
-           	server.getServerConfiguration().addHttpHandler(new StaticHttpHandler("src/main/webapp/assets/"), "/assets/");
-           	return server;
-        } else {
-        	throw new SSLException("SSL Configuration is not valid");
-        }
-    }
-    
     private static void checkOrCreateDirectories() {
     	File localProp = new File("luzzu.properties");
     	if (!(localProp.exists()))
@@ -183,7 +159,7 @@ public class Main {
     	}
     	
     	// Starting server
-    	final HttpServer server = (Boolean.parseBoolean(PROP.getProperty("ENABLE_SSH")) == true) ? startSSLServer() : startServer();
+    	final HttpServer server = startServer();
     	try {
             server.start();
             System.out.println(String.format("Jersey app started with WADL available at " + "%sapplication.wadl\n", BASE_URI));

@@ -33,3 +33,4 @@ target/
 .settings/
 
 /luzzu-internal-tests/
+/luzzu-irc-extension/
