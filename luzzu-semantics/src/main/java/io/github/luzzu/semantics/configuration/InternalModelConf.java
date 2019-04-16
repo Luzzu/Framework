@@ -23,6 +23,7 @@ import org.apache.jena.query.DatasetFactory;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.util.FileUtils;
 import org.apache.jena.vocabulary.OWL;
 import org.apache.jena.vocabulary.RDF;
 
@@ -51,6 +52,7 @@ public class InternalModelConf {
 		if (externalsFolder.exists()){
 			File[] listOfOntologies = externalsFolder.listFiles();
 			for (File ontology : listOfOntologies) {
+				if (FileUtils.guessLang(ontology.getPath(), null) == null) continue;
 				if (ontology.isHidden()) continue;
 				temp = ModelFactory.createDefaultModel();
 				logger.info("Loading ontology : {} ", ontology.getName());
@@ -93,7 +95,6 @@ public class InternalModelConf {
 		Model m = ModelFactory.createDefaultModel();
 		
 		Iterator<String> iter = semanticModel.listNames();
-//		semanticModel.listNames()
 		
 		while (iter.hasNext()){
 			m.add(semanticModel.getNamedModel(iter.next()));
@@ -116,5 +117,5 @@ public class InternalModelConf {
 			result.put(entry.getKey(), entry.getValue());
 		}
 		return result;
-	}
+	}	
 }
