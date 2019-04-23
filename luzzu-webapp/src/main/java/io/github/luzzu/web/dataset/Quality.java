@@ -61,7 +61,7 @@ public class Quality {
 			try {
 				jsonDate = StringUtils.toJSONDateFormat(ldDate);
 			} catch (ParseException e) {
-				ExceptionOutput.output(e, "[Dataset Profiling] Cannot convert Linked Data date fromat to JSON date format for "+ ldDate, logger);
+				ExceptionOutput.output(e, "[Quality Metadata] Cannot convert Linked Data date fromat to JSON date format for "+ ldDate, logger);
 			}
 			
 			if (jsonDate != null) dates.add("\""+jsonDate+"\"");
@@ -70,19 +70,31 @@ public class Quality {
 		return dates;
 	}
 	
+	
 	public static Set<ComputedMetric> getObservationForDataset(String datasetPLD, String date){
+		return getObservationForDataset(null, datasetPLD, date);
+	}
+	
+	public static Set<ComputedMetric> getObservationForDataset(Model m, String datasetPLD, String date){
 		if (date != null) logger.info("[Quality Metadata] - Getting observations for all metrics in {} for date {}", datasetPLD, date);
-		String graphName = graphs.get(StringUtils.strippedURI(datasetPLD));
+
+		Model qualityMetadata = null;
 		
-		Model qualityMetadata = ModelFactory.createDefaultModel();
-		qualityMetadata.add(d.getNamedModel(graphName));
-		qualityMetadata.add(InternalModelConf.getFlatModel());
+		if (m == null) {
+			String graphName = graphs.get(StringUtils.strippedURI(datasetPLD));
+			
+			qualityMetadata = ModelFactory.createDefaultModel();
+			qualityMetadata.add(d.getNamedModel(graphName));
+			qualityMetadata.add(InternalModelConf.getFlatModel());
+		} else {
+			qualityMetadata = m;
+		}
 	
 		String query = "";
 		try {
 			query = StringUtils.getQueryFromFile("metrics/DatasetCDM.sparql");
 		} catch (IOException e) {
-			ExceptionOutput.output(e, "[Dataset Profiling] Cannot retreive GetObservationBasicProfilingData.sparql for method getProfilingInformation(...)", logger);
+			ExceptionOutput.output(e, "[Quality Metadata] Cannot retreive DatasetCDM.sparql for method getObservationForDataset(...)", logger);
 		}
 		
 		QueryExecution exec =  QueryExecutionFactory.create(QueryFactory.create(query), qualityMetadata);
@@ -122,7 +134,7 @@ public class Quality {
 		}
 		return mos;
 	}
-
+	
 	public static Set<ComparingDatasetObject> compareDatasetsOnMetric(Set<String> datasetPLDs, String metric) {
 		Resource metricResource = ResourceCommons.toResource(metric);
 		Set<ComparingDatasetObject> cdoSet = new HashSet<ComparingDatasetObject>();
