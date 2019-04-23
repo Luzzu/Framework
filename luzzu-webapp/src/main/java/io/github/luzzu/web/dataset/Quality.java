@@ -71,24 +71,68 @@ public class Quality {
 	}
 	
 	
-	public static Set<ComputedMetric> getObservationForDataset(String datasetPLD, String date){
-		return getObservationForDataset(null, datasetPLD, date);
-	}
 	
-	public static Set<ComputedMetric> getObservationForDataset(Model m, String datasetPLD, String date){
-		if (date != null) logger.info("[Quality Metadata] - Getting observations for all metrics in {} for date {}", datasetPLD, date);
+	public static Set<ComputedMetric> getObservationForDataset(Model metadata, String date){
+		if (date != null) logger.info("[Quality Metadata] - Getting observations for all metrics for date {}", date);
 
-		Model qualityMetadata = null;
-		
-		if (m == null) {
-			String graphName = graphs.get(StringUtils.strippedURI(datasetPLD));
-			
-			qualityMetadata = ModelFactory.createDefaultModel();
-			qualityMetadata.add(d.getNamedModel(graphName));
-			qualityMetadata.add(InternalModelConf.getFlatModel());
-		} else {
-			qualityMetadata = m;
+		Model qualityMetadata = ModelFactory.createDefaultModel();
+		qualityMetadata.add(metadata);
+		qualityMetadata.add(InternalModelConf.getFlatModel());
+	
+		String query = "";
+		try {
+			query = StringUtils.getQueryFromFile("metrics/DatasetCDM.sparql");
+		} catch (IOException e) {
+			ExceptionOutput.output(e, "[Quality Metadata] Cannot retreive DatasetCDM.sparql for method getObservationForDataset(...)", logger);
 		}
+		
+		QueryExecution exec =  QueryExecutionFactory.create(QueryFactory.create(query), qualityMetadata);
+		
+		Set<ComputedMetric> mos = new HashSet<ComputedMetric>();
+		ResultSet set = exec.execSelect();
+		if (set.hasNext()) {
+			set.forEachRemaining(sol -> {
+				ComputedMetric mo = new ComputedMetric();
+				
+				String metricName = sol.get("metric_name").asLiteral().toString();
+				String dimensionName = sol.get("dimension_name").asLiteral().toString();
+				String categoryName = sol.get("category_name").asLiteral().toString();
+				Resource metric = sol.get("metric").asResource();
+				Resource metric_type = sol.get("metric_uri").asResource();
+				
+				mo.setInCategory(categoryName);
+				mo.setInDimension(dimensionName);
+				mo.setName(metricName);
+				mo.setUri(metric.getURI());
+				mo.setMetric_uri(metric_type);
+				
+				if (date == null) {
+					Observation latestObservation = ObservationHelper.getLatestObservation(ObservationHelper.extractObservations(metadata,metric_type));
+					mo.addObservations(new ObservationObject(latestObservation));
+				} else {
+					List<Observation> obs = ObservationHelper.extractObservations(metadata,metric_type);
+					
+					Optional<Observation> observation = obs.stream().filter(o -> Date.dateToString(o.getDateComputed()).equals(date)).findFirst();
+					
+					if (observation.isPresent()) 
+						mo.addObservations(new ObservationObject(observation.get()));
+				}
+				
+				if (mo.getObservations().size() > 0) mos.add(mo);
+			});
+		}
+		return mos;
+	}
+
+	
+	
+	public static Set<ComputedMetric> getObservationForDataset(String datasetPLD, String date){
+		if (date != null) logger.info("[Quality Metadata] - Getting observations for all metrics in {} for date {}", datasetPLD, date);
+		String graphName = graphs.get(StringUtils.strippedURI(datasetPLD));
+		
+		Model qualityMetadata = ModelFactory.createDefaultModel();
+		qualityMetadata.add(d.getNamedModel(graphName));
+		qualityMetadata.add(InternalModelConf.getFlatModel());
 	
 		String query = "";
 		try {
