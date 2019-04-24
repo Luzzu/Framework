@@ -59,6 +59,7 @@
         		<artifactId>luzzu-webapp</artifactId>
         		<version>${luzzu.version}</version>
         </dependency>
+                
 	</dependencies>
 	
 	<build>
