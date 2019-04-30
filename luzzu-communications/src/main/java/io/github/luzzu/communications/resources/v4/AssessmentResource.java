@@ -165,7 +165,7 @@ public class AssessmentResource {
 			if (validRequest) {
 				String requestID = requestQualityAssessment(parameters);
 				System.out.println("Added request: "+ requestID);
-				logger.info("Request ID: {}", requestID);
+				logger.info("Request ID: {}; Dataset PLD: {}", requestID, parameters.get("Dataset-PLD").get(0));
 				jsonResponse = RequestBoard.getRequestStatus(requestID);
 			}
 		} catch (IllegalArgumentException | InterruptedException | ExecutionException | ResourceNotFoundException e) {
@@ -182,7 +182,7 @@ public class AssessmentResource {
 		final Boolean isSparql = Boolean.parseBoolean(parameters.get("Is-Sparql-Endpoint").get(0));
 		final Boolean genQualityReport = Boolean.parseBoolean(parameters.get("Quality-Report-Required").get(0));
 		
-		logger.info("Assessment Request -\nDataset URI: {}\nBase URI: {}\nMetrics: {}\nIs-Sparql: {}\nGenerate Problem Report: {}",
+		logger.debug("Assessment Request -\nDataset URI: {}\nBase URI: {}\nMetrics: {}\nIs-Sparql: {}\nGenerate Problem Report: {}",
 				datasetURI, baseURI, jsonStrMetricsConfig, isSparql, genQualityReport);
 
 		final String crawlDate;

@@ -337,7 +337,9 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 			}
 			
 			report.closeSerialisedFile();
-			logger.debug("[IOProcessor - {}] Quality problem report for {} written successfully. File stored: {}",this.datasetPLD, prFile.getPath());
+			String date = (new io.github.luzzu.operations.lowlevel.Date()).getDate();
+
+			logger.debug("[IOProcessor - {}] Quality problem report for {} written successfully. File stored: {}", date, this.datasetPLD, prFile.getPath());
 			
 			this.isGeneratingQR = false;
 			this.endedGeneratingQR = true;
