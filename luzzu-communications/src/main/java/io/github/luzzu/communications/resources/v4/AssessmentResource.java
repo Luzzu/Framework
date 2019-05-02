@@ -27,6 +27,7 @@ import io.github.luzzu.communications.requests.RequestBoard;
 import io.github.luzzu.communications.requests.RequestValidator;
 import io.github.luzzu.communications.utils.APIExceptionJSONBuilder;
 import io.github.luzzu.communications.utils.APIResponse;
+import io.github.luzzu.exceptions.ExternalMetricLoaderException;
 import io.github.luzzu.exceptions.LuzzuIOException;
 import io.github.luzzu.exceptions.MetricProcessingException;
 import io.github.luzzu.exceptions.ProcessorNotEnabled;
@@ -48,7 +49,7 @@ public class AssessmentResource {
 	
 	final static Logger logger = LoggerFactory.getLogger(AssessmentResource.class);
 	private String JSON = MediaType.APPLICATION_JSON;
-	
+
 	
 	// --- GET REQUESTS --- //
 	@GET
@@ -204,7 +205,7 @@ public class AssessmentResource {
 		final Model modelConfig = _modelConfig;
 		
 		ExtendedCallable<Boolean> newRequest = new ExtendedCallable<Boolean>(){
-			public Boolean call()  throws LuzzuIOException, InterruptedException, MetricProcessingException {
+			public Boolean call()  throws LuzzuIOException, InterruptedException, MetricProcessingException, ExternalMetricLoaderException {
 				try {
 					strmProc = ProcessorController.getInstance().decide(baseURI, datasetURI, genQualityReport, modelConfig, isSparql, crawlDate);
 					strmProc.processorWorkFlow();

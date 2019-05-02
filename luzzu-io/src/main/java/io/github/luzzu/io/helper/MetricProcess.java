@@ -6,9 +6,11 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.ThreadFactory;
 
 import org.slf4j.Logger;
 
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
 import io.github.luzzu.assessment.QualityMetric;
 import io.github.luzzu.datatypes.Object2Quad;
@@ -23,7 +25,8 @@ public final class MetricProcess {
 //	private MetricProcessingException thrownException = null;
 	private Logger logger = null;
 	
-	private ExecutorService executor = Executors.newSingleThreadExecutor();
+	private ExecutorService executor = null;
+	
     private Future<Boolean> successfulProcessing = null;
     
     Long stmtsProcessed = 0l;
@@ -32,6 +35,9 @@ public final class MetricProcess {
     public MetricProcess(final Logger logger, final QualityMetric<?> m) {
     		this.logger = logger;
         	this.metricName = m.getClass().getSimpleName();
+        	
+        	ThreadFactory namedThreadFactory = new ThreadFactoryBuilder().setNameFormat(this.metricName+"-thread-%d").build();
+        	this.executor =  Executors.newSingleThreadExecutor(namedThreadFactory);
         	
         	Callable<Boolean> mProcess = new Callable<Boolean>() {
 				@Override
@@ -50,7 +56,7 @@ public final class MetricProcess {
 		        					curQuad = null; 
 		        					stmtsProcessed++;
 								} catch (MetricProcessingException e) {
-			        					ExceptionOutput.output(e, "Halting metric processing " + metricName+". Quad causing problem: "+curQuad.getStatement().toString(), logger);
+			        				ExceptionOutput.output(e, "Halting metric processing " + metricName+". Quad causing problem: "+curQuad.getStatement().toString(), logger);
 									stopSignal = true;
 									throw e;
 								}
@@ -61,6 +67,7 @@ public final class MetricProcess {
 				}
         		
         	};
+        	
         	successfulProcessing = executor.submit(mProcess);
     }
 

@@ -24,6 +24,7 @@ import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.riot.RDFFormat;
 import org.slf4j.Logger;
 
+
 import io.github.luzzu.annotations.ProblemReport;
 import io.github.luzzu.annotations.QualityMetadata;
 import io.github.luzzu.assessment.ComplexQualityMetric;
@@ -410,6 +411,7 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 			QualityMetadata md;
 			if (this.crawlDate == null) md = new QualityMetadata(model, res);
 			else md = new QualityMetadata(model, res, this.crawlDate);
+			
 			
 			// Write quality metadata about the metrics assessed through this processor
 			for(String className : this.metricInstances.keySet()){

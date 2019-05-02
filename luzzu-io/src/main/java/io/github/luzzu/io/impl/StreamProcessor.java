@@ -4,6 +4,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.ThreadFactory;
 
 import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFLanguages;
@@ -15,6 +16,8 @@ import org.apache.jena.riot.lang.PipedRDFStream;
 import org.apache.jena.riot.lang.PipedTriplesStream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
 import org.apache.jena.graph.Triple;
 import org.apache.jena.rdf.model.Model;
@@ -77,7 +80,8 @@ public class StreamProcessor extends AbstractIOProcessor {
 			
 			try {
 				loadMetrics();
-				this.executor = Executors.newSingleThreadExecutor();
+	        	ThreadFactory namedThreadFactory = new ThreadFactoryBuilder().setNameFormat("streamprocessor-parser-thread-%d").build();
+				this.executor = Executors.newSingleThreadExecutor(namedThreadFactory);
 				this.isInitalised = true;
 			} catch (ExternalMetricLoaderException e) {
 				ExceptionOutput.output(e, "Error loading metrics", logger);

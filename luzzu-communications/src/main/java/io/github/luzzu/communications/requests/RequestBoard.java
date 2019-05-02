@@ -13,6 +13,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.jena.query.Dataset;
@@ -26,6 +27,7 @@ import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.ListeningExecutorService;
 import com.google.common.util.concurrent.MoreExecutors;
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
 import io.github.luzzu.communications.ExtendedCallable;
 import io.github.luzzu.communications.exceptions.ResourceNotFoundException;
@@ -55,19 +57,20 @@ public class RequestBoard {
 
 	final static Logger logger = LoggerFactory.getLogger(RequestBoard.class);
 	
-	private static ExecutorService executor = Executors.newFixedThreadPool(12); //TODO: update from settings?
+	private static ThreadFactory namedThreadFactory = new ThreadFactoryBuilder().setNameFormat("requestboard-addrequest-thread-%d").build();
+	private static ExecutorService executor = Executors.newFixedThreadPool(12, namedThreadFactory); //TODO: update from settings?
 	private static ListeningExecutorService service = MoreExecutors.listeningDecorator(executor);
 
 	private static Map<AssessmentRequest,Future<Boolean>> computingResources = new ConcurrentHashMap<AssessmentRequest, Future<Boolean>>(); // resources under assessment
 	private static Map<AssessmentRequest, Callable<Boolean>> callableDirectory = new ConcurrentHashMap<AssessmentRequest, Callable<Boolean>>(); // holds all requests instances 
 	private static Map<String, AssessmentRequest> requestObjects = new ConcurrentHashMap<String, AssessmentRequest>();
 			
-	
-	
+		
 	private static Set<String> finishedResources = new HashSet<String>(); // completed assessment requests
 	
 	static {
-		ScheduledExecutorService execService =   Executors.newScheduledThreadPool(1);
+		ThreadFactory namedBackgroundThread = new ThreadFactoryBuilder().setNameFormat("requestboard-background-thread-%d").build();
+		ScheduledExecutorService execService =   Executors.newScheduledThreadPool(1, namedBackgroundThread);
 		execService.scheduleAtFixedRate(()->{
 			computingResources.forEach((req, future) -> {
 				try {
@@ -120,7 +123,7 @@ public class RequestBoard {
 	    		if (!finishedResources.contains(uuid)) {
 	        		Future<Boolean> handler = computingResources.get(req);
 	        		if (handler.isDone()){
-					Boolean result = handler.get();
+	        			Boolean result = handler.get();
 	        			computingResources.remove(req);
 	        			requestObjects.remove(uuid);
 	        			callableDirectory.remove(req);
@@ -180,9 +183,9 @@ public class RequestBoard {
 		if (req != null) {
 	    		if (!finishedResources.contains(uuid)) {
 	    			ExtendedCallable<Boolean> callable = (ExtendedCallable<Boolean>) callableDirectory.get(req);
-				List<IOStats> stats = callable.getIOProcessor().getIOStats();
-				AssessmentStatistics as = new AssessmentStatistics(uuid, stats);
-				return as.toString();
+					List<IOStats> stats = callable.getIOProcessor().getIOStats();
+					AssessmentStatistics as = new AssessmentStatistics(uuid, stats);
+					return as.toString();
 	    		} else {
 	    			return req.toString(); 
 	    		}

@@ -12,5 +12,4 @@ public abstract class ExtendedCallable<V> implements Callable<V> {
 		if (this.strmProc == null) return null;
 		else return this.strmProc;
 	}
-
 }
