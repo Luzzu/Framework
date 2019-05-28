@@ -92,6 +92,9 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 	
 	protected LuzzuFileLock locker = LuzzuFileLock.getInstance();
 	
+	//Triple Store Upload
+	protected useFusekiStore = false;
+	
 	protected Logger logger = null;
 	
 	{	
@@ -106,6 +109,7 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 			metadataBaseDir = System.getProperty("user.dir") + "/qualityMetadata";
 		} else {
 			metadataBaseDir = props.getProperties("luzzu.properties").getProperty("QUALITY_METADATA_BASE_DIR");
+			useFusekiStore = props.getProperties("luzzu.properties").getProperty("USE_FUSEKI_SERVER");
 		}
 	}
 	
@@ -358,9 +362,12 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 			fileName = fileName.substring(0, lastIndexPos);
 		}
 		
+		if(useFusekiStore)
+		{
 		//Write ProblemReport to Datastore
 		LoadToDataStore ltds = new LoadToDataStore();
 		ltds.loadData(fileName,prFile.getAbsolutePath());
+		}
 
 	}
 	
@@ -440,9 +447,12 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 				RDFDataMgr.write(out, md.createQualityMetadata(), RDFFormat.TRIG_PRETTY);
 				
 				logger.info("[IOProcessor - {}] Quality metadata for {} written successfully. File stored: {}",this.datasetPLD,metadataFilePath);
+				if(useFusekiStore)
+				{
 				//Write Quality Metadata to Datastore
 				LoadToDataStore ltds = new LoadToDataStore();
 				ltds.loadData("defaultGraph",metadataFilePath);
+				}
 			} catch(MetadataException | IOException ex) {
 				ExceptionOutput.output(ex, "Error in generating quality metadata file for "+this.datasetPLD, logger);
 			}
