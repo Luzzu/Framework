@@ -50,6 +50,7 @@ import io.github.luzzu.operations.properties.PropertyManager;
 import io.github.luzzu.qml.parser.ParseException;
 import io.github.luzzu.qualityproblems.ProblemCollection;
 import io.github.luzzu.semantics.vocabularies.LMI;
+import io.github.luzzu.io.LoadToDataStore;
 
 public abstract class AbstractIOProcessor implements IOProcessor {
 
@@ -91,6 +92,9 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 	
 	protected LuzzuFileLock locker = LuzzuFileLock.getInstance();
 	
+	//Triple Store Upload
+	protected boolean useFusekiStore = false;
+	
 	protected Logger logger = null;
 	
 	protected Map<String, Resource> observationURIs = new ConcurrentHashMap<String, Resource>();
@@ -107,6 +111,7 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 			metadataBaseDir = System.getProperty("user.dir") + "/qualityMetadata";
 		} else {
 			metadataBaseDir = props.getProperties("luzzu.properties").getProperty("QUALITY_METADATA_BASE_DIR");
+			useFusekiStore = Boolean.parseBoolean(props.getProperties("luzzu.properties").getProperty("USE_FUSEKI_SERVER"));
 		}
 	}
 	
@@ -353,6 +358,18 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 			ExceptionOutput.output(e, "Error in generating Problem Report File for "+this.datasetPLD, logger);
 		}
 		
+		//Write ProblemReport to Datastore
+		String fileName = prFile.getName();
+		int lastIndexPos = fileName.lastIndexOf(".");
+		if (lastIndexPos > 0) {
+			fileName = fileName.substring(0, lastIndexPos);
+		}
+		if(useFusekiStore)
+		{
+		//Write ProblemReport to Datastore
+		LoadToDataStore ltds = new LoadToDataStore();
+		ltds.loadData(fileName,prFile.getAbsolutePath());
+		}
 
 	}
 	
@@ -434,6 +451,12 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 				RDFDataMgr.write(out, md.createQualityMetadata(), RDFFormat.TRIG_PRETTY);
 				
 				logger.info("[IOProcessor - {}] Quality metadata for {} written successfully. File stored: {}",this.datasetPLD,metadataFilePath);
+				if(useFusekiStore)
+				{
+				//Write Quality Metadata to Datastore
+				LoadToDataStore ltds = new LoadToDataStore();
+				ltds.loadData("defaultGraph",metadataFilePath);
+				}
 			} catch(MetadataException | IOException ex) {
 				ExceptionOutput.output(ex, "Error in generating quality metadata file for "+this.datasetPLD, logger);
 			}

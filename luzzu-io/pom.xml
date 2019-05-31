@@ -95,7 +95,13 @@
 		    <artifactId>httpclient</artifactId>
 		    <version>4.5.2</version>
 		</dependency>
-
+		
+		<!-- This is to support file upload to Triple Store -->
+		<dependency>
+    		<groupId>org.apache.httpcomponents</groupId>
+    		<artifactId>httpmime</artifactId>
+    		<version>4.5.2</version>
+		</dependency>
 
 		<!-- required for SPARK 
 		<dependency>
