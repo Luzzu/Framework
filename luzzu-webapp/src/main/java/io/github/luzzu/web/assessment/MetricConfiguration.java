@@ -14,6 +14,7 @@ import org.slf4j.LoggerFactory;
 
 import io.github.luzzu.semantics.commons.ResourceCommons;
 import io.github.luzzu.semantics.configuration.InternalModelConf;
+import io.github.luzzu.semantics.vocabularies.DAQ;
 import io.github.luzzu.semantics.vocabularies.LMI;
 import io.github.luzzu.web.ranking.Facets;
 
@@ -64,10 +65,13 @@ public class MetricConfiguration {
 				String metricComment = "";
 				if (comment.hasNext()) metricComment = comment.next().asLiteral().getString();
 				
+				Resource expectedDataType = internalModel.listObjectsOfProperty(metric, DAQ.expectedDataType).nextNode().asResource();
 				
 				Resource bn = ResourceCommons.generateRDFBlankNode().asResource();
 				returnModel.add(bn, LMI.javaPackageName, returnModel.createLiteral(jpn));
 				returnModel.add(bn, RDFS.label, returnModel.createLiteral(label));
+				returnModel.add(bn, LMI.referTo, metric);
+				returnModel.add(bn, DAQ.expectedDataType, expectedDataType);
 				if (metricComment != "") returnModel.add(bn, RDFS.comment, returnModel.createLiteral(metricComment));
 			}
 		}
