@@ -69,7 +69,6 @@ public class ProblemReport {
 	/**
 	 * Create instance triples corresponding towards a Quality Report
 	 * 
-	 * @param computedOn - The resource URI of the dataset computed on
 	 * @param problemCollection - A list of quality problem collections
 	 * 
 	 */
@@ -91,6 +90,35 @@ public class ProblemReport {
 		}
 		problemCollection.cleanup();
 	}
+	
+	/**
+	 * Create instance triples corresponding towards a Quality Report
+	 * 
+	 * @param problemCollection - A list of quality problem collections
+	 * @param observationURI - The observation URI for problem
+	 * 
+	 */
+	public void addToQualityProblemReport(ProblemCollection<?> problemCollection, Resource observationURI){
+		Resource problemURI = problemCollection.getProblemURI();
+		this.m.add(new StatementImpl(this.reportURI, QPRO.hasProblem, problemURI));
+		this.m.add(new StatementImpl(problemURI, QPRO.generatedBy, observationURI));
+
+
+		Dataset d = problemCollection.getDataset();
+
+		try {
+			d.begin(ReadWrite.READ);
+			problemCollection.getReentrantLock().lock();
+			Model _m = d.getNamedModel(problemCollection.getNamedGraph());
+			RDFDataMgr.write(this.serialisationOutput, _m, RDFFormat.TURTLE_PRETTY);
+		} finally {
+			problemCollection.getReentrantLock().unlock();
+			d.end();
+			d.close();
+		}
+		problemCollection.cleanup();
+	}
+	
 	
 
 	@Deprecated

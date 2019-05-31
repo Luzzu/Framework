@@ -93,6 +93,8 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 	
 	protected Logger logger = null;
 	
+	protected Map<String, Resource> observationURIs = new ConcurrentHashMap<String, Resource>();
+	
 	{	
 		// Initialize cache manager
 		cacheMgr.createNewCache(graphCacheName, 50, true);
@@ -332,7 +334,7 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 				ProblemCollection<?> problemCollection = metric.getProblemCollection();
 				if (problemCollection != null) {
 					if (!problemCollection.isEmpty())  {
-						report.addToQualityProblemReport(problemCollection);
+						report.addToQualityProblemReport(problemCollection, observationURIs.get(className));
 					}
 				}
 			}
@@ -417,7 +419,8 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 			for(String className : this.metricInstances.keySet()){
 				QualityMetric<?> m = this.metricInstances.get(className);
 				try { 
-					md.addMetricData(m);
+					Resource observation = md.addMetricData(m);
+					observationURIs.put(className, observation);
 				} catch (MetadataException e) {
 					ExceptionOutput.output(e, "Error in creating quality metadata", logger);
 				}

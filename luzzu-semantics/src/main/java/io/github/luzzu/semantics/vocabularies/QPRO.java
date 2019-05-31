@@ -37,6 +37,11 @@ public class QPRO {
     /** <p>Identifies problem instances in the report</p> */
     public static final Property hasProblem = M_MODEL.createProperty( "http://purl.org/eis/vocab/qpro#hasProblem" );
     
+    
+    /** <p>Links a quality problem to a particular observation in the metadata</p> */
+    public static final Property generatedBy = M_MODEL.createProperty( "http://purl.org/eis/vocab/qpro#generatedBy" );
+
+    
     /** <p>This property enables the reification of quads by creating a new property 
      *  to define the context of a triple statement.</p>
      */

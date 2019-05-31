@@ -121,11 +121,13 @@ public class QualityMetadata {
 	
 
 	/**
-	 * Creates observational data for the assessed metric
+	 * Creates observation data for the assessed metric
 	 * 
 	 * @param metric - Metric Class
+	 * 
+	 * @return Observation URI which will be used for the quality problem report
 	 */
-	public void addMetricData(QualityMetric<?> metric) throws MetadataException {
+	public Resource addMetricData(QualityMetric<?> metric) throws MetadataException {
 		Resource categoryURI = null;
 		try {
 			Resource categoryType = DAQHelper.getCategoryResource(metric.getMetricURI());
@@ -191,6 +193,8 @@ public class QualityMetadata {
 		}
 		
 		this.metadata.add(observationURI, CUBE.dataSet, qualityGraph);
+		
+		return observationURI;
 	}
 	
 	/**
