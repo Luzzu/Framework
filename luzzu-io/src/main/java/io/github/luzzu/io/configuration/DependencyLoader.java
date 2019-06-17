@@ -112,12 +112,13 @@ public class DependencyLoader {
 
 		CollectRequest collectRequest = new CollectRequest();
 		collectRequest.setRoot( dependency );
-		collectRequest.addRepository( central );
+		collectRequest.addRepository(central);
 
 		DependencyRequest dependencyRequest = new DependencyRequest();
 		dependencyRequest.setCollectRequest( collectRequest );
 
 		system.resolveDependencies(session, dependencyRequest ).getRoot();
+		//TODO: catch exception
 	}
 
 	private class POMDependency{
