@@ -246,6 +246,10 @@ public abstract class AbstractIOProcessor implements IOProcessor {
 			metricInstances.put(className, metric);
 		}
 		
+		initiateMetricProcessThreads();
+	}
+	
+	protected void initiateMetricProcessThreads() {
 		for(String className : this.metricInstances.keySet()) {
 			if (this.metricInstances.get(className) instanceof ComplexQualityMetric<?>){
 				try {
