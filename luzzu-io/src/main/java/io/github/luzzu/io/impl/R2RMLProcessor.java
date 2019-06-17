@@ -32,7 +32,7 @@ public class R2RMLProcessor extends AbstractIOProcessor {
 	final static Logger logger = LoggerFactory.getLogger(R2RMLProcessor.class);
 
 	private Model mappingModel = ModelFactory.createDefaultModel();
-	private List<R2RMLMapping> r2rmlMappings = Collections.synchronizedList(new ArrayList<R2RMLMapping>());
+	protected List<R2RMLMapping> r2rmlMappings = Collections.synchronizedList(new ArrayList<R2RMLMapping>());
 
 	public R2RMLProcessor(String mappingURIID, String mappingFileLocation, boolean genQualityReport, Model configuration) {
 		super(mappingURIID, mappingFileLocation, genQualityReport, configuration);
@@ -163,4 +163,5 @@ public class R2RMLProcessor extends AbstractIOProcessor {
 	public void setMappingModel(Model mappingModel) {
 		this.mappingModel = mappingModel;
 	}
+
 }
