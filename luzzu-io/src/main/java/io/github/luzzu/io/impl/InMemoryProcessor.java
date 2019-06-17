@@ -150,30 +150,6 @@ public class InMemoryProcessor extends AbstractIOProcessor {
 		this.lstMetricConsumers.clear();
 		this.metricInstances.clear();
 	}
-
-//	@Override
-//	public void processorWorkFlow() throws LuzzuIOException{
-//		this.setUpProcess();
-//		
-//		try {
-//			this.startProcessing();
-//		} catch (ProcessorNotInitialised e) {
-//			logger.warn("[MemoryProcessor - {}]Processor not initialized while trying to start dataset processing. Dataset: {}", 
-//						(new io.github.luzzu.commons.Date()).getDate(), this.datasetLocation);
-//			this.processorWorkFlow();
-//		}
-//		
-//		if (!forcedCancel){
-//			this.generateAndWriteQualityMetadataReport();
-//			if (this.genQualityReport) {
-//				this.generateAndWriteQualityProblemReport();
-//			} else {
-//				this.clearTDBFiles();
-//			}
-//		} else {
-//			this.clearTDBFiles();
-//		}
-//	}
 	
 	public Dataset getMemoryModel() {
 		return memoryModel;
