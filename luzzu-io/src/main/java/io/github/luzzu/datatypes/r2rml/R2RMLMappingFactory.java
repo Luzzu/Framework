@@ -56,6 +56,11 @@ public class R2RMLMappingFactory {
 		return createR2RMLMapping(data, baseIRI);
 	}
 
+	// If mapping is contained in Jena Model
+	public static R2RMLMapping createR2RMLMappingFromModel(Model data) {
+		return createR2RMLMapping(data, "");
+	}
+
 	private static R2RMLMapping createR2RMLMapping(Model data, String baseIRI) {
 		R2RMLMapping mapping = new R2RMLMapping();
 

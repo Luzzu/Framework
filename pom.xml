@@ -65,7 +65,7 @@ use-case driven discovery and retrieval.</description>
 		<jerseymedia.version>2.11</jerseymedia.version>
 		<powermock.version>1.7.3</powermock.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<luzzu.version>4.0.0</luzzu.version>
+		<luzzu.version>5.0.0</luzzu.version>
 		<guava.version>23.6-jre</guava.version> <!-- 18.0 -->
 		<slf4j.version>1.7.5</slf4j.version>
 		<jackson.version>2.9.5</jackson.version>
@@ -365,5 +365,5 @@ use-case driven discovery and retrieval.</description>
 		</repository>
 	</distributionManagement>
 
-	<version>4.0.0</version>
+	<version>5.0.0</version>
 </project>

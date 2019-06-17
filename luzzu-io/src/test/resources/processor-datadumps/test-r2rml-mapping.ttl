@@ -1,0 +1,29 @@
+# Mapping created using Juma editor.
+# 1 class from geo
+  @prefix rr: <http://www.w3.org/ns/r2rml#> .
+  @prefix rrf: <http://kdeg.scss.tcd.ie/ns/rrf#> .
+  @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+  @prefix ex: <http://example.org/> .
+  @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+  @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+  <#TriplesMap1>
+  rr:logicalTable [
+    rr:tableName "city";
+  ];
+
+   rr:subjectMap [
+      rr:template "http://example.org/city/{city_id}";
+      rr:class geo:SpatialThing;
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant rdfs:label;
+    ];
+
+     rr:objectMap [
+      rr:column "name";
+     ];
+  ];
+.

@@ -13,3 +13,7 @@ _:SimpleCountMetric a lmi:LuzzuMetricJavaImplementation ;
 _:SimpleTitleMetric a lmi:LuzzuMetricJavaImplementation ;
 	rdfs:label "Simple Title Metric" ;
 	lmi:javaPackageName "io.github.luzzu.testing.metrics.SimpleTitleMetric" .
+	
+_:ComplexR2RMLMetric a lmi:LuzzuMetricJavaImplementation ;
+	rdfs:label "Complex R2RML Metric" ;
+	lmi:javaPackageName "io.github.luzzu.testing.metrics.ComplexR2RMLMetric" .	
