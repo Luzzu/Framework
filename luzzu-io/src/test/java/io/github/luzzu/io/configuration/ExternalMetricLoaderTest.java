@@ -21,7 +21,7 @@ public class ExternalMetricLoaderTest extends Assert {
 	
 	@Test
 	public void getQualityMetricClassesTest() {
-		assertEquals(2,loader.getQualityMetricClasses().size());
+		assertEquals(3,loader.getQualityMetricClasses().size());
 	}
 	
 	
