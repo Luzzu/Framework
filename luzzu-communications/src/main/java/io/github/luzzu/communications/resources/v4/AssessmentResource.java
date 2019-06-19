@@ -177,24 +177,27 @@ public class AssessmentResource {
 	}
 	
 	private String requestQualityAssessment(MultivaluedMap<String, String> parameters) {
+		
+		//TODO: Set default values and thus remove compulsory checks
 		final String datasetURI = parameters.get("Dataset-Location").get(0);
 		final String  jsonStrMetricsConfig = parameters.get("Metrics-Configuration").get(0);
 		final String  baseURI = parameters.get("Dataset-PLD").get(0);
 		final Boolean isSparql = Boolean.parseBoolean(parameters.get("Is-Sparql-Endpoint").get(0));
 		final Boolean genQualityReport = Boolean.parseBoolean(parameters.get("Quality-Report-Required").get(0));
-		
-		logger.debug("Assessment Request -\nDataset URI: {}\nBase URI: {}\nMetrics: {}\nIs-Sparql: {}\nGenerate Problem Report: {}",
-				datasetURI, baseURI, jsonStrMetricsConfig, isSparql, genQualityReport);
+		final Boolean isMappingFile = Boolean.parseBoolean(parameters.get("Is-Mapping-File").get(0));
+
+		logger.debug("Assessment Request -\nDataset URI: {}\nBase URI: {}\nMetrics: {}\nIs-Sparql: {}\nGenerate Problem Report: {}\nIs an (R2)RML mapping file: {}",
+				datasetURI, baseURI, jsonStrMetricsConfig, isSparql, genQualityReport, isMappingFile);
 
 		final String crawlDate;
 		if (parameters.containsKey("Crawl-Date")) {
 			crawlDate = parameters.get("Crawl-Date").get(0);
-			logger.debug("Processing request parameters. Dataset-Location: {}; Quality-Report-Required: {}; Metrics-Configuration: {}; Dataset-PLD: {}; Is-Sparql-Endpoint: {}; Crawl-Date: {}", 
-					datasetURI, genQualityReport, jsonStrMetricsConfig, baseURI, isSparql, crawlDate);
+			logger.debug("Processing request parameters. Dataset-Location: {}; Quality-Report-Required: {}; Metrics-Configuration: {}; Dataset-PLD: {}; Is-Sparql-Endpoint: {}; Is an (R2)RML mapping file: {}; Crawl-Date: {}", 
+					datasetURI, genQualityReport, jsonStrMetricsConfig, baseURI, isSparql, isMappingFile, crawlDate);
 		} else {
 			crawlDate = null;
-			logger.debug("Processing request parameters. Dataset-Location: {}; Quality-Report-Required: {}; Metrics-Configuration: {}; Dataset-PLD: {}; Is-Sparql-Endpoint: {}", 
-					datasetURI, genQualityReport, jsonStrMetricsConfig, baseURI, isSparql);
+			logger.debug("Processing request parameters. Dataset-Location: {}; Quality-Report-Required: {}; Metrics-Configuration: {}; Dataset-PLD: {}; Is-Sparql-Endpoint: {}; Is an (R2)RML mapping file: {}", 
+					datasetURI, genQualityReport, jsonStrMetricsConfig, baseURI, isSparql, isMappingFile);
 //			System.out.printf("Processing request parameters. Dataset-Location: %s; Quality-Report-Required: %s; Metrics-Configuration: %s; Dataset-PLD: %s; Is-Sparql-Endpoint: %s", 
 //					datasetURI, genQualityReport, jsonStrMetricsConfig, baseURI, isSparql);				
 
@@ -207,7 +210,7 @@ public class AssessmentResource {
 		ExtendedCallable<Boolean> newRequest = new ExtendedCallable<Boolean>(){
 			public Boolean call()  throws LuzzuIOException, InterruptedException, MetricProcessingException, ExternalMetricLoaderException {
 				try {
-					strmProc = ProcessorController.getInstance().decide(baseURI, datasetURI, genQualityReport, modelConfig, isSparql, crawlDate);
+					strmProc = ProcessorController.getInstance().decide(baseURI, datasetURI, genQualityReport, modelConfig, isSparql, crawlDate, isMappingFile);
 					strmProc.processorWorkFlow();
 				} catch (SyntaxErrorException e) {
 					// Do nothing because this exception is already logged

@@ -25,11 +25,13 @@ public class RequestValidator {
 	
 	public static boolean computeRequest(MultivaluedMap<String, String> parameters) {
 		
+		//TODO: Set default values and thus remove compulsory checks
 		final List<String> lstDatasetURI = parameters.get("Dataset-Location");
 		final List<String> lstQualityReportReq = parameters.get("Quality-Report-Required");
 		final List<String> lstMetricsConfig = parameters.get("Metrics-Configuration");
 		final List<String> lstBaseUri = parameters.get("Dataset-PLD");
 		final List<String> lstIsSparql = parameters.get("Is-Sparql-Endpoint");
+		final List<String> lstIsMappingFile = parameters.get("Is-Mapping-File");
 											
 		if(lstDatasetURI == null || lstDatasetURI.size() <= 0) {
 			throw new IllegalArgumentException("Dataset-Location parameter was not provided");
@@ -45,6 +47,9 @@ public class RequestValidator {
 		}
 		if(lstIsSparql == null || lstIsSparql.size() <= 0) {
 			throw new IllegalArgumentException("Is-Sparql-Endpoint parameter was not provided");
+		}
+		if(lstIsMappingFile == null || lstIsMappingFile.size() <= 0) {
+			throw new IllegalArgumentException("Is-Mapping-File parameter was not provided");
 		}
 		
 		return true;

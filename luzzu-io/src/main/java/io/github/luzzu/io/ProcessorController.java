@@ -14,6 +14,7 @@ import io.github.luzzu.exceptions.ProcessorNotEnabled;
 import io.github.luzzu.io.impl.HDTProcessor;
 import io.github.luzzu.io.impl.InMemoryProcessor;
 import io.github.luzzu.io.impl.LargeNTGZStreamProcessor;
+import io.github.luzzu.io.impl.R2RMLProcessor;
 import io.github.luzzu.io.impl.SPARQLEndPointProcessor;
 import io.github.luzzu.io.impl.StreamProcessor;
 import io.github.luzzu.operations.lowlevel.ExceptionOutput;
@@ -34,13 +35,24 @@ public class ProcessorController {
 		return instance;
 	}
 	
-	public IOProcessor decide(String baseURI, String datasetURI, boolean genQualityReport, Model modelConfig, boolean isSparql, String crawlDate) throws LuzzuIOException {
-		if (isSparql) {
+	public IOProcessor decide(String baseURI, String datasetURI, boolean genQualityReport, Model modelConfig, boolean isSparql, String crawlDate, boolean isMappingFile) throws LuzzuIOException {
+		if (isMappingFile) {
+			System.out.println("Using R2RML Processor for the Assessment");
+			logger.info("[Processor Controller] Choice: R2RML Processor");
+			if (crawlDate == null)
+				return new R2RMLProcessor(baseURI, datasetURI, genQualityReport, modelConfig);
+			else 
+				return new R2RMLProcessor(baseURI, datasetURI, genQualityReport, modelConfig,crawlDate);
+		} 
+		else if (isSparql) {
+			System.out.println("Using SPARQL Processor for the Assessment");
+			logger.info("[Processor Controller] Choice: SPARQL Processor");
 			if (crawlDate == null)
 				return new SPARQLEndPointProcessor(baseURI, datasetURI, genQualityReport, modelConfig);
 			else 
 				return new SPARQLEndPointProcessor(baseURI, datasetURI, genQualityReport, modelConfig,crawlDate);
-		} else if (datasetURI.endsWith("hdt")) {
+		} 
+		else if (datasetURI.endsWith("hdt")) {
 			System.out.println("Using an HDT Processor for the Assessment");
 			logger.info("[Processor Controller] Choice: HDT Processor");
 			
