@@ -7,6 +7,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.slf4j.Logger;
 
@@ -31,6 +32,7 @@ public final class MetricProcess {
 
 	Long stmtsProcessed = 0l;
 	boolean stopSignal = false;
+	AtomicBoolean threadFinished = new AtomicBoolean(false);
 
 	public MetricProcess(final Logger logger, final QualityMetric<?> m) {
 		this.logger = logger;
@@ -55,6 +57,7 @@ public final class MetricProcess {
 							m.compute(curQuad.getStatement());
 							curQuad = null;
 							stmtsProcessed++;
+							threadFinished.set(true);
 						} catch (MetricProcessingException e) {
 							ExceptionOutput.output(e, "Halting metric processing " + metricName + ". Quad causing problem: " + curQuad.getStatement().toString(), logger);
 							stopSignal = true;
@@ -80,7 +83,7 @@ public final class MetricProcess {
 	}
 
 	public void stop() {
-		while (!quadsToProcess.isEmpty()) {
+		while ((!quadsToProcess.isEmpty()) && (!threadFinished.get())) {
 			logger.trace("Waiting for items on queue: {} Metric: {}", quadsToProcess.size(), this.metricName);
 		}
 
