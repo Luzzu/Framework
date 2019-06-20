@@ -83,7 +83,7 @@ public final class MetricProcess {
 	}
 
 	public void stop() {
-		while ((!quadsToProcess.isEmpty()) && (!threadFinished.get())) {
+		while ((!quadsToProcess.isEmpty()) || (!threadFinished.get())) {
 			logger.trace("Waiting for items on queue: {} Metric: {}", quadsToProcess.size(), this.metricName);
 		}
 
