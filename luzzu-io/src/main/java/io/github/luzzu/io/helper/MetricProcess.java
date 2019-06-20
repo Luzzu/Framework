@@ -32,7 +32,7 @@ public final class MetricProcess {
 
 	Long stmtsProcessed = 0l;
 	boolean stopSignal = false;
-	AtomicBoolean threadFinished = new AtomicBoolean(false);
+	AtomicBoolean rmlProcessingDone = new AtomicBoolean(false);
 
 	public MetricProcess(final Logger logger, final QualityMetric<?> m) {
 		this.logger = logger;
@@ -57,7 +57,7 @@ public final class MetricProcess {
 							m.compute(curQuad.getStatement());
 							curQuad = null;
 							stmtsProcessed++;
-							threadFinished.set(true);
+							rmlProcessingDone.set(true);
 						} catch (MetricProcessingException e) {
 							ExceptionOutput.output(e, "Halting metric processing " + metricName + ". Quad causing problem: " + curQuad.getStatement().toString(), logger);
 							stopSignal = true;
@@ -83,7 +83,7 @@ public final class MetricProcess {
 	}
 
 	public void stop() {
-		while ((!quadsToProcess.isEmpty()) || (!threadFinished.get())) {
+		while ((!quadsToProcess.isEmpty()) || (!rmlProcessingDone.get())) {
 			logger.trace("Waiting for items on queue: {} Metric: {}", quadsToProcess.size(), this.metricName);
 		}
 
