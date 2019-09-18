@@ -25,12 +25,12 @@
 
 	<root>
 		<priority value="INFO" />
-		<appender-ref ref="rollingFile" />
+		<appender-ref ref="console" />
 	</root>
 
 	<logger name="org.apache.jena">
 		<level value="error" />
-		<appender-ref ref="rollingFile" />
+		<appender-ref ref="console" />
 	</logger>
 
 

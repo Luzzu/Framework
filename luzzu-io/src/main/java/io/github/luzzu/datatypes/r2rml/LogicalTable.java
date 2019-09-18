@@ -35,21 +35,25 @@ public class LogicalTable extends R2RMLResource {
 		// LogicalTable: Being one of its subclasses, rr:BaseTableOrView or rr:R2RMLView
 		// BaseTableOrView: Having an rr:tableName property
 		// R2RMLView: Having an rr:sqlQuery property
+		// RMLView: being a Logical Source
 
 		boolean isBaseTableOrView = false;
 		boolean isR2RMLView = false;
+		boolean isRMLView = false;
 		List<Statement> list = description.listProperties(RDF.type).toList();
 		for (Statement s : list) {
 			if (s.getObject().equals(R2RML.BaseTableOrView))
 				isBaseTableOrView = true;
 			if (s.getObject().equals(R2RML.R2RMLView))
 				isR2RMLView = true;
+			if (s.getObject().equals(RML.LogicalSource))
+				isRMLView = true;
 		}
 
 		// We will not explicitly check whether it is a LogicalTable as it has
 		// to be one of its subclasses and -- via inference -- a LogicalTable.
 		// Perform XOR to see if it is exactly one of its subclasses.
-		if (!(isBaseTableOrView ^ isR2RMLView)) {
+		if (!(isBaseTableOrView ^ isR2RMLView ^ isRMLView)) {
 			logger.error("LogicalTable must be exactly one of its subclasses.");
 			logger.error(description);
 			return false;
@@ -76,7 +80,7 @@ public class LogicalTable extends R2RMLResource {
 			// All clear
 			tableName = n.toString();
 
-		} else {
+		} else if (isR2RMLView) {
 			// Check cardinality
 			List<Statement> l = description.listProperties(R2RML.sqlQuery).toList();
 			if (l.size() != 1) {
@@ -102,6 +106,26 @@ public class LogicalTable extends R2RMLResource {
 			// by removing one.
 			if (sqlQuery.endsWith(";"))
 				sqlQuery = sqlQuery.substring(0, sqlQuery.length() - 1);
+		} else {
+			// Check cardinality
+			List<Statement> l = description.listProperties(RML.source).toList();
+			if (l.size() != 1) {
+				logger.error("LogicalSource must have exactly one rml:source.");
+				logger.error(description);
+				return false;
+			}
+
+			// Check value
+			RDFNode n = l.get(0).getObject();
+
+			if (!n.isLiteral() || !n.asLiteral().getDatatype().getURI().equals(XSD.xstring.getURI())) {
+				logger.error("Source is not a valid xsd:string.");
+				logger.error(description);
+				return false;
+			}
+
+			// All clear
+			tableName = n.toString();
 		}
 
 		return true;

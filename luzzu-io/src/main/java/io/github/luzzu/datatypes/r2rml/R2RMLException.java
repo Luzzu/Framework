@@ -15,4 +15,8 @@ public class R2RMLException extends Exception {
 		super(message, throwable);
 	}
 
+	public R2RMLException(String message) {
+		super(message);
+	}
+
 }

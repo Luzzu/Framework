@@ -1,10 +1,8 @@
 package io.github.luzzu.datatypes.r2rml;
 
 import java.net.MalformedURLException;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -27,18 +25,6 @@ public abstract class TermMap extends R2RMLResource {
 
 	private static Logger logger = Logger.getLogger(TermMap.class.getName());
 	private Resource termType = null;
-
-	/*
-	 * Term generation rules for blank nodes. If the term type is rr:BlankNode: Return a blank node
-	 * that is unique to the natural RDF lexical form corresponding to value. This seems to imply
-	 * that there is a one-on-one mapping for each value and blank node. We will thus map the
-	 * outcome of the constant, template, or column to the same blank node. In other words, if two
-	 * TermMaps use "test"^^xsd:string, return same blank node. "1"^^xsd:string and "1"^^xsd:integer
-	 * are different.
-	 * 
-	 */
-	private static Map<Object, Resource> blankNodeMap = new HashMap<Object, Resource>();
-
 	private String template;
 	protected RDFNode constant;
 	private String column;
@@ -59,9 +45,10 @@ public abstract class TermMap extends R2RMLResource {
 		List<Statement> templates = description.listProperties(R2RML.template).toList();
 		List<Statement> constants = description.listProperties(R2RML.constant).toList();
 		List<Statement> columns = description.listProperties(R2RML.column).toList();
+		List<Statement> references = description.listProperties(RML.reference).toList();
 
 		// Having exactly one of rr:constant, rr:column, rr:template
-		if (templates.size() + constants.size() + columns.size() != 1) {
+		if (templates.size() + constants.size() + columns.size() + references.size() != 1) {
 			logger.error("TermMap must have exactly one of rr:constant, rr:column, rr:template, and rrf:functionCall.");
 			logger.error(description);
 			return false;
@@ -98,6 +85,13 @@ public abstract class TermMap extends R2RMLResource {
 			constant = distillConstant(constants.get(0).getObject());
 			if (constant == null)
 				return false;
+		} else if (references.size() == 1) {
+			column = distillColumnName(references.get(0).getObject());
+			if (column == null) {
+				logger.error("The value of the rr:column property must be a valid column name.");
+				logger.error(description);
+				return false;
+			}
 		}
 
 		// Validity of the termType is also local.

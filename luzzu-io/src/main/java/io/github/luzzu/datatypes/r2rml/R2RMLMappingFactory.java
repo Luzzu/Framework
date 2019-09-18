@@ -2,9 +2,6 @@ package io.github.luzzu.datatypes.r2rml;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.util.List;
 
 import org.apache.jena.query.QueryExecutionFactory;
@@ -37,31 +34,31 @@ public class R2RMLMappingFactory {
 	private static String CONSTRUCTLITERAL = "PREFIX rr: <http://www.w3.org/ns/r2rml#> CONSTRUCT { ?x rr:termType rr:Literal . } WHERE { ?x rr:constant ?y . FILTER (isLiteral(?y)) }";
 
 	// If mapping is contained in a String (in TURTLE)
-	public static R2RMLMapping createR2RMLMappingFromString(String mapping, String baseIRI) {
+	public static R2RMLMapping createR2RMLMappingFromString(String mapping, String baseIRI) throws R2RMLException {
 		Model data = ModelFactory.createDefaultModel();
 		data.read(new ByteArrayInputStream(mapping.getBytes()), null, "TURTLE");
 		return createR2RMLMapping(data, baseIRI);
 	}
 
 	// If mapping is contained in a Input Stream (in TURTLE)
-	public static R2RMLMapping createR2RMLMappingFromInputStream(InputStream mapping, String baseIRI) {
+	public static R2RMLMapping createR2RMLMappingFromInputStream(InputStream mapping, String baseIRI) throws R2RMLException {
 		Model data = ModelFactory.createDefaultModel();
 		data.read(mapping, null, "TURTLE");
 		return createR2RMLMapping(data, baseIRI);
 	}
 
 	// If mapping is contained in file
-	public static R2RMLMapping createR2RMLMappingFromFile(String mappingFile, String baseIRI) {
+	public static R2RMLMapping createR2RMLMappingFromFile(String mappingFile, String baseIRI) throws R2RMLException {
 		Model data = FileManager.get().loadModel(mappingFile);
 		return createR2RMLMapping(data, baseIRI);
 	}
 
 	// If mapping is contained in Jena Model
-	public static R2RMLMapping createR2RMLMappingFromModel(Model data) {
+	public static R2RMLMapping createR2RMLMappingFromModel(Model data) throws R2RMLException {
 		return createR2RMLMapping(data, "");
 	}
 
-	private static R2RMLMapping createR2RMLMapping(Model data, String baseIRI) {
+	private static R2RMLMapping createR2RMLMapping(Model data, String baseIRI) throws R2RMLException {
 		R2RMLMapping mapping = new R2RMLMapping();
 
 		// We reason over the mapping to facilitate retrieval of the mappings
@@ -84,38 +81,19 @@ public class R2RMLMappingFactory {
 
 		if (list.isEmpty()) {
 			logger.error("R2RML Mapping File has no TriplesMaps.");
-			return null;
+			throw new R2RMLException("R2RML Mapping File has no TriplesMaps.");
 		}
 
 		for (Resource tm : list) {
 			TriplesMap triplesMap = new TriplesMap(tm, baseIRI);
 			if (!triplesMap.preProcessAndValidate()) {
 				// Something went wrong, abort.
-				return null;
+				throw new R2RMLException("An error was found in your mapping. Check log for details.");
 			}
 			mapping.addTriplesMap(tm, triplesMap);
 		}
 
 		return mapping;
-	}
-
-	/**
-	 * Small utility function to test URL based on
-	 * http://stackoverflow.com/questions/1600291/validating-url-in-java
-	 * 
-	 * @param uri
-	 * @return
-	 */
-	private static boolean isValidURL(String uri) {
-		try {
-			URL u = new URL(uri);
-			u.toURI();
-		} catch (MalformedURLException e) {
-			return false;
-		} catch (URISyntaxException e) {
-			return false;
-		}
-		return true;
 	}
 
 }

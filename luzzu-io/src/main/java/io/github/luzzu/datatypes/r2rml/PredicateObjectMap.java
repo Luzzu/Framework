@@ -105,14 +105,14 @@ public class PredicateObjectMap extends R2RMLResource {
 			Resource r = s.getObject().asResource();
 
 			/*
-			 * Because of all the OWL axioms, it is difficult to infer whether resources are a
+			 * FIXME Because of all the OWL axioms, it is difficult to infer whether resources are a
 			 * ObjectMap or a RefObjectMap. This is because after reasoning, those instances are
 			 * members of concepts that are OM or ROM concept union (!) something else. One should
 			 * be able to deduce that from the roles they play however. TODO: investigate if we
 			 * can't configure the reasoner and execute more elegantly.
 			 */
-			boolean isOM = r.hasProperty(R2RML.column) || r.hasProperty(R2RML.constant) || r.hasProperty(R2RML.template);
-			boolean isROM = r.hasProperty(R2RML.joinCondition);
+			boolean isOM = r.hasProperty(R2RML.column) || r.hasProperty(R2RML.constant) || r.hasProperty(R2RML.template) || r.hasProperty(RML.reference);
+			boolean isROM = r.hasProperty(R2RML.parentTriplesMap);
 
 			// If it plays the roles of a OM, create OM
 			if (isOM && !isROM) {

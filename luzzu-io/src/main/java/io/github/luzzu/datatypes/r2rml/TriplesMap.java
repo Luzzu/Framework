@@ -61,8 +61,13 @@ public class TriplesMap extends R2RMLResource {
 
 		// TermMap must have an rr:logicalTable property (exactly one?)
 		List<Statement> list = description.listProperties(R2RML.logicalTable).toList();
+
+		if (list.isEmpty()) {
+			list = description.listProperties(RML.logicalSource).toList();
+		}
+
 		if (list.size() != 1) {
-			logger.error("TriplesMap must have exactly one rr:logicalTable property.");
+			logger.error("TriplesMap must have exactly one rr:logicalTable or one rml:logicalSource property.");
 			logger.error(description);
 			return false;
 		}

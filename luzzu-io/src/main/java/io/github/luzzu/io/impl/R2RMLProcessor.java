@@ -44,7 +44,7 @@ public class R2RMLProcessor extends AbstractIOProcessor {
 		super.logger = R2RMLProcessor.logger;
 	}
 
-	private void tryLoadMapping() throws RiotException {
+	private void tryLoadMapping() throws Exception {
 		try {
 			this.mappingModel = RDFDataMgr.loadModel(datasetLocation);
 		} catch (RiotException re) {
@@ -77,6 +77,9 @@ public class R2RMLProcessor extends AbstractIOProcessor {
 				forcedCancel = true;
 				throw new SyntaxErrorException(e.getMessage());
 			}
+		} catch (Exception e) {
+			ExceptionOutput.output(e, "Error parsing mapping file: " + datasetLocation, logger);
+			throw new SyntaxErrorException(e.getMessage());
 		}
 	}
 
