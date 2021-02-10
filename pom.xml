@@ -56,7 +56,7 @@ use-case driven discovery and retrieval.</description>
 	<properties>
 		<mapdb.version>3.0.5</mapdb.version>
 		<jdk.version>1.8</jdk.version>
-		<junit.version>4.12</junit.version>
+		<junit.version>4.13.1</junit.version>
 		<log4j.version>1.2.16</log4j.version>
  		<jena.version>3.13.1</jena.version>
 		<mockito.version>2.13.0</mockito.version>
